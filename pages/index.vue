@@ -1,5 +1,5 @@
 <template>
-  <v-logo />
+  <v-logo class="rb-logo" />
 </template>
 
 <script>
@@ -16,5 +16,10 @@ export default {
      margin: 0;
      padding: 0;
      background: #262626;
+   }
+
+   .rb-logo {
+     width: 80vw;
+     height: 80vh;
    }
 </style>
