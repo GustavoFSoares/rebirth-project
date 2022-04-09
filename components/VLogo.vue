@@ -48,12 +48,11 @@ export default {
 </script>
 
 <style scoped>
-
 svg g#circle {
   fill-opacity: 0;
-  stroke-width: 0px;
+  stroke-width: 0;
   animation:
-    fill-opacity 2s ease 5s forwards,
+    fill-opacity 2s ease 4s forwards,
     write-line 4s ease 2s forwards;
 }
 
@@ -76,11 +75,27 @@ svg g#simbol {
 }
 
 svg g#texto {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
+  fill-opacity: 0;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-  animation: fade-in 1.5s ease 10s;
+  transform: translate3d(-20%, 0, 0);
+  animation:
+    back-right 6s ease 2s forwards,
+    fill-opacity 3s ease-in 4s forwards;
+
+}
+
+@keyframes back-right {
+  0% {
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  10% {
+    transform: translate3d(-5%%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @keyframes back-left {
