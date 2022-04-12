@@ -21,3 +21,15 @@
   font-display: swap;
   src: url('~assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
+
+$font-sizes: [
+  16,
+  24,
+  43
+];
+
+@each $size in $font-sizes {
+  .rb-text-size-#{$size} {
+    font-size: #{$size}px;
+  }
+}

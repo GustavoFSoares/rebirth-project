@@ -1,0 +1,11 @@
+$text-colors: (
+  1: #E8E8E8,
+  2: #ADADAD,
+  3: #8C8C8C
+);
+
+@each $name, $value in $text-colors {
+  .rb-text-color-#{$name} {
+    color: $value;
+  }
+}

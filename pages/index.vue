@@ -1,5 +1,5 @@
 <template>
-  <v-logo class="rb-logo" />
+  <menu-item label="Mussum" />
 </template>
 
 <script>
