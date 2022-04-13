@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+a {
+  &:link,
+  &:visited,
+  &:active,
+  &:hover {
+    text-decoration: none;
+    color: unset;
+  }
+}
+
 body {
   font-family: "Open Sans", serif;
   font-weight: normal;

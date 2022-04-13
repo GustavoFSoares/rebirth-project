@@ -1,11 +1,11 @@
 <template>
-  <nav class="menu">
+  <div class="menu">
     <menu-item
       v-for="(item, index) in menuItems"
       :key="`${index}-${item}`"
       :label="item"
     />
-  </nav>
+  </div>
 </template>
 
 <script>
@@ -22,10 +22,14 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
   .menu {
     display: flex;
     justify-content: space-between;
     gap: 48px;
+
+    @include media('tablet') {
+      background: purple !important;
+    }
   }
 </style>
