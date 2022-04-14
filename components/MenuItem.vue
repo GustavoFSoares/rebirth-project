@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-item">
+  <nuxt-link class="menu-item" :to="href">
     <span class="rb-text-color-1 rb-text-size-16">{{ label }}</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
         />
       </g>
     </svg>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -31,6 +31,11 @@ export default {
       type: String,
       default: 'Menu Item',
       required: true
+    },
+    href: {
+      type: String,
+      default: '#',
+      required: false
     }
   }
 }
