@@ -1,5 +1,5 @@
 <template>
-  <menu-item label="Mussum" />
+  <v-menu />
 </template>
 
 <script>
