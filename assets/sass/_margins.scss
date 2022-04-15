@@ -1,0 +1,35 @@
+$margin-sizes: (
+  8: 0.8,
+  16: 1.6,
+  24: 2.4
+);
+
+@each $size, $value in $margin-sizes {
+  .rb-ml-#{$size} {
+    margin-left: #{$value}rem;
+  }
+
+  .rb-mr-#{$size} {
+    margin-right: #{$value}rem;
+  }
+
+  .rb-mx-#{$size} {
+    margin: 0 #{$value}rem;
+  }
+
+  .rb-mt-#{$size} {
+    margin-top: #{$value}rem;
+  }
+
+  .rb-mb-#{$size} {
+    margin-bottom: #{$value}rem;
+  }
+
+  .rb-my-#{$size} {
+    margin: #{$value}rem 0;
+  }
+
+  .rb-ma-#{$size} {
+    margin: #{$value}rem;
+  }
+}
