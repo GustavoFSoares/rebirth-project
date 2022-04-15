@@ -24,7 +24,6 @@ body {
   margin: 0;
   padding: 0;
   background: #262626;
-  font-size: 10px;
 }
 
 .rb-logo {
