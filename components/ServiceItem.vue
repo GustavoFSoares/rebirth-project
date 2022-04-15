@@ -7,12 +7,12 @@
         </svg>
       </div>
 
-      <h4 class="title-content">
+      <h4 class="title-content rb-text-color-2 rb-font-size-24">
         {{ title }}
       </h4>
     </div>
 
-    <h6 class="service-item-content">
+    <h6 class="service-item-content rb-text-color-3 rb-font-size-16">
       {{ content }}
     </h6>
   </div>
@@ -40,41 +40,37 @@ export default {
     transform: translateX(0);
   }
   to {
-    transform: translateX(1rem);
+
   }
 }
 
 .service-item {
   max-width: 42rem;
 
+  &:hover {
+    .service-item-title-container .title-arrow {
+      transform: translate3d(1rem,0,0);
+    }
+  }
+
   &-title-container {
     display: flex;
-
-    &:hover {
-      .title-arrow {
-        animation: movement 1s ease-in-out forwards alternate;
-      }
-    }
 
     .title-arrow {
       width: 24px;
       margin-right: 1.6rem;
+      align-self: center;
+
+      transition: transform 0.5s ease-in-out;
     }
 
     .title-content {
-      @extend .rb-text-color-2;
-
-      font-size: 2.4rem;
-      line-height: 2.4rem;
       font-weight: 600;
     }
   }
 
   &-content {
-    @extend .rb-text-color-3;
     margin-top: 1.6rem;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
     font-style: italic;
   }
 }

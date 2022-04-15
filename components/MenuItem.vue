@@ -1,6 +1,6 @@
 <template>
   <nuxt-link class="menu-item" :to="href">
-    <span class="rb-text-color-1 rb-text-size-16">{{ label }}</span>
+    <span class="rb-text-color-1 rb-font-size-16">{{ label }}</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="127"
