@@ -17,19 +17,24 @@
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('~assets/fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url('~assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
-$font-sizes: [
-  16,
-  24,
-  43
-];
+$font-sizes: 16, 24, 43;
 
 @each $size in $font-sizes {
-  .rb-text-size-#{$size} {
+  .rb-font-size-#{$size} {
     font-size: #{$size}px;
+    line-height: 1;
   }
 }
