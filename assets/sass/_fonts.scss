@@ -30,11 +30,24 @@
   src: url('~assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
-$font-sizes: 16, 24, 43;
+$font-sizes: 16, 24, 40;
 
 @each $size in $font-sizes {
   .rb-font-size-#{$size} {
     font-size: #{$size}px;
     line-height: 1;
+  }
+}
+
+$font-weights: (
+  bold: 700,
+  semibold: 600,
+  normal: 500,
+  light: 400,
+);
+
+@each $name, $value in $font-weights {
+  .rb-font-weight-#{$name} {
+    font-weight: $value;
   }
 }

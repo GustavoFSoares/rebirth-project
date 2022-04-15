@@ -1,35 +1,42 @@
 $margin-sizes: (
+  auto: auto,
   8: 0.8,
   16: 1.6,
   24: 2.4
 );
 
 @each $size, $value in $margin-sizes {
+  $propValue: #{$value}rem;
+
+  @if $value == 'auto' {
+    $propValue: #{$value};
+  }
+
   .rb-ml-#{$size} {
-    margin-left: #{$value}rem;
+    margin-left: #{$propValue};
   }
 
   .rb-mr-#{$size} {
-    margin-right: #{$value}rem;
+    margin-right: #{$propValue};
   }
 
   .rb-mx-#{$size} {
-    margin: 0 #{$value}rem;
+    margin: 0 #{$propValue};
   }
 
   .rb-mt-#{$size} {
-    margin-top: #{$value}rem;
+    margin-top: #{$propValue};
   }
 
   .rb-mb-#{$size} {
-    margin-bottom: #{$value}rem;
+    margin-bottom: #{$propValue};
   }
 
   .rb-my-#{$size} {
-    margin: #{$value}rem 0;
+    margin: #{$propValue} 0;
   }
 
   .rb-ma-#{$size} {
-    margin: #{$value}rem;
+    margin: #{$propValue};
   }
 }
