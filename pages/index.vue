@@ -1,11 +1,22 @@
 <template>
   <div>
-    <menu-item label="Mussum" />
+    <VSection title="Title1">
+      <menu-item label="Mussum" />
 
-    <ServiceItem
-      title="title"
-      content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
-    />
+      <ServiceItem
+        title="title"
+        content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
+      />
+    </VSection>
+
+    <VSection title="Title2" type="light">
+      <menu-item label="Mussum" />
+
+      <ServiceItem
+        title="title"
+        content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
+      />
+    </VSection>
   </div>
 </template>
 
@@ -17,12 +28,6 @@ export default {
 
 <style>
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
   background: #262626;
 }
 
