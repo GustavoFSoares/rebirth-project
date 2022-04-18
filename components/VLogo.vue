@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-10 -10 1163 346" fill="none">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 1163 346" fill="none">
     <g id="rb-logo">
       <g id="texto">
         <g id="studio">
@@ -61,7 +61,6 @@ svg #triangle {
   stroke-dasharray: 1 500;
   opacity: 0;
   animation: write-line 4s ease 0s forwards;
-
 }
 
 svg g#rb-logo{
@@ -90,7 +89,7 @@ svg g#texto {
   }
 
   10% {
-    transform: translate3d(-5%%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
   }
 
   100% {
@@ -159,7 +158,7 @@ svg g#texto {
 
   100% {
     transform: scale(1);
-    filter: blur(0px);
+    filter: blur(0);
   }
 }
 </style>
