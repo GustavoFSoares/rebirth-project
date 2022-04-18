@@ -1,14 +1,16 @@
 <template>
   <section :class="['section', `rb-background-${type}`]">
-    <div class="section-container rb-mx-auto">
-      <h1 class="section-title">
-        {{ title }}
-      </h1>
+    <slot name="container">
+      <div class="section-container rb-mx-auto">
+        <h1 class="section-title">
+          {{ title }}
+        </h1>
 
-      <div class="section-content">
-        <slot />
+        <div class="section-content">
+          <slot />
+        </div>
       </div>
-    </div>
+    </slot>
   </section>
 </template>
 

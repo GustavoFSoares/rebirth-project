@@ -1,5 +1,7 @@
 <template>
   <div>
+    <VMenu />
+
     <VSection title="Title1">
       <menu-item label="Mussum" />
 
@@ -27,12 +29,5 @@ export default {
 </script>
 
 <style>
-body {
-  background: #262626;
-}
 
-.rb-logo {
-  width: 80vw;
-  height: 80vh;
-}
 </style>

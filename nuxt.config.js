@@ -28,7 +28,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'nuxt-gsap-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -43,6 +44,9 @@ export default {
     scss: [
       '@/assets/sass/resources.scss'
     ]
+  },
+  gsap: {
+    /* Module Options */
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
