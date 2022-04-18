@@ -1,5 +1,5 @@
 <template>
-  <div class="menu" :class="{'active' : isShowMenu}">
+  <div class="menu active" :class="{'active' : isShowMenu}">
     <v-logo class="menu-logo" />
     <div
       class="menu-close"
@@ -32,7 +32,32 @@ export default {
       'Contact Us'
     ],
     isShowMenu: false
-  })
+  }),
+  mounted () {
+    if (window.innerWidth < 768) {
+      const gsap = this.$gsap
+      gsap.set(
+        '.menu-item', {
+          x: 768
+        })
+    }
+  },
+  watch: {
+    isShowMenu (val) {
+      this.boxRotation(val)
+    }
+  },
+  methods: {
+    boxRotation (bol) {
+      const gsap = this.$gsap
+      gsap.to(
+        '.menu-item',
+        {
+          x: (bol) ? 0 : 768,
+          stagger: (bol) ? 0.2 : 0.1
+        })
+    }
+  }
 }
 </script>
 
