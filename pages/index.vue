@@ -3,10 +3,12 @@
     <v-header />
 
     <v-section title="Title1">
+
       <service-item
         title="title"
         content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
       />
+      <social-link icon="insta" />
     </v-section>
 
     <v-section title="Title2" type="light">

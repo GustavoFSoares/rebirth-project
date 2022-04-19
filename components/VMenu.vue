@@ -35,7 +35,7 @@ export default {
   }),
   watch: {
     isShowMenu (val) {
-      this.boxRotation(val)
+      this.showMenu(val)
     }
   },
   mounted () {
@@ -48,7 +48,7 @@ export default {
     }
   },
   methods: {
-    boxRotation (bol) {
+    showMenu (bol) {
       const gsap = this.$gsap
       gsap.to(
         '.menu-item',
