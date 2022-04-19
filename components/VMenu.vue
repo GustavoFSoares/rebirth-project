@@ -1,5 +1,5 @@
 <template>
-  <div class="menu active" :class="{'active' : isShowMenu}">
+  <nav class="menu" :class="{'active' : isShowMenu}">
     <v-logo class="menu-logo" />
     <div
       class="menu-close"
@@ -17,7 +17,7 @@
         :label="item"
       />
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -79,14 +79,14 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  padding: 15px;
-  width: 100vw;
-  max-width: 1117px;
+  position: relative;
+  padding: 15px 0;
+  width: auto;
   margin: 0 auto;
+
+  @include media('tablet', 'max') {
+    width: auto;
+  }
 
   &-logo {
     height: 48px;
@@ -173,7 +173,7 @@ export default {
     }
 
     &-item {
-      background: rgba(255, 255, 255,.05);
+      background: map-get($backgrounds, 'soft-dark');
       width: 100%;
       padding: 20px 10px;
     }

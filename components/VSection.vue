@@ -54,7 +54,7 @@ export default {
   }
 
   &-container {
-    max-width: 1127px;
+    @extend .container;
 
     .section-title {
       display: flex;

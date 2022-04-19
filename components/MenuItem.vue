@@ -46,30 +46,6 @@ export default {
 
 <style scoped lang="scss">
 
-@keyframes menu-line {
-  0% {
-    d: path('M1 5C50 4.99998 77.1845 5 126 5');
-  }
-  30% {
-    d: path('M1 5C52.3183 9.09391 79.4405 8.95118 126 5');
-  }
-  60% {
-    d: path('M1 4.99931C52.5833 0.261296 79.119 0.80672 126 4.99931');
-  }
-  100% {
-    d: path('M1 5C50 4.99998 77.1845 5 126 5');
-  }
-}
-
-@keyframes menu-line-click {
-  0% {
-    d: path('M1 5C50 4.99998 77.1845 5 126 5');
-  }
-  30%, 100% {
-    d: path('M1 5C52.3183 9.09391 79.4405 8.95118 126 5');
-  }
-}
-
 .menu-item {
   display: flex;
   flex-direction: column;
@@ -82,12 +58,12 @@ export default {
     transform-box: fill-box;
   }
 
-  &:hover > svg path#middle-line {
-    animation: menu-line 1s ease forwards alternate;
+  svg path{
+    transition: ease .4s;
   }
 
-  &:active svg path#middle-line {
-    animation: menu-line-click 1s ease forwards alternate;
+  &:hover > svg path#middle-line {
+    stroke: map-get($text-colors, 3);
   }
 }
 </style>

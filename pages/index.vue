@@ -1,35 +1,31 @@
 <template>
-  <div>
-    <VMenu />
+  <div class="main">
+    <v-header />
 
-    <VSection title="Title1">
-      <menu-item label="Mussum" />
-
-      <ServiceItem
+    <v-section title="Title1">
+      <service-item
         title="title"
         content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
       />
 
-      <VMember
+      <v-member
         name="Joao Santos de Oliveira"
         occupation="dev"
         identifier="1"
       />
 
-      <VMember
+      <v-member
         name="Joao (Sem foto)"
         occupation="dev"
       />
-    </VSection>
+    </v-section>
 
-    <VSection title="Title2" type="light">
-      <menu-item label="Mussum" />
-
-      <ServiceItem
+    <v-section title="Title2" type="light">
+      <service-item
         title="title"
         content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
       />
-    </VSection>
+    </v-section>
   </div>
 </template>
 
@@ -39,6 +35,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  .main {
+    section:first-of-type {
+      margin-top:  116px;
+    }
+  }
 </style>
