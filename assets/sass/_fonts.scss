@@ -11,7 +11,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('~assets/fonts/OpenSans-Italic.ttf') format('truetype');
+  src: url('~assets/fonts/OpenSans-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -30,7 +30,7 @@
   src: url('~assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
-$font-sizes: 16, 24, 40;
+$font-sizes: 12, 16, 24, 40;
 
 @each $size in $font-sizes {
   .rb-font-size-#{$size} {
