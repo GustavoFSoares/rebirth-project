@@ -37,6 +37,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
+    transition: .2s ease-in-out;
 
     @include media('desktop', 'max') {
       padding: 0 15px;
