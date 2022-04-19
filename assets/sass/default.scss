@@ -21,5 +21,9 @@ a {
 body {
   font-family: "Open Sans", serif;
   font-weight: normal;
+}
+
+body,
+header {
   background: $secondary;
 }
