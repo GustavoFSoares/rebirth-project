@@ -1,0 +1,17 @@
+$screen-sizes: (
+  "tablet": "768px",
+  "desktop": "1127px",
+  "largger": "1728px",
+);
+
+@mixin media($resolution, $minOrMax: "min") {
+  @if ($minOrMax == "min") {
+    @media screen and (min-width: map-get($screen-sizes, $resolution)) {
+      @content;
+    }
+  } @else if($minOrMax == "max") {
+    @media screen and (max-width: map-get($screen-sizes, $resolution)) {
+      @content;
+    }
+  }
+}
