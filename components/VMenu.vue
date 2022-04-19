@@ -33,6 +33,11 @@ export default {
     ],
     isShowMenu: false
   }),
+  watch: {
+    isShowMenu (val) {
+      this.boxRotation(val)
+    }
+  },
   mounted () {
     if (window.innerWidth < 768) {
       const gsap = this.$gsap
@@ -40,11 +45,6 @@ export default {
         '.menu-item', {
           x: 768
         })
-    }
-  },
-  watch: {
-    isShowMenu (val) {
-      this.boxRotation(val)
     }
   },
   methods: {
@@ -129,7 +129,7 @@ export default {
       }
 
       span:nth-child(2) {
-         opacity: 0;
+        opacity: 0;
       }
 
       span:nth-child(3) {
