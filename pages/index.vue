@@ -11,7 +11,6 @@
       <v-member
         name="Joao Santos de Oliveira"
         occupation="dev"
-        identifier="1"
       />
 
       <v-member
