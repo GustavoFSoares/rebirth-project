@@ -7,6 +7,16 @@
         title="title"
         content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
       />
+
+      <v-member
+        name="Joao Santos de Oliveira"
+        occupation="dev"
+      />
+
+      <v-member
+        name="Joao (Sem foto)"
+        occupation="dev"
+      />
     </v-section>
 
     <v-section title="Title2" type="light">
