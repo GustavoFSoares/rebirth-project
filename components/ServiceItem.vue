@@ -60,6 +60,11 @@ export default {
       width: 24px;
       align-self: center;
 
+      svg {
+        width: 1.8rem;
+        height: 2.1rem;
+      }
+
       transition: transform 0.5s ease-in-out;
     }
 

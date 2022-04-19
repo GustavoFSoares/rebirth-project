@@ -129,7 +129,7 @@ export default {
       }
 
       span:nth-child(2) {
-         opacity: 0;
+        opacity: 0;
       }
 
       span:nth-child(3) {
