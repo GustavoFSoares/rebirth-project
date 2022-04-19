@@ -43,6 +43,7 @@ export default {
 
   &.rb-background-dark {
     .section-title {
+      @extend .rb-font-size-40;
       @extend .rb-text-color-1;
     }
   }
