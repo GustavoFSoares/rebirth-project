@@ -1,9 +1,9 @@
 <template>
-  <div class="member">
-    <div class="member-picture">
+  <div class="member-item">
+    <div class="member-item-picture">
       <img
         :class="[
-          'member-picture-content',
+          'member-item-picture-content',
           { 'no-profile-picture': !identifier},
           'ma-auto'
         ]"
@@ -12,25 +12,25 @@
       >
     </div>
 
-    <h5 class="member-name">
+    <h5 class="member-item-name">
       {{ name }}
     </h5>
 
-    <h6 class="member-occupation rb-text-color-1">
-      {{ occupation }}
+    <h6 class="member-item-role rb-text-color-1">
+      {{ role }}
     </h6>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'VMember',
+  name: 'VMemberItem',
   props: {
     name: {
       type: String,
       required: true
     },
-    occupation: {
+    role: {
       type: String,
       required: true
     },
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.member {
+.member-item {
   width: 16.8rem;
 
   &-picture {
@@ -84,13 +84,12 @@ export default {
     @extend .rb-font-weight-semibold;
   }
 
-  &-occupation {
+  &-role {
     @extend .rb-mt-8;
     @extend .rb-text-color-1;
     @extend .rb-font-size-12;
     @extend .rb-font-weight-light;
     font-style: italic;
-
   }
 }
 </style>
