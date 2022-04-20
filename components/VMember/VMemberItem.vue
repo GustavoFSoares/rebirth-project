@@ -45,7 +45,7 @@ export default {
         return `/members/${this.identifier}.png`
       }
 
-      return require('~/assets/img/members/default-image.svg')
+      return require('~/assets/images/members/default-image.svg')
     }
   }
 }
