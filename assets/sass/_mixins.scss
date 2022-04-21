@@ -44,3 +44,25 @@ $screen-sizes: (
     }
   }
 }
+
+@mixin scrollbars($size, $foreground-color: $primary, $background-color: mix($secondary, white,  90%)) {
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
