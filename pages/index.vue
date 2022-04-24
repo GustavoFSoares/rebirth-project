@@ -25,12 +25,15 @@
         content="Chuck Norris threw a grenade and killed 50 people. Then it exploded."
       />
     </v-section>
+    <v-footer />
   </div>
 </template>
 
 <script>
+import VFooter from '~/pages/partials/VFooter'
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: { VFooter }
 }
 </script>
 

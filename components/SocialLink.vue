@@ -23,6 +23,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  .social-link {
+    cursor: pointer;
+    transition: ease .5s;
 
+    &:hover {
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .7));
+      transform: scale(1.2);
+      stroke: $secondary;
+    }
+
+    &__icon {
+      max-width: 28px;
+    }
+  }
 </style>

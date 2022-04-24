@@ -35,6 +35,7 @@ export default {
     width: 100vw;
     max-width: 100vw;
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     transition: .2s ease-in-out;
