@@ -11,15 +11,11 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/sass/default.scss'
-  ],
+  css: ['@/assets/sass/default.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -44,12 +40,11 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    '@nuxtjs/i18n'
   ],
   styleResources: {
-    scss: [
-      '@/assets/sass/resources.scss'
-    ]
+    scss: ['@/assets/sass/resources.scss']
   },
   gsap: {
     /* Module Options */
@@ -58,6 +53,22 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/'
+  },
+  i18n: {
+    strategy: 'prefix_except_default',
+    locales: [{ code: 'en-US', file: 'en-US.json' }],
+    defaultLocale: 'en-US',
+    lazy: true,
+    langDir: 'locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieDomain: null,
+      cookieKey: 'lang',
+      alwaysRedirect: false
+    },
+    vueI18n: {
+      fallbackLocale: 'en-US'
+    }
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -68,6 +79,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }

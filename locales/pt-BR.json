@@ -1,0 +1,41 @@
+{
+  "section": {
+    "ourServices": {
+      "title": "Our Services",
+      "items": [
+        {
+          "title": "Art Director",
+          "content": "Temos dois incríveis diretores de arte trabalhando conosco, que podem providenciar direcionamento especializado e altamente qualificado para qualquer projeto artístico que você possa imaginar. Contamos com eles para levar a sua arte para um patamar mais alto."
+        },
+        {
+          "title": "Character Design",
+          "content": "Qualquer bom jogo ou estória depende de bons personagens. E para criar os melhores, nós temos Concept Artists experientes e altamente qualificados, que são capazes de criar os melhores personagens para o seu universo."
+        },
+        {
+          "title": "Environment",
+          "content": "Junto com os personagens, os ambientes dão um coração pulsante e background consistente para todo trabalho artístico. Pensando nisso, nós desejamos te fornecer belos cenários e maravilhosas paisagens."
+        },
+        {
+          "title": "Prop Design",
+          "content": "Os props estão por todos os lugares em qualquer jogo, e às vezes tem bastante destaque neles, como armas ou armaduras lendárias. De qualquer forma, nos deixe trazer os melhores itens e props para o seu projeto."
+        },
+        {
+          "title": "Concept Art",
+          "content": "A etapa mais primitiva e essencial no desenvolvimento de qualquer IP, concept art é o trabalho que dá alma e identidade ao projeto, e é por isso que damos real valor a isso, sempre buscando trazer à vida as coisas mais belas e criativas que sua mente possa conceber."
+        },
+        {
+          "title": "Illustration",
+          "content": "Se o concept art é o que dá vida a uma ideia, as ilustrações, em todas as formas, são o que mostra ela ao mundo. Criar uma forte conexão, um laço real, entre criador e público, tal é o poder de uma boa ilustração, e tal é o nosso objetivo quando trabalhamos em uma."
+        }
+      ]
+    },
+    "aboutUs": {
+      "title": "Sobre Nós",
+      "paragraphs": [
+        "Fundada em meados de 2020, a Rebirth Studio começou como um coletivo de artistas. Amigos que, acima de tudo, compartilhavam pela mesma paixão e desejo de trazer à vida os mais diversos universos da indústria de entretenimento.",
+        "Com o tempo o coletivo foi crescendo e se profissionalizando, tornando-se o que é hoje: uma empresa formalizada e estruturada, com a missão de atender os seus clientes com primor e excelência naquilo que sempre fizeram de melhor, que é a arte.",
+        "Junto com a empresa, cresceram sempre a amizade e o companheirismo dos membros, fazendo com que o espírito de amor daquele coletivo viva cada vez mais forte no coração de uma estrutura cada vez mais profissional."
+      ]
+    }
+  }
+}

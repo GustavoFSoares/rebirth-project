@@ -34,11 +34,14 @@ export default {
 <style lang="scss" scoped>
 .section {
   width: 100%;
-  height: 100vh;
-  padding-top: calc(11.4rem + 72px);
+  min-height: calc(100vh - 72px);
 
   @include media("desktop", "max") {
     padding: 1.5rem;
+  }
+
+  @include media('mobile', 'max') {
+    padding: 0 #{map-get($margin-sizes, 8)}rem;
   }
 
   &.rb-background-dark {
@@ -78,6 +81,15 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @extend .rb-pt-96;
+
+    @include media('mobile', 'max') {
+      padding:
+        #{map-get($margin-sizes, 64)}rem
+        #{map-get($margin-sizes, 8)}rem
+        0;
+    }
   }
 }
 </style>
