@@ -2,41 +2,49 @@ $margin-sizes: (
   auto: auto,
   8: 0.8,
   16: 1.6,
-  24: 2.4
+  24: 2.4,
+  32: 3.2
 );
 
-@each $size, $value in $margin-sizes {
-  $propValue: #{$value}rem;
+$spaces: (
+  margin: 'm',
+  padding: 'p',
+);
 
-  @if $value == 'auto' {
-    $propValue: #{$value};
-  }
+@each $spaceName, $spaceInitial in $spaces {
+  @each $size, $value in $margin-sizes {
+    $propValue: #{$value}rem;
 
-  .rb-ml-#{$size} {
-    margin-left: #{$propValue};
-  }
+    @if $value == 'auto' {
+      $propValue: #{$value};
+    }
 
-  .rb-mr-#{$size} {
-    margin-right: #{$propValue};
-  }
+    .rb-#{$spaceInitial}l-#{$size} {
+      #{$spaceName}-left: #{$propValue};
+    }
 
-  .rb-mx-#{$size} {
-    margin: 0 #{$propValue};
-  }
+    .rb-#{$spaceInitial}r-#{$size} {
+      #{$spaceName}-right: #{$propValue};
+    }
 
-  .rb-mt-#{$size} {
-    margin-top: #{$propValue};
-  }
+    .rb-#{$spaceInitial}x-#{$size} {
+      #{$spaceName}: 0 #{$propValue};
+    }
 
-  .rb-mb-#{$size} {
-    margin-bottom: #{$propValue};
-  }
+    .rb-#{$spaceInitial}t-#{$size} {
+      #{$spaceName}-top: #{$propValue};
+    }
 
-  .rb-my-#{$size} {
-    margin: #{$propValue} 0;
-  }
+    .rb-#{$spaceInitial}b-#{$size} {
+      #{$spaceName}-bottom: #{$propValue};
+    }
 
-  .rb-ma-#{$size} {
-    margin: #{$propValue};
+    .rb-#{$spaceInitial}y-#{$size} {
+      #{$spaceName}: #{$propValue} 0;
+    }
+
+    .rb-#{$spaceInitial}a-#{$size} {
+      #{$spaceName}: #{$propValue};
+    }
   }
 }
