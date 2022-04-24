@@ -66,17 +66,3 @@ $screen-sizes: (
     scrollbar-track-color: $background-color;
   }
 }
-
-.grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-column: 1/span 12;
-
-  @for $start from 1 through 12 {
-    @for $fill from 1 through 12 {
-      .grid-column-#{$start}-#{$fill} {
-        grid-column: #{$start}/span #{$fill};
-      }
-    }
-  }
-}
