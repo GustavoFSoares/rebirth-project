@@ -34,8 +34,7 @@ export default {
 <style lang="scss" scoped>
 .section {
   width: 100%;
-  min-height: 100vh;
-  padding-top: calc(11.4rem + 72px);
+  min-height: calc(100vh - 72px);
 
   @include media("desktop", "max") {
     padding: 1.5rem;
@@ -83,11 +82,13 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    @extend .rb-mt-96;
+    @extend .rb-pt-96;
 
     @include media('mobile', 'max') {
-      margin-top: #{map-get($margin-sizes, 64)}rem;
-      padding: 0 #{map-get($margin-sizes, 8)}rem;
+      padding:
+        #{map-get($margin-sizes, 64)}rem
+        #{map-get($margin-sizes, 8)}rem
+        0;
     }
   }
 }
