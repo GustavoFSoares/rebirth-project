@@ -1,0 +1,41 @@
+{
+  "section": {
+    "ourServices": {
+      "title": "Our Services",
+      "items": [
+        {
+          "title": "Art Director",
+          "content": "We have two awesome art directors working with us, who can provide specialized and high-qualified guidance for any artistic project that you can imagine. We count on them to lead your art for a higher level."
+        },
+        {
+          "title": "Character Design",
+          "content": "Any good game and story relies upon good characters. And to create the better ones, we have experienced and high-qualified Concept Artists, who are capable of creating the greater characters to your universe."
+        },
+        {
+          "title": "Environment",
+          "content": "Alongside with the characters, the environment gives a beating heart and consistent background to every artwork. Thinking about it, we wish to provide you beautiful scenarios and wonderful landscapes."
+        },
+        {
+          "title": "Prop Design",
+          "content": "The props are all over any game, and sometimes have great highlights on them, like legendary weapons or armors. In any way, let us come up with the greater items and props for your project."
+        },
+        {
+          "title": "Concept Art",
+          "content": "The very primal and essential step in the development of any IP, concept art is the work that gives soul and identity to the project, and that’s why we give real value to it, always looking to bring to life the most beautiful and creative stuff that your mind can conceive."
+        },
+        {
+          "title": "Illustration",
+          "content": "If the concept art is what gives life to an idea, the illustrations, in all forms, are what shows it to the world. To create a Strong connection, a real bond, between creator and public, such is the power of a good illustration, and such is our goal when working on one."
+        }
+      ]
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "paragraphs": [
+        "Founded in mid-2020, Rebirth Studio started as an artist collective. Friends who, above all, shared the same passion and desire to bring to life the most diverse universes in the entertainment industry.",
+        "Over time, the collective grew and became professional, becoming what it is today: a formalized and structured company, with the mission of serving its customers with perfection and excellence in what they have always done best, which is art.",
+        "Along with the company, the friendship and companionship of the members always grew, making the spirit of love of that collective live stronger and stronger in the heart of an increasingly professional structure."
+      ]
+    }
+  }
+}

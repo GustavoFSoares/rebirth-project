@@ -1,6 +1,6 @@
 <template>
   <a v-if="icon" :href="href" class="social-link">
-    <component :is="getIcon" class="social-link__icon"/>
+    <component :is="getIcon" class="social-link__icon" />
   </a>
 </template>
 
