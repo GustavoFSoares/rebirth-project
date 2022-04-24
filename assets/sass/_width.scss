@@ -1,0 +1,17 @@
+$withSizes: (
+  1: 25%,
+  2: 33%,
+  3: 50%,
+  4: 66%,
+  5: 75%
+);
+
+@each $pos, $size in $withSizes {
+  .w-#{$pos} {
+    width: $size;
+  }
+
+  .mw-#{$pos} {
+    max-width: $size;
+  }
+}
