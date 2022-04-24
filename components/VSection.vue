@@ -2,7 +2,7 @@
   <section :class="['section', `rb-background-${type}`]">
     <slot name="container">
       <div class="section-container rb-mx-auto">
-        <h1 class="section-title">
+        <h1 v-if="title" class="section-title">
           {{ title }}
         </h1>
 
@@ -20,7 +20,7 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      default: ''
     },
     type: {
       type: String,

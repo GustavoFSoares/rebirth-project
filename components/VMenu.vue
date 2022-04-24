@@ -139,7 +139,7 @@ export default {
       }
     }
 
-    @include media('tablet', 'min') {
+    @include media('tablet', '>') {
       display: none;
     }
   }
