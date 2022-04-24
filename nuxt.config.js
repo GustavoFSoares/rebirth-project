@@ -56,7 +56,15 @@ export default {
   },
   i18n: {
     strategy: 'prefix_except_default',
-    locales: [{ code: 'en-US', file: 'en-US.json' }],
+    locales: [
+      {
+        code: 'en-US',
+        file: 'en-US.json'
+      },
+      {
+        code: 'pt-BR',
+        file: 'pt-BR.json'
+      }],
     defaultLocale: 'en-US',
     lazy: true,
     langDir: 'locales/',
