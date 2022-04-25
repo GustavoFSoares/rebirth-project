@@ -6,6 +6,10 @@
 
 :root {
   font-size: 10px;
+
+  @include media("mobile", "max") {
+    font-size: 8px;
+  }
 }
 
 a {
