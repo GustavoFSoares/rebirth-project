@@ -17,12 +17,10 @@
 </template>
 
 <script>
-import SimpleArrow from '@/assets/images/icons/simple-arrow.svg?inline'
-
 export default {
   name: 'ServiceItem',
   components: {
-    SimpleArrow
+    SimpleArrow: () => import('@/assets/images/icons/simple-arrow.svg?inline')
   },
   props: {
     title: {
