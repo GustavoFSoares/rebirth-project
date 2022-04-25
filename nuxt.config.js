@@ -1,4 +1,7 @@
 export default {
+  server: {
+    host: '0'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'rebirth-studio',
@@ -15,7 +18,9 @@ export default {
   css: ['@/assets/sass/default.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    '@/plugins/vuelidate'
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -51,7 +56,15 @@ export default {
   },
   i18n: {
     strategy: 'prefix_except_default',
-    locales: [{ code: 'en-US', file: 'en-US.json' }],
+    locales: [
+      {
+        code: 'en-US',
+        file: 'en-US.json'
+      },
+      {
+        code: 'pt-BR',
+        file: 'pt-BR.json'
+      }],
     defaultLocale: 'en-US',
     lazy: true,
     langDir: 'locales/',

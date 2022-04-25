@@ -5,6 +5,7 @@ $text-colors: (
   1: #E8E8E8,
   2: #ADADAD,
   3: #8C8C8C,
+  primary: $primary,
   dark: $secondary,
 );
 
@@ -18,7 +19,7 @@ $backgrounds: (
   light: #ffffff,
   dark: $secondary,
   soft-dark: #313131,
-  primary: #E72E51,
+  primary: $primary,
 );
 
 @each $name, $value in $backgrounds {
