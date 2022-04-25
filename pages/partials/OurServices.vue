@@ -1,17 +1,18 @@
 <template>
-  <div class="our-services">
-    <v-section :title="$t('section.ourServices.title')">
-      <div class="our-services-container">
-        <service-item
-          v-for="(service, index) in services"
-          :key="index"
-          class="our-services-item"
-          :title="service.title"
-          :content="service.content"
-        />
-      </div>
-    </v-section>
-  </div>
+  <v-section
+    class="our-services"
+    :title="$t('section.ourServices.title')"
+  >
+    <div class="our-services-container">
+      <service-item
+        v-for="(service, index) in services"
+        :key="index"
+        class="our-services-item"
+        :title="service.title"
+        :content="service.content"
+      />
+    </div>
+  </v-section>
 </template>
 
 <script>

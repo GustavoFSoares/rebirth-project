@@ -1,14 +1,15 @@
 <template>
-  <div class="about-us">
-    <v-section :title="$t('section.aboutUs.title')">
-      <div class="about-us-container">
-        <v-paragraphs
-          class="about-us-item"
-          :paragraphs="$t('section.aboutUs.paragraphs')"
-        />
-      </div>
-    </v-section>
-  </div>
+  <v-section
+    class="about-us"
+    :title="$t('section.aboutUs.title')"
+  >
+    <div class="about-us-container">
+      <v-paragraphs
+        class="about-us-item"
+        :paragraphs="$t('section.aboutUs.paragraphs')"
+      />
+    </div>
+  </v-section>
 </template>
 
 <script>
