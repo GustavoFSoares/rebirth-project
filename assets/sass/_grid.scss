@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 24px;
+
+  @include media("mobile", "max") {
+    gap: 12px;
+  }
+
+  @for $fill from 1 through 12 {
+    .grid-start-#{$fill} {
+      grid-column-start: #{$fill};
+    }
+
+    .grid-#{$fill} {
+      grid-column: span #{$fill};
+    }
+  }
+
+  @include media("tablet", "<") {
+    @for $fill from 1 through 12 {
+      .grid-start-#{$fill} {
+        grid-column-start: 1;
+      }
+
+      .grid-#{$fill} {
+        grid-column: span 12;
+      }
+    }
+  }
+}
