@@ -1,6 +1,6 @@
 <template>
   <div class="service-item">
-    <div class="service-item-decoration rb-mr-16">
+    <div class="service-item-decoration">
       <SimpleArrow />
     </div>
 
@@ -42,14 +42,13 @@ export default {
   from {
     transform: translateX(0);
   }
-  to {
-
-  }
 }
 
 .service-item {
   max-width: 42rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: #{map-get($margin-sizes, 16)}rem;
 
   &:hover {
     .service-item-decoration {
@@ -58,7 +57,6 @@ export default {
   }
 
   &-decoration {
-    width: 34px;
     transition: transform 0.5s ease-in-out;
   }
 
