@@ -1,7 +1,7 @@
 <template>
   <div class="service-item">
     <div class="service-item-decoration">
-      <SimpleArrow />
+      <simple-arrow />
     </div>
 
     <div class="service-item-text-container">
