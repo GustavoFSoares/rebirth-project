@@ -19,7 +19,7 @@ $backgrounds: (
   light: #ffffff,
   dark: $secondary,
   soft-dark: #313131,
-  primary: #primary,
+  primary: $primary,
 );
 
 @each $name, $value in $backgrounds {
