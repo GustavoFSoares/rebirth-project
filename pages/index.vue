@@ -30,5 +30,21 @@ export default {
   &:first-child {
     margin-top: calc(1rem + 72px);
   }
+
+  section + section {
+    @include media('tablet', 'max') {
+      margin-top: 5rem;
+    }
+  }
+
+  > * {
+    @include media('desktop', 'max') {
+      padding: 0 16px;
+    }
+
+    @include media('mobile-m', '<') {
+      padding: 0 10px;
+    }
+  }
 }
 </style>
