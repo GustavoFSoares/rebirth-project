@@ -70,9 +70,7 @@ export default {
     langDir: 'locales/',
     detectBrowserLanguage: {
       useCookie: true,
-      cookieDomain: null,
-      cookieKey: 'lang',
-      alwaysRedirect: false
+      cookieKey: 'lang'
     },
     vueI18n: {
       fallbackLocale: 'en-US'
