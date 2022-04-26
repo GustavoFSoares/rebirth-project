@@ -50,6 +50,12 @@ export default {
       required: true
     }
   },
+  mounted () {
+    document.querySelector('body').style.overflow = 'hidden'
+  },
+  destroyed () {
+    document.querySelector('body').style.overflow = 'initial'
+  },
   methods: {
     handleHideMemberModal ({ currentTarget, target }) {
       if (currentTarget === target) {
@@ -62,14 +68,13 @@ export default {
 
 <style lang="scss" scoped>
 .member-modal {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
 
   backdrop-filter: blur(5px);
-
-  width: 100vw;
-  height: 100vh;
 
   display: flex;
 
