@@ -3,7 +3,13 @@
     class="member-modal"
     @click="handleHideMemberModal"
   >
-    <div ref="container" class="member-modal-container">
+    <div
+      ref="container"
+      :class="[
+        'member-modal-container',
+        {'member-modal-container-out': toHide}
+      ]"
+    >
       <v-member-item
         class="member-item"
         :name="name"
@@ -50,6 +56,11 @@ export default {
       required: true
     }
   },
+  data () {
+    return {
+      toHide: false
+    }
+  },
   mounted () {
     document.querySelector('body').style.overflow = 'hidden'
   },
@@ -59,7 +70,11 @@ export default {
   methods: {
     handleHideMemberModal ({ currentTarget, target }) {
       if (currentTarget === target) {
-        this.$emit('hide')
+        this.toHide = true
+        setTimeout(() => {
+          this.$emit('hide')
+          this.toHide = false
+        }, 400)
       }
     }
   }
@@ -67,6 +82,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@keyframes zoomIn {
+  0% {
+    transform:scale(0);
+    background: blue !important;
+  }
+  100% {
+    transform:scale(1);
+    background: red !important;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(0);
+  }
+}
+
 .member-modal {
   position: fixed;
   top: 0;
@@ -95,6 +130,13 @@ export default {
     justify-content: center;
     align-items: center;
 
+    transform:scale(0);
+    animation: zoomIn .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+    &-out {
+      animation: zoomOut .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+
     @include media("tablet", "max") {
       flex-direction: column;
 
@@ -109,6 +151,7 @@ export default {
 
     .member-item {
       min-width: 16.8rem;
+      max-width: 16.8rem;
     }
 
     .member-description {
@@ -136,6 +179,7 @@ export default {
 
       &-content {
         font-style: italic;
+        line-height: 1.3;
         flex-grow: 1;
 
         @extend .rb-font-weight-light;

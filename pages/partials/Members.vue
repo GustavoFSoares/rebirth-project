@@ -54,6 +54,19 @@ export default {
       &-position-5 {
         @extend .grid-start-4;
       }
+
+      @include media("tablet", "<") {
+        @extend .m-grid-3;
+
+        &.member-position-0 {
+          grid-column-start: 1;
+          grid-column-end: span 3;
+        }
+
+        &.member-position-5 {
+          grid-column: span 3;
+        }
+      }
     }
   }
 }
