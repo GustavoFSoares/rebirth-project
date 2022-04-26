@@ -36,6 +36,32 @@
         "Over time, the collective grew and became professional, becoming what it is today: a formalized and structured company, with the mission of serving its customers with perfection and excellence in what they have always done best, which is art.",
         "Along with the company, the friendship and companionship of the members always grew, making the spirit of love of that collective live stronger and stronger in the heart of an increasingly professional structure."
       ]
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "form": {
+        "name": {
+          "label": "Name",
+          "errorMessage": "This field is required"
+        },
+        "email": {
+          "label": "E-mail",
+          "errorMessage": "This field is required",
+          "errorEmail": "Please, insert a valid email"
+        },
+        "subject": {
+          "label": "Subject",
+          "errorMessage": "This field is required"
+        },
+        "message": {
+          "label": "Message",
+          "errorMessage": "This field is required"
+        },
+        "button": {
+          "send": "Send",
+          "reset": "Clear"
+        }
+      }
     }
   }
 }

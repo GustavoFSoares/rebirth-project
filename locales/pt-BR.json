@@ -36,6 +36,32 @@
         "Com o tempo o coletivo foi crescendo e se profissionalizando, tornando-se o que é hoje: uma empresa formalizada e estruturada, com a missão de atender os seus clientes com primor e excelência naquilo que sempre fizeram de melhor, que é a arte.",
         "Junto com a empresa, cresceram sempre a amizade e o companheirismo dos membros, fazendo com que o espírito de amor daquele coletivo viva cada vez mais forte no coração de uma estrutura cada vez mais profissional."
       ]
+    },
+    "contactUs": {
+      "title": "Fale Conosco",
+      "form": {
+        "name": {
+          "label": "Nome",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "email": {
+          "label": "E-mail",
+          "errorMessage": "Este campo é obrigatório",
+          "errorEmail": "Favor informar um email válido"
+        },
+        "subject": {
+          "label": "Assunto",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "message": {
+          "label": "Mensagem",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "button": {
+          "send": "Enviar",
+          "reset": "Limpar"
+        }
+      }
     }
   }
 }
