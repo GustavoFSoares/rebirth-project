@@ -42,7 +42,7 @@ export default {
   computed: {
     imagePath () {
       if (this.identifier) {
-        return `/members/${this.identifier}.png`
+        return `/members/${this.identifier}.jpg`
       }
 
       return require('~/assets/images/members/default-image.svg')
@@ -53,15 +53,17 @@ export default {
 
 <style lang="scss" scoped>
 .member-item {
-  width: 16.8rem;
+  width: 100%;
 
   &-picture {
     display: flex;
     width: 100%;
-    height: 16.8rem;
+    height: 1;
+
     @extend .rb-background-primary;
 
     &-content {
+      widows: 100%;
       display: block;
       @extend .rb-ma-auto;
 

@@ -6,6 +6,8 @@
 
     <about-us />
 
+    <members />
+
     <v-footer />
   </div>
 </template>
@@ -13,6 +15,7 @@
 <script>
 import OurServices from '~/pages/partials/OurServices'
 import AboutUs from '~/pages/partials/AboutUs'
+import Members from '~/pages/partials/Members'
 import VFooter from '~/pages/partials/VFooter'
 
 export default {
@@ -20,6 +23,7 @@ export default {
   components: {
     OurServices,
     AboutUs,
+    Members,
     VFooter
   }
 }
@@ -29,6 +33,22 @@ export default {
 .main {
   &:first-child {
     margin-top: calc(1rem + 72px);
+  }
+
+  section + section {
+    @include media('tablet', 'max') {
+      margin-top: 5rem;
+    }
+  }
+
+  > * {
+    @include media('desktop', 'max') {
+      padding: 0 16px;
+    }
+
+    @include media('mobile-m', '<') {
+      padding: 0 10px;
+    }
   }
 }
 </style>
