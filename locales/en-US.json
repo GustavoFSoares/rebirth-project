@@ -36,6 +36,51 @@
         "Over time, the collective grew and became professional, becoming what it is today: a formalized and structured company, with the mission of serving its customers with perfection and excellence in what they have always done best, which is art.",
         "Along with the company, the friendship and companionship of the members always grew, making the spirit of love of that collective live stronger and stronger in the heart of an increasingly professional structure."
       ]
+    },
+    "members": {
+      "title": "Members",
+      "people": {
+        "alef-mengali": {
+          "name": "Alef",
+          "role": "role",
+          "description": "He started his artistic career out of love, and because of that, he always wanted to keep those he loves close. Soon he created many friendships within the artistic world, with whom he shared and grew as an artist. Alongside these friends, with whom he learned and who he taught, he founded Rebirth Studio, where he currently holds the title of Lead Artist with honor, feeling grateful to work alongside the artists he most admires and loves."
+        },
+        "catatau": {
+          "name": "Catatau",
+          "role": "role",
+          "description": "Passionate about designing scenarios and telling stories through them, he studied Graphic Design in college and started studying illustration during the course, always focusing on environments. Some time later he accessed the market, working on editorial projects and role-playing games, when he founded Rebirth Studio alongside his friends, where he works as an artist and art director until today."
+        },
+        "daiany-tadaieski": {
+          "name": "Day",
+          "role": "role",
+          "description": "Graduated in Law at UnC Campus Mafra in 2014 and Post-Graduated in management and tax legislation at UNINTER in 2020. She discovered the artistic world that same year, when she started in the administration of SKILLTREE Cursos and Rebirth Studio. Working in the legal and administrative sectors of both companies, he awakened a love for art, learning from it to have discipline, perseverance, constant search for knowledge, among other unspeakable values."
+        },
+        "felipe-castro": {
+          "name": "felipe-castro (sem bio)",
+          "role": "role",
+          "description": "no description"
+        },
+        "guilherme-castro": {
+          "name": "Gui",
+          "role": "role",
+          "description": "Graduated in Music, he started teaching the discipline of Arts in regular schools. Through his involvement with Art he came into contact with the artistic market. Currently he studies digital art and works in the administrative management of Rebirth Studio."
+        },
+        "mariana-livraes": {
+          "name": "Mari Livraes",
+          "role": "role",
+          "description": "Involved with drawing since always, she began her formal studies in 2018, when she studied digital painting with Mike Azevedo at ICS. Since then, she continued studying Fundamentals of Art and Character Design, and entered the job market making freelances for RPG books and passing through companies such as Insane, Kokku and Rebirth Studio itself, where she currently works as an artist and art director."
+        },
+        "mariana-morgan": {
+          "name": "mariana-morgan (sem bio)",
+          "role": "role",
+          "description": "no description"
+        },
+        "pedro-dutra": {
+          "name": "Peidin",
+          "role": "role",
+          "description": "He has always been drawing, just like most children when they discover a pencil and paper. But over the years his fascination with art became more intense, until he decided to have it as a profession. Along the way, he met his great friends and partners in the field, especially Alef, who was responsible for showing that he could go further with his art, leading him to his current position as Lead Artist at Rebirth Studio."
+        }
+      }
     }
   }
 }

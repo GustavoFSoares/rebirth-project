@@ -6,6 +6,8 @@
 
     <about-us />
 
+    <members />
+
     <v-footer />
   </div>
 </template>
@@ -13,6 +15,7 @@
 <script>
 import OurServices from '~/pages/partials/OurServices'
 import AboutUs from '~/pages/partials/AboutUs'
+import Members from '~/pages/partials/Members'
 import VFooter from '~/pages/partials/VFooter'
 
 export default {
@@ -20,6 +23,7 @@ export default {
   components: {
     OurServices,
     AboutUs,
+    Members,
     VFooter
   }
 }

@@ -36,6 +36,51 @@
         "Com o tempo o coletivo foi crescendo e se profissionalizando, tornando-se o que é hoje: uma empresa formalizada e estruturada, com a missão de atender os seus clientes com primor e excelência naquilo que sempre fizeram de melhor, que é a arte.",
         "Junto com a empresa, cresceram sempre a amizade e o companheirismo dos membros, fazendo com que o espírito de amor daquele coletivo viva cada vez mais forte no coração de uma estrutura cada vez mais profissional."
       ]
+    },
+    "members": {
+      "title": "Membros",
+      "people": {
+        "alef-mengali": {
+          "name": "Alef",
+          "role": "role",
+          "description": "Iniciou sua carreira artística por amor, e devido a isso sempre quis manter aqueles que ama por perto. Logo foi criando muitas amizades dentro do mundo artístico, com os quais compartilhou e cresceu como artista. Ao lado desses amigos, com quem aprendeu e a quem ensinou, fundou a Rebirth Studio, onde atualmente carrega com honra o título de Lead Artist, sentindo-se grato por trabalhar ao lado dos artistas que mais admira e ama."
+        },
+        "catatau": {
+          "name": "Catatau",
+          "role": "role",
+          "description": "Apaixonado por desenhar cenários e contar história através deles, estudou Design Gráfico na faculdade e começou a estudar ilustração ao decorrer do curso, sempre se focando em environment. Algum tempo depois ingressou no mercado, trabalhando em projetos editoriais e jogos de RPG, quando fundou a Rebirth Studio ao lado de seus amigos, onde atua como artista e diretor de arte até hoje."
+        },
+        "daiany-tadaieski": {
+          "name": "Day",
+          "role": "role",
+          "description": "Formanda em Direito pela UnC Campus Mafra em 2014 e Pós Graduada em gestão e legislação tributária pela UNINTER em 2020. Descobriu o meio artístico nesse mesmo ano, quando iniciou na administração da SKILLTREE Cursos e da Rebirth Studio. Atuando no setor jurídico e administrativo de ambas as empresas, despertou o amor pela arte, aprendendo com ela a ter disciplina, perseverança, busca constante por conhecimento, entre outros valores inenarráveis."
+        },
+        "felipe-castro": {
+          "name": "felipe-castro (sem bio)",
+          "role": "role",
+          "description": "sem descricao"
+        },
+        "guilherme-castro": {
+          "name": "Gui",
+          "role": "role",
+          "description": "Formado em Música, passou a lecionar a disciplina de Artes em escolas de ensino regular. Através de seu envolvimento com a Arte foi tendo contato com o mercado artístico. Atualmente, estuda desenho e atua na gestão administrativa da Rebirth Studio."
+        },
+        "mariana-livraes": {
+          "name": "Mari Livraes",
+          "role": "role",
+          "description": "Envolvida com desenho desde sempre, começou seus estudos formais em 2018, quando estudou pintura digital com Mike Azevedo na ICS. Desde então continuou estudando Fundamentos da Arte e Character Design, e ingressou no mercado de trabalho fazendo freelances para livros de RPG e passando por empresas como Insane, Kokku e a própria Rebirth Studio, onde atualmente atua como artista e diretora de arte."
+        },
+        "mariana-morgan": {
+          "name": "mariana-morgan (sem bio)",
+          "role": "role",
+          "description": "sem descricao"
+        },
+        "pedro-dutra": {
+          "name": "Peidin",
+          "role": "role",
+          "description": "Desenhou desde sempre, assim como a maioria das crianças quando descobrem um lápis e um papel. Mas ao longo dos anos seu fascínio pela arte se tornou mais intenso, até que decidiu ter como profissão. Nesse trajeto, conheceu seus grandes amigos e parceiros do ramo, em especial o Alef, que foi responsável por mostrar que poderia ir mais longe com sua arte, o levando a sua posição atual como Lead Artist na Rebirth Studio."
+        }
+      }
     }
   }
 }

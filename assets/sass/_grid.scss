@@ -8,24 +8,37 @@
   }
 
   @for $fill from 1 through 12 {
-    .grid-start-#{$fill} {
-      grid-column-start: #{$fill};
-    }
+    .grid-{
+      &#{$fill} {
+        grid-column: span #{$fill};
 
-    .grid-#{$fill} {
-      grid-column: span #{$fill};
+        @for $s from 1 through 12 {
+          &.grid-start-#{$s} {
+            grid-column-start: #{$s};
+            grid-column-end: span #{$fill}
+          }
+        }
+      }
     }
   }
 
   @include media("tablet", "<") {
-    @for $fill from 1 through 12 {
-      .grid-start-#{$fill} {
-        grid-column-start: 1;
-      }
+    grid-template-columns: repeat(6,1fr);
 
-      .grid-#{$fill} {
-        grid-column: span 12;
+    @for $fill from 1 through 6 {
+      .m-grid-{
+        &#{$fill} {
+          grid-column: span #{$fill};
+
+          @for $s from 1 through 6 {
+            &.m-grid-start-#{$s} {
+              grid-column-start: #{$s};
+              grid-column-end: span 6
+            }
+          }
+        }
       }
     }
   }
 }
+
