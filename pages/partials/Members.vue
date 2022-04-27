@@ -67,6 +67,14 @@ export default {
           grid-column: span 3;
         }
       }
+
+      &:nth-child(odd) {
+        &::v-deep .member-item {
+          &-picture:hover {
+            transform: scale(1.1) rotate(-5deg);
+          }
+        }
+      }
     }
   }
 }

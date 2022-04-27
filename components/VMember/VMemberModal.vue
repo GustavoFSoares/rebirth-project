@@ -11,7 +11,7 @@
       ]"
     >
       <v-member-item
-        class="member-item"
+        class="member-modal-container-item"
         :name="name"
         :role="role"
         :identifier="identifier"
@@ -149,7 +149,15 @@ export default {
       padding: #{map-get($margin-sizes, 16)}rem;
     }
 
-    .member-item {
+    ::v-deep .member-item {
+      content: '';
+      .member-item-picture:hover {
+        transform: initial;
+        box-shadow: initial;
+      }
+    }
+
+    &-item {
       min-width: 16.8rem;
       max-width: 16.8rem;
     }
