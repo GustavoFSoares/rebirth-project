@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <v-section :title="$t('section.portfolio.title')">
-      <template #container>
-        <h1 style="background: white">
-          123
-        </h1>
-      </template>
-    </v-section>
-  </div>
+  <v-section :title="$t('section.portfolio.title')">
+    <template #container>
+      <h1 style="background: white">
+        123
+      </h1>
+    </template>
+  </v-section>
 </template>
 
 <script>
