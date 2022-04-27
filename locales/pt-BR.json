@@ -29,6 +29,9 @@
         }
       ]
     },
+    "portfolio": {
+      "title": "Portefólio"
+    },
     "aboutUs": {
       "title": "Sobre Nós",
       "paragraphs": [
