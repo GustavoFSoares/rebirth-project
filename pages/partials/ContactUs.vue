@@ -45,6 +45,7 @@
       />
       <v-button
         :label="$t('section.contactUs.form.button.send')"
+        @click="send()"
       />
     </form>
   </v-section>
@@ -52,6 +53,7 @@
 
 <script>
 import { required, email } from 'vuelidate/lib/validators'
+import emailjs from '@/helpers/emailjs'
 
 export default {
   name: 'ContactUs',
@@ -77,6 +79,15 @@ export default {
       },
       message: {
         required
+      }
+    }
+  },
+  methods: {
+    async send () {
+      try {
+        await emailjs.send({ ...this.form })
+      } catch (e) {
+        console.error(e)
       }
     }
   }
