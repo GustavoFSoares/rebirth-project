@@ -38,7 +38,20 @@ export default {
   name: 'PPortfolio',
   computed: {
     images () {
-      const imageCount = [...new Array(10)].map((_, index) => ({ url: `portifolio/${index + 1}.webp` }))
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+      const maxImages = 20
+      const totalImagesAvailable = 28
+
+      while (numbers.length !== maxImages) {
+        const random = Math.floor(Math.random() * totalImagesAvailable)
+
+        if (!numbers.includes(random) && random !== 0) {
+          numbers.push(random)
+        }
+      }
+
+      console.log(numbers)
+      const imageCount = numbers.map(image => ({ url: `portifolio/${image}.webp` }))
 
       return imageCount
     }
@@ -50,7 +63,7 @@ export default {
     startCubePortfolio () {
       cube('#js-grid-mosaic-flat', {
         filters: '#js-filters-mosaic-flat',
-        layoutMode: 'mosaic',
+        layoutMode: 'grid',
         sortByDimension: true,
         mediaQueries: [
           // { width: 1921, cols: 6 },
