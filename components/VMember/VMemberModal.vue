@@ -152,7 +152,6 @@ export default {
     ::v-deep .member-item {
       content: '';
       .member-item-picture:hover {
-        transform: initial;
         box-shadow: initial;
       }
     }
