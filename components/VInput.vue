@@ -25,7 +25,7 @@
     </label>
 
     <div class="form-input__message w-5">
-      <transition name="error">
+      <transition name="error" mode="out-in">
         <span
           v-if="error.$error && !error.required"
           key="error"

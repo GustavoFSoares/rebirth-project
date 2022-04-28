@@ -1,6 +1,6 @@
 <template>
   <v-section :title="$t('section.contactUs.title')" class="contact-us">
-    <form class="contact-us__form form">
+    <form ref="form" class="contact-us__form form">
       <v-input
         class="contact-us__form-name"
         :label="$t('section.contactUs.form.name.label')"
@@ -44,10 +44,18 @@
         :label="$t('section.contactUs.form.button.reset')"
       />
       <v-button
-        :label="$t('section.contactUs.form.button.send')"
-        :disabled="isDisabled"
+        :disabled="isDisabled || sending"
+        :class="{'sending' : sending}"
         @click="send()"
-      />
+      >
+        <transition mode="out-in">
+          <span v-if="!sending" key="label">
+            {{ $t('section.contactUs.form.button.send') }}
+          </span>
+          <span v-else key="loading" class="button-loading" />
+        </transition>
+      </v-button>
+      <recaptcha style="display: none" />
     </form>
   </v-section>
 </template>
@@ -64,7 +72,8 @@ export default {
       email: '',
       subject: '',
       message: ''
-    }
+    },
+    sending: false
   }),
   validations: {
     form: {
@@ -91,10 +100,15 @@ export default {
   methods: {
     async send () {
       try {
-        await emailjs.send({ ...this.form })
+        this.sending = true
+        const token = await this.$recaptcha.getResponse()
+        await emailjs.send({ 'g-recaptcha-response': token, ...this.form })
+        await this.$recaptcha.reset()
       } catch (e) {
         console.error(e)
       }
+      this.sending = false
+      this.$refs.form.reset()
     }
   }
 }
@@ -149,7 +163,56 @@ export default {
             grid-column-end: span 3;
           }
         }
+
+        &-loading {
+          width: 20px;
+          height: 20px;
+          display: block;
+          border: 3px solid $primary;
+          border-bottom: 3px solid transparent;
+          border-radius: 50%;
+          margin: 0 auto;
+          animation:
+            girar linear 0.4s infinite,
+            bordar ease-in-out 2s infinite alternate;
+        }
       }
     }
+  }
+
+  @keyframes girar {
+    70% {
+      transform: rotate(100deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes bordar {
+    0% {
+      border-style: dashed;
+    }
+    60%{
+      filter: blur(0.5px);
+    }
+    90% {
+      filter: blur(2px);
+    }
+    100% {
+      filter: blur(2px);
+      border-color: #E8E8E8;
+      box-shadow: inset 0 0 12px 1px #E8E8E8;
+    }
+  }
+
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.3s;
+  }
+
+  .v-enter,
+  .v-leave-to {
+    opacity: 0;
   }
 </style>

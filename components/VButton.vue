@@ -5,7 +5,9 @@
     :disabled="disabled"
     @click="click($event)"
   >
-    {{ label }}
+    <slot>
+      {{ label }}
+    </slot>
   </button>
 </template>
 
@@ -69,6 +71,7 @@ export default {
       text-decoration: underline;
     }
 
+    &.sending,
     &:disabled {
       cursor: not-allowed;
     }
