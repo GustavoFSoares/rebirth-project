@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     imagePath () {
-      return `/portifolio/${this.identifier}.webp`
+      return this.identifier
     }
   }
 }
@@ -31,7 +31,6 @@ export default {
 <style lang="scss" scoped>
 .portfolio-item {
   flex: 1 0 50px;
-  /* flex: 1 0 0; */
 
   height: 200px;
   border-radius: 2px;

@@ -1,30 +1,31 @@
 <template>
-  <div
-    :class="[
-      'portfolio',
-      'portfolio-container',
-    ]"
-  >
+  <div class="portfolio portfolio-container">
     <v-portfolio-item
-      v-for="(photo, index) in shuffleImageList"
+      v-for="(image, index) in shuffleImageList"
       :key="index"
       class="portfolio-item"
-      :identifier="photo.identifier"
-      :description="photo.index+''"
-      @click.native="handlePortfolioImage(photo)"
+      :identifier="image"
+      @click.native="handlePortfolioImage(index)"
     />
 
-    <v-portfolio-modal
-      v-if="modal.currentIndex !== null"
-      :identifier="modal.identifier"
-      @hide="handleHidePortfolio"
-    />
+    <no-ssr>
+      <vue-gallery-slideshow
+        :images="shuffleImageList"
+        :index="galleryIndex"
+        @close="handleHideGallery"
+      />
+    </no-ssr>
   </div>
 </template>
 
 <script>
+import VueGallerySlideshow from 'vue-gallery-slideshow'
+
 export default {
   name: 'VPortfolio',
+  components: {
+    VueGallerySlideshow
+  },
   props: {
     images: {
       type: Array,
@@ -33,40 +34,30 @@ export default {
   },
   data () {
     return {
-      modal: {
-        currentIndex: null,
-        identifier: null
-      },
+      galleryIndex: null,
       shuffleImageList: []
     }
   },
   mounted () {
-    const images = this.images.map((imageId, index) => {
-      return {
-        identifier: imageId,
-        index
-      }
-    })
-
+    const images = this.images.map(imageIndex => `/portifolio/${imageIndex}.webp`)
     this.shuffleImageList = this.shuffle(images)
   },
   methods: {
+    prepareToGallery (imageList) {
+      return imageList.map(({ identifier }) => `/portifolio/${identifier}.webp`)
+    },
     shuffle (imageList) {
-      const shuffle = imageList.sort(() => Math.random() - 0.5)
+      const shuffle = [...imageList].sort(() => Math.random() - 0.5)
 
       return shuffle
     },
-    handlePortfolioImage ({ identifier, index }) {
-      this.modal = {
-        identifier,
-        currentIndex: index
-      }
+    handlePortfolioImage (imageIndex) {
+      this.galleryIndex = imageIndex
+      document.querySelector('body').style.overflow = 'hidden'
     },
-    handleHidePortfolio () {
-      this.modal = {
-        identifier: null,
-        currentIndex: null
-      }
+    handleHideGallery () {
+      document.querySelector('body').style.overflow = 'initial'
+      this.galleryIndex = null
     }
   }
 }
@@ -86,7 +77,7 @@ export default {
       overflow-y: auto;
     }
 
-    > div {
+    > .portfolio-item {
       &:nth-child(2n+1) {
         min-width: 25%;
       }
@@ -111,6 +102,26 @@ export default {
           min-width: 20%;
         }
       }
+    }
+
+    ::v-deep .vgs {
+      backdrop-filter: blur(10px);
+
+      .vgs__container {
+        height: 80vh;
+        background: transparent;
+
+        @include media("tablet", "max") {
+          height: 70vh;
+          top: 20%;
+        }
+
+        @include media("mobile", "max") {
+          height: 70vh;
+          top: 30%;
+        }
+      }
+
     }
   }
 
