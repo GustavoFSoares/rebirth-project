@@ -1,64 +1,44 @@
 <template>
   <div
-    class="member-modal"
+    class="portfolio-modal"
     @click="handleHideMemberModal"
   >
     <div
       ref="container"
       :class="[
-        'member-modal-container',
-        {'member-modal-container-out': toHide}
+        'portfolio-modal-container',
+        {'portfolio-modal-container-out': toHide}
       ]"
     >
-      <v-member-item
-        class="member-modal-container-item"
-        :name="name"
-        :role="role"
-        :identifier="identifier"
-      />
-
-      <div class="member-description">
-        <div class="member-description-icon">
-          <simple-arrow-svg />
-        </div>
-
-        <p class="member-description-content">
-          {{ description }}
-        </p>
-      </div>
+      <img
+        :src="imagePath"
+        :description="description"
+      >
     </div>
   </div>
 </template>
 
 <script>
-import SimpleArrowSvg from '@/assets/images/icons/simple-arrow.svg?inline'
-
 export default {
   name: 'VMemberModal',
-  components: {
-    SimpleArrowSvg
-  },
   props: {
-    name: {
-      type: String,
-      required: true
-    },
-    role: {
-      type: String,
-      required: true
-    },
     identifier: {
       type: [Number, String],
-      default: null
+      required: true
     },
     description: {
       type: String,
-      required: true
+      default: null
     }
   },
   data () {
     return {
       toHide: false
+    }
+  },
+  computed: {
+    imagePath () {
+      return `/portifolio/${this.identifier}.webp`
     }
   },
   mounted () {
@@ -100,12 +80,15 @@ export default {
   }
 }
 
-.member-modal {
+.portfolio-modal {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+
+  width: 100vw;
+  height: 100vh;
 
   backdrop-filter: blur(5px);
 
@@ -113,15 +96,15 @@ export default {
 
   &-container {
     z-index: 10;
-    @extend .rb-background-primary;
+    /* @extend .rb-background-primary; */
     @extend .rb-ma-auto;
-    @extend .rb-pa-32;
+    /* @extend .rb-pa-32; */
 
     width: 80vw;
     max-width: 1127px;
 
-    height: 40vh;
-    max-height: 274px;
+    height: 70vh;
+    /* max-height: 274px; */
 
     border-radius: .5rem;
     display: flex;
@@ -135,6 +118,11 @@ export default {
       animation: zoomOut .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
     }
 
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
     @include media("tablet", "max") {
       flex-direction: column;
 
@@ -145,53 +133,6 @@ export default {
       max-height: initial;
 
       padding: #{map-get($margin-sizes, 16)}rem;
-    }
-
-    ::v-deep .member-item {
-      content: '';
-      .member-item-picture:hover {
-        box-shadow: initial;
-      }
-    }
-
-    &-item {
-      min-width: 16.8rem;
-      max-width: 16.8rem;
-    }
-
-    .member-description {
-      position: relative;
-      flex-grow: 1;
-      @extend .rb-ml-24;
-
-      display: flex;
-
-      @include media("tablet", "max") {
-        margin-top: #{map-get($margin-sizes, 24)}rem;
-      }
-
-      &-icon {
-        @extend .rb-mr-16;
-
-        svg path {
-          fill: map-get($text-colors, 1)
-        }
-
-        @include media("tablet", "max") {
-          display: none;
-        }
-      }
-
-      &-content {
-        font-style: italic;
-        line-height: 1.3;
-        flex-grow: 1;
-
-        @extend .rb-font-weight-light;
-        @extend .rb-font-size-16;
-        @extend .rb-text-color-1;
-
-      }
     }
   }
 }
