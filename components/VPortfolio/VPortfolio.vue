@@ -39,13 +39,10 @@ export default {
     }
   },
   mounted () {
-    const images = this.images.map(imageIndex => `/portifolio/${imageIndex}.webp`)
+    const images = this.images.map(imageIndex => `/portfolio/${imageIndex}.webp`)
     this.shuffleImageList = this.shuffle(images)
   },
   methods: {
-    prepareToGallery (imageList) {
-      return imageList.map(({ identifier }) => `/portifolio/${identifier}.webp`)
-    },
     shuffle (imageList) {
       const shuffle = [...imageList].sort(() => Math.random() - 0.5)
 
