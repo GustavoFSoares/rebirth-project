@@ -10,11 +10,13 @@
 
     <members />
 
+    <contact-us />
     <v-footer />
   </div>
 </template>
 
 <script>
+
 import OurServices from '~/pages/partials/OurServices'
 import Portfolio from '~/pages/partials/Portfolio'
 import AboutUs from '~/pages/partials/AboutUs'
@@ -27,6 +29,7 @@ export default {
     OurServices,
     Portfolio,
     AboutUs,
+    ContactUs: () => import('@/pages/partials/ContactUs'),
     Members,
     VFooter
   }
