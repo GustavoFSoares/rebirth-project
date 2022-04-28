@@ -1,5 +1,3 @@
-import webpack from 'webpack'
-
 export default {
   server: {
     host: '0'
@@ -18,18 +16,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/sass/default.scss',
-    '@/assets/vendor/css/cubeportfolio.min.css'
+    '@/assets/sass/default.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vuelidate',
-    {
-      src: '~/assets/vendor/js/jquery.cubeportfolio.min.js',
-      mode: 'client',
-      ssr: false
-    }
+    '@/plugins/vuelidate'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -98,16 +90,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    babel: {
-      compact: true
-    },
-    plugins: [
-      new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery'
-      })
-    ]
-  }
+  build: {}
 }
