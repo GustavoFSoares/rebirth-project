@@ -23,16 +23,25 @@
         @blur="blur"
       />
     </label>
-    <transition>
-      <div v-if="error.$error" class="form-input__message mw-2">
+
+    <div class="form-input__message w-5">
+      <transition name="error" mode="out-in">
         <span
-          v-if="!error.required || !error.email"
+          v-if="error.$error && !error.required"
+          key="error"
           class="form-input__message--error rb-text-color-primary rb-font-size-12 flex flex-start flex-gap-1 flex-center-center"
         >
           <error-icon class="form-input__message-icon" /> {{ errorMessage }}
         </span>
-      </div>
-    </transition>
+        <span
+          v-else-if="error.$error && !error.email && type === 'email'"
+          key="error"
+          class="form-input__message--error rb-text-color-primary rb-font-size-12 flex flex-start flex-gap-1 flex-center-center"
+        >
+          <error-icon class="form-input__message-icon" /> {{ errorEmail }}
+        </span>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -60,6 +69,10 @@ export default {
       type: String,
       default: 'Enter a valid value'
     },
+    errorEmail: {
+      type: String,
+      default: 'Enter a valid value'
+    },
     error: undefined
   },
   data: () => ({
@@ -78,19 +91,45 @@ export default {
 
 <style scoped lang="scss">
   .form-input {
+    position: relative;
+
     &__input {
       border: none;
       padding: 5px 10px;
       border-radius: 4px;
       line-height: 2;
+      @extend .rb-font-size-16;
+      margin-bottom: 20px;
 
       &:focus-visible,
       &:active {
         outline: unset;
       }
     }
-    &__message-icon {
-      max-width: 20px;
+    &__message {
+      position: absolute;
+      bottom: -5px;
+      left: 8px;
+      font-style: italic;
+
+      &-icon {
+        max-width: 20px;
+      }
+    }
+
+    &__label {
+      text-transform: lowercase;
     }
   }
+
+  .error-enter-active,
+  .error-leave-active {
+    transition: opacity .5s;
+  }
+
+  .error-enter,
+  .error-leave-to {
+    opacity: 0;
+  }
+
 </style>

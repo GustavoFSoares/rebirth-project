@@ -81,6 +81,32 @@
           "description": "Desenhou desde sempre, assim como a maioria das crianças quando descobrem um lápis e um papel. Mas ao longo dos anos seu fascínio pela arte se tornou mais intenso, até que decidiu ter como profissão. Nesse trajeto, conheceu seus grandes amigos e parceiros do ramo, em especial o Alef, que foi responsável por mostrar que poderia ir mais longe com sua arte, o levando a sua posição atual como Lead Artist na Rebirth Studio."
         }
       }
+    },
+    "contactUs": {
+      "title": "Fale Conosco",
+      "form": {
+        "name": {
+          "label": "Nome",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "email": {
+          "label": "E-mail",
+          "errorMessage": "Este campo é obrigatório",
+          "errorEmail": "Favor informar um email válido"
+        },
+        "subject": {
+          "label": "Assunto",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "message": {
+          "label": "Mensagem",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "button": {
+          "send": "Enviar",
+          "reset": "Limpar"
+        }
+      }
     }
   }
 }

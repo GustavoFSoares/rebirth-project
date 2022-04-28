@@ -8,11 +8,13 @@
 
     <members />
 
+    <contact-us />
     <v-footer />
   </div>
 </template>
 
 <script>
+
 import OurServices from '~/pages/partials/OurServices'
 import AboutUs from '~/pages/partials/AboutUs'
 import Members from '~/pages/partials/Members'
@@ -23,6 +25,7 @@ export default {
   components: {
     OurServices,
     AboutUs,
+    ContactUs: () => import('@/pages/partials/ContactUs'),
     Members,
     VFooter
   }

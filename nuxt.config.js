@@ -41,8 +41,18 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     '@nuxtjs/svg',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxtjs/recaptcha'
   ],
+  publicRuntimeConfig: {
+    recaptcha: {
+      /* reCAPTCHA options */
+      siteKey: process.env.RECAPTCHA_SITE_KEY,
+      size: 'invisible',
+      hideBadge: false,
+      version: 2
+    }
+  },
   styleResources: {
     scss: ['@/assets/sass/resources.scss']
   },
@@ -70,9 +80,7 @@ export default {
     langDir: 'locales/',
     detectBrowserLanguage: {
       useCookie: true,
-      cookieDomain: null,
-      cookieKey: 'lang',
-      alwaysRedirect: false
+      cookieKey: 'lang'
     },
     vueI18n: {
       fallbackLocale: 'en-US'

@@ -81,6 +81,32 @@
           "description": "He has always been drawing, just like most children when they discover a pencil and paper. But over the years his fascination with art became more intense, until he decided to have it as a profession. Along the way, he met his great friends and partners in the field, especially Alef, who was responsible for showing that he could go further with his art, leading him to his current position as Lead Artist at Rebirth Studio."
         }
       }
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "form": {
+        "name": {
+          "label": "Name",
+          "errorMessage": "This field is required"
+        },
+        "email": {
+          "label": "E-mail",
+          "errorMessage": "This field is required",
+          "errorEmail": "Please, insert a valid email"
+        },
+        "subject": {
+          "label": "Subject",
+          "errorMessage": "This field is required"
+        },
+        "message": {
+          "label": "Message",
+          "errorMessage": "This field is required"
+        },
+        "button": {
+          "send": "Send",
+          "reset": "Clear"
+        }
+      }
     }
   }
 }
