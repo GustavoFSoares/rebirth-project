@@ -70,13 +70,7 @@ export default {
     }
 
     &:disabled {
-      background: map-get($text-colors, 2);
-      color: map-get($text-colors, 3);
       cursor: not-allowed;
-
-      &:hover {
-        background-color: darken(map-get($text-colors, 2), 10);
-      }
     }
 
     &--outline {

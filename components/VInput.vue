@@ -23,22 +23,25 @@
         @blur="blur"
       />
     </label>
-    <transition>
-      <div v-if="error.$error" class="form-input__message w-5">
+
+    <div class="form-input__message w-5">
+      <transition name="error">
         <span
-          v-if="!error.required"
+          v-if="error.$error && !error.required"
+          key="error"
           class="form-input__message--error rb-text-color-primary rb-font-size-12 flex flex-start flex-gap-1 flex-center-center"
         >
           <error-icon class="form-input__message-icon" /> {{ errorMessage }}
         </span>
         <span
-          v-else-if="!error.email && type === 'email'"
+          v-else-if="error.$error && !error.email && type === 'email'"
+          key="error"
           class="form-input__message--error rb-text-color-primary rb-font-size-12 flex flex-start flex-gap-1 flex-center-center"
         >
           <error-icon class="form-input__message-icon" /> {{ errorEmail }}
         </span>
-      </div>
-    </transition>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -118,4 +121,15 @@ export default {
       text-transform: lowercase;
     }
   }
+
+  .error-enter-active,
+  .error-leave-active {
+    transition: opacity .5s;
+  }
+
+  .error-enter,
+  .error-leave-to {
+    opacity: 0;
+  }
+
 </style>

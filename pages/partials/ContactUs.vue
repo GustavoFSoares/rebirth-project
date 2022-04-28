@@ -45,6 +45,7 @@
       />
       <v-button
         :label="$t('section.contactUs.form.button.send')"
+        :disabled="isDisabled"
         @click="send()"
       />
     </form>
@@ -80,6 +81,11 @@ export default {
       message: {
         required
       }
+    }
+  },
+  computed: {
+    isDisabled () {
+      return this.$v.form.$invalid
     }
   },
   methods: {
