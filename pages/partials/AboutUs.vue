@@ -51,7 +51,7 @@ export default {
 
       .arrows-bars {
         position: absolute;
-        bottom: 25%;
+        bottom: -25%;
         left: 11%;
 
         display: flex;

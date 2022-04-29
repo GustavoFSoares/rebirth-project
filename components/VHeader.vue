@@ -63,7 +63,7 @@ export default {
         }
 
         ::v-deep svg {
-          height: 20px;
+          height: 40px;
           width: 100%;
         }
       }
