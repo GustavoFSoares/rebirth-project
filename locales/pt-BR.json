@@ -45,42 +45,42 @@
       "people": {
         "alef-mengali": {
           "name": "Alef",
-          "role": "role",
+          "role": "Artista Principal",
           "description": "Iniciou sua carreira artística por amor, e devido a isso sempre quis manter aqueles que ama por perto. Logo foi criando muitas amizades dentro do mundo artístico, com os quais compartilhou e cresceu como artista. Ao lado desses amigos, com quem aprendeu e a quem ensinou, fundou a Rebirth Studio, onde atualmente carrega com honra o título de Lead Artist, sentindo-se grato por trabalhar ao lado dos artistas que mais admira e ama."
         },
         "catatau": {
           "name": "Catatau",
-          "role": "role",
+          "role": "Diretor de arte",
           "description": "Apaixonado por desenhar cenários e contar história através deles, estudou Design Gráfico na faculdade e começou a estudar ilustração ao decorrer do curso, sempre se focando em environment. Algum tempo depois ingressou no mercado, trabalhando em projetos editoriais e jogos de RPG, quando fundou a Rebirth Studio ao lado de seus amigos, onde atua como artista e diretor de arte até hoje."
         },
         "daiany-tadaieski": {
-          "name": "Day",
-          "role": "role",
+          "name": "Daiany",
+          "role": "Gerente financeiro",
           "description": "Formanda em Direito pela UnC Campus Mafra em 2014 e Pós Graduada em gestão e legislação tributária pela UNINTER em 2020. Descobriu o meio artístico nesse mesmo ano, quando iniciou na administração da SKILLTREE Cursos e da Rebirth Studio. Atuando no setor jurídico e administrativo de ambas as empresas, despertou o amor pela arte, aprendendo com ela a ter disciplina, perseverança, busca constante por conhecimento, entre outros valores inenarráveis."
         },
         "felipe-castro": {
-          "name": "felipe-castro (sem bio)",
-          "role": "role",
-          "description": "sem descricao"
+          "name": "Felipe",
+          "role": "Illustrator",
+          "description": "Entusiasta do desenho com muita paixão desde sempre, ama criar ilustrações pessoais com base em seus temas de interesse. Começou a estudar ilustração de maneira mais intensa durante a faculdade, e a trabalhar como profissional na indústria em 2020, se juntando ao estúdio Rebirth no ano seguinte. Atualmente, dedica seu tempo ao trabalho com ilustração e concept art, e à sua arte pessoal, sendo essa inspirada em suas vivências, animações, filmes e histórias favoritas."
         },
         "guilherme-castro": {
-          "name": "Gui",
-          "role": "role",
-          "description": "Formado em Música, passou a lecionar a disciplina de Artes em escolas de ensino regular. Através de seu envolvimento com a Arte foi tendo contato com o mercado artístico. Atualmente, estuda desenho e atua na gestão administrativa da Rebirth Studio."
+          "name": "Guilherme",
+          "role": "Gestor de projeto",
+          "description": "Formado em Música e Pedagogia, se pós-graduando em Filosofia, passou a lecionar a disciplina de Artes em escolas de ensino regular. Através de seu envolvimento com a Arte foi tendo contato com o mercado artístico. Atualmente, estuda desenho e atua na gestão administrativa da Rebirth Studio."
         },
         "mariana-livraes": {
           "name": "Mari Livraes",
-          "role": "role",
+          "role": "Diretora de arte",
           "description": "Envolvida com desenho desde sempre, começou seus estudos formais em 2018, quando estudou pintura digital com Mike Azevedo na ICS. Desde então continuou estudando Fundamentos da Arte e Character Design, e ingressou no mercado de trabalho fazendo freelances para livros de RPG e passando por empresas como Insane, Kokku e a própria Rebirth Studio, onde atualmente atua como artista e diretora de arte."
         },
         "mariana-morgan": {
-          "name": "mariana-morgan (sem bio)",
-          "role": "role",
-          "description": "sem descricao"
+          "name": "Mari Morgan",
+          "role": "Diretora de arte",
+          "description": "Envolvida com desenho desde sempre, começou seus estudos formais em 2018, quando estudou pintura digital com Mike Azevedo na ICS. Desde então continuou estudando Fundamentos da Arte e Character Design, e ingressou no mercado de trabalho fazendo freelances para livros de RPG e passando por empresas como Insane, Kokku e a própria Rebirth Studio, onde atualmente atua como artista e diretora de arte."
         },
         "pedro-dutra": {
-          "name": "Peidin",
-          "role": "role",
+          "name": "Pedro",
+          "role": "Artista Principal",
           "description": "Desenhou desde sempre, assim como a maioria das crianças quando descobrem um lápis e um papel. Mas ao longo dos anos seu fascínio pela arte se tornou mais intenso, até que decidiu ter como profissão. Nesse trajeto, conheceu seus grandes amigos e parceiros do ramo, em especial o Alef, que foi responsável por mostrar que poderia ir mais longe com sua arte, o levando a sua posição atual como Lead Artist na Rebirth Studio."
         }
       }
