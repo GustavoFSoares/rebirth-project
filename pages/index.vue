@@ -28,6 +28,12 @@ export default {
     ContactUs: () => import('@/pages/partials/ContactUs'),
     Members: () => import('~/pages/partials/Members'),
     VFooter: () => import('~/pages/partials/VFooter')
+  },
+  mounted () {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 9000)
+    })
   }
 }
 </script>
@@ -44,7 +50,7 @@ export default {
     }
   }
 
-  > * {
+  > *:not(.hero) {
     @include media('desktop', 'max') {
       padding: 0 16px;
     }

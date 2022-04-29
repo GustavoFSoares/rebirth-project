@@ -1,9 +1,9 @@
 <template>
   <div class="portfolio-item">
-    <img
-      :src="imagePath"
-      :alt="description"
-    >
+    <div
+      class="image"
+      :style="`background-image: url(${imagePath})`"
+    />
   </div>
 </template>
 
@@ -45,7 +45,7 @@ export default {
     min-width: 200px;
   }
 
-  img {
+  .image {
     position: relative;
     top: 50%;
 

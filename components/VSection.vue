@@ -40,9 +40,9 @@ export default {
   width: 100%;
   min-height: calc(100vh - 72px);
 
-  @include media("desktop", "max") {
-    padding: 1.5rem;
-  }
+  //@include media("desktop", "max") {
+  //  padding: 1.5rem;
+  //}
 
   @include media('mobile', 'max') {
     padding: 0 #{map-get($margin-sizes, 8)}rem;

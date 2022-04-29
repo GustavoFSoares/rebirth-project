@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1163 346" fill="none">
+  <svg :class="{'animate' : animate}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1163 346" fill="none">
     <g id="rb-logo">
       <g id="texto">
         <g id="studio">
@@ -43,44 +43,51 @@
 </template>
 <script>
 export default {
-  name: 'VLogo'
+  name: 'VLogo',
+  props: {
+    animate: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 
-<style scoped>
-svg g#circle {
-  fill-opacity: 0;
-  stroke-width: 0;
-  animation:
-    fill-opacity 2s ease 4s forwards,
-    write-line 4s ease 2s forwards;
-}
+<style scoped lang="scss">
+.animate {
+  g#circle {
+    fill-opacity: 0;
+    stroke-width: 0;
+    animation:
+      fill-opacity 2s ease 4s forwards,
+      write-line 4s ease 2s forwards;
+  }
 
-svg #triangle {
-  stroke-width: 100px;
-  stroke-dasharray: 1 500;
-  opacity: 0;
-  animation: write-line 4s ease 0s forwards;
-}
+  #triangle {
+    stroke-width: 100px;
+    stroke-dasharray: 1 500;
+    opacity: 0;
+    animation: write-line 4s ease 0s forwards;
+  }
 
-svg g#rb-logo{
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-  animation: fade-in 1.5s ease;
-}
+  g#rb-logo{
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    animation: fade-in 1.5s ease;
+  }
 
-svg g#simbol {
-  transform: translate3d(40%, 0, 0);
-  animation: back-left 5s ease 3s forwards;
-}
+  g#simbol {
+    transform: translate3d(40%, 0, 0);
+    animation: back-left 5s ease 3s forwards;
+  }
 
-svg g#texto {
-  fill-opacity: 0;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-  transform: translate3d(-20%, 0, 0);
-  animation:
-    back-right 6s ease 2s forwards,
-    fill-opacity 3s ease-in 4s forwards;
-
+  g#texto {
+    fill-opacity: 0;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transform: translate3d(-20%, 0, 0);
+    animation:
+      back-right 6s ease 2s forwards,
+      fill-opacity 3s ease-in 4s forwards;
+  }
 }
 
 @keyframes back-right {
