@@ -46,7 +46,9 @@ export default {
     z-index: 10;
     top: 0;
     left: 0;
+    opacity: 0;
     transition: .2s ease-in-out;
+    animation: enter .3s ease 3s forwards;
 
     @include media('desktop', 'max') {
       padding: 0 15px;
@@ -67,6 +69,12 @@ export default {
           width: 100%;
         }
       }
+    }
+  }
+
+  @keyframes enter {
+    to {
+      opacity: 1;
     }
   }
 </style>
