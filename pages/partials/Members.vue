@@ -4,6 +4,12 @@
     :title="$t('section.members.title')"
   >
     <div class="members-container">
+      <div class="decorator">
+        <div class="arrow-3-red">
+          <arrow-3-red />
+        </div>
+      </div>
+
       <v-member
         v-for="(memberKey, position) in memberPositions"
         :key="memberKey"
@@ -14,6 +20,12 @@
         :identifier="memberKey"
         v-bind="members[memberKey]"
       />
+
+      <div class="decorator">
+        <div class="double-arrow-3-red">
+          <double-arrow-3-red />
+        </div>
+      </div>
     </div>
   </v-section>
 </template>
@@ -21,6 +33,10 @@
 <script>
 export default {
   name: 'PMembers',
+  components: {
+    Arrow3Red: () => import('@/assets/images/icons/decorators/arrow-3-red.svg?inline'),
+    DoubleArrow3Red: () => import('@/assets/images/icons/decorators/double-arrow-3-red.svg?inline')
+  },
   data () {
     return {
       members: this.$t('section.members.people'),
@@ -74,6 +90,24 @@ export default {
             transform: scale(1.1) rotate(-5deg);
           }
         }
+      }
+    }
+
+    .decorator {
+      @include media("mobile", "max") {
+        display: none;
+      }
+
+      .arrow-3-red {
+        position: absolute;
+        top: -10%;
+        right: 40%;
+      }
+
+      .double-arrow-3-red {
+        position: absolute;
+        bottom: -10%;
+        right: 4%;
       }
     }
   }

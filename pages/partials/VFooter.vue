@@ -1,19 +1,25 @@
 <template>
   <v-section class="footer">
-    <div class="footer-social-links">
-      <social-link
-        v-for="(link, index) in socialLinks"
-        :key="`${index}-social-link`"
-        v-bind="link"
-      />
-    </div>
-    <a
-      class="footer-mail rb-text-color-1 rb-font-size-20"
-      href="mailto:contact@rebirthstudio.com.br"
-    >
-      contact@rebirthstudio.com.br
-    </a>
-    <r-brand class="footer-brand" />
+    <template #section>
+      <div class="footer-container rb-pt-96">
+        <div class="footer-container-social-links">
+          <social-link
+            v-for="(link, index) in socialLinks"
+            :key="`${index}-social-link`"
+            v-bind="link"
+          />
+        </div>
+
+        <a
+          class="footer-container-mail rb-text-color-1 rb-font-size-20"
+          href="mailto:contact@rebirthstudio.com.br"
+        >
+          contact@rebirthstudio.com.br
+        </a>
+
+        <r-brand class="footer-container-brand" />
+      </div>
+    </template>
   </v-section>
 </template>
 
@@ -51,7 +57,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .footer {
+.footer {
+  &-container {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background-image: url("~/assets/images/footer-background.webp");
     background-position: center center;
     background-repeat: no-repeat;
@@ -104,4 +116,5 @@ export default {
       position: absolute;
     }
   }
+}
 </style>

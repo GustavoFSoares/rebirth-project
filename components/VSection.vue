@@ -84,6 +84,7 @@ export default {
     }
 
     &-content {
+      position: relative;
       /* max-width: #{map-get($screen-sizes, 'largger')}px; */
 
       @extend .rb-pt-96;

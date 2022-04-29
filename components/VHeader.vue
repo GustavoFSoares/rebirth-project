@@ -1,5 +1,10 @@
 <template>
   <header class="header" :class="{'rb-bshadow-3' : showShadow}">
+    <div class="decorator">
+      <div class="arrows-black">
+        <arrows-black />
+      </div>
+    </div>
     <v-menu class="container rb-mx-auto" />
   </header>
 </template>
@@ -7,6 +12,9 @@
 <script>
 export default {
   name: 'VHeader',
+  components: {
+    ArrowsBlack: () => import('@/assets/images/icons/decorators/arrows-black.svg?inline')
+  },
   data: () => ({
     limit: 78,
     scroll: 0
@@ -42,6 +50,23 @@ export default {
 
     @include media('desktop', 'max') {
       padding: 0 15px;
+    }
+
+    .decorator {
+      .arrows-black {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include media("tablet", "max") {
+          display: none;
+        }
+
+        ::v-deep svg {
+          height: 40px;
+          width: 100%;
+        }
+      }
     }
   }
 </style>
