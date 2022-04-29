@@ -49,6 +49,10 @@ export default {
     position: relative;
     top: 50%;
 
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
     transform: translateY(-50%);
 
     max-width: 100%;
@@ -56,6 +60,8 @@ export default {
 
     @include media("mobile", "max") {
       top: 0;
+
+      background-position: center center;
 
       transform: initial;
 
