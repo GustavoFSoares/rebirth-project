@@ -1,5 +1,8 @@
 <template>
-  <v-section class="rb-mb-64" :title="$t('section.portfolio.title')">
+  <v-section
+    class="portfolio"
+    :title="$t('section.portfolio.title')"
+  >
     <template #container>
       <div class="portfolio-container">
         <v-portfolio :images="images" />
