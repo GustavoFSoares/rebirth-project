@@ -104,7 +104,9 @@ export default {
         const token = await this.$recaptcha.getResponse()
         await emailjs.send({ 'g-recaptcha-response': token, ...this.form })
         await this.$recaptcha.reset()
+        this.showToast(this.$t('section.contactUs.form.messages.success'), 'success')
       } catch (e) {
+        this.showToast(this.$t('section.contactUs.form.messages.error'), 'error')
         console.error(e)
       }
       this.sending = false
