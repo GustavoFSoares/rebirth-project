@@ -64,7 +64,7 @@ export default {
 .portfolio {
   &-container {
     display: flex;
-    gap: 10px;
+    gap: 1px;
     flex-wrap: wrap;
     overflow: hidden;
     position: relative;
