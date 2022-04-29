@@ -108,6 +108,10 @@
         "button": {
           "send": "Send",
           "reset": "Clear"
+        },
+        "messages": {
+          "error": "Fail to send message",
+          "success": "Message sent successfully"
         }
       }
     }

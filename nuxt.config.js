@@ -22,7 +22,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/vuelidate',
-    { src: '@/plugins/vue-carousel', mode: 'client' }
+    { src: '@/plugins/vue-carousel', mode: 'client' },
+    { src: '@/plugins/vue-toastification.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -50,7 +51,7 @@ export default {
   publicRuntimeConfig: {
     recaptcha: {
       /* reCAPTCHA options */
-      siteKey: process.env.RECAPTCHA_SITE_KEY || '123',
+      siteKey: process.env.RECAPTCHA_SITE_KEY,
       size: 'invisible',
       hideBadge: false,
       version: 2
