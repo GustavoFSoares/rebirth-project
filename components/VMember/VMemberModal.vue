@@ -11,7 +11,7 @@
       ]"
     >
       <v-member-item
-        class="member-item"
+        class="member-modal-container-item"
         :name="name"
         :role="role"
         :identifier="identifier"
@@ -85,11 +85,9 @@ export default {
 @keyframes zoomIn {
   0% {
     transform:scale(0);
-    background: blue !important;
   }
   100% {
     transform:scale(1);
-    background: red !important;
   }
 }
 
@@ -149,7 +147,14 @@ export default {
       padding: #{map-get($margin-sizes, 16)}rem;
     }
 
-    .member-item {
+    ::v-deep .member-item {
+      content: '';
+      .member-item-picture:hover {
+        box-shadow: initial;
+      }
+    }
+
+    &-item {
       min-width: 16.8rem;
       max-width: 16.8rem;
     }

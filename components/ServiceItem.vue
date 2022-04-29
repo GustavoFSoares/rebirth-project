@@ -64,6 +64,7 @@ export default {
 
       @include media("mobile", "max") {
         line-height: 1.3;
+        user-select: none;
       }
     }
   }

@@ -58,7 +58,13 @@ export default {
   &-picture {
     display: flex;
     width: 100%;
-    height: 1;
+
+    transition: transform ease .6s;
+
+    &:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
+    }
 
     @extend .rb-background-primary;
 

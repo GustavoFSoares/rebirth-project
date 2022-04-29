@@ -1,16 +1,18 @@
 <template>
   <section :class="['section', `rb-background-${type}`]">
-    <slot name="container">
-      <div class="section-container rb-mx-auto">
-        <h1 v-if="title" class="section-title">
-          {{ title }}
-        </h1>
+    <div class="section-container rb-mx-auto">
+      <h1 v-if="title" class="section-container-title rb-mx-auto">
+        {{ title }}
+      </h1>
 
-        <div class="section-content">
-          <slot />
-        </div>
+      <div class="section-container-content">
+        <slot name="container">
+          <div class="section-container-content-wrapper">
+            <slot />
+          </div>
+        </slot>
       </div>
-    </slot>
+    </div>
   </section>
 </template>
 
@@ -45,21 +47,23 @@ export default {
   }
 
   &.rb-background-dark {
-    .section-title {
+    .section-container-title {
       @extend .rb-font-size-40;
       @extend .rb-text-color-1;
     }
   }
   &.rb-background-light {
-    .section-title {
+    .section-container-title {
       @extend .rb-text-color-dark;
     }
   }
 
   &-container {
-    @extend .container;
+    &-title, &-content-wrapper {
+      @extend .container;
+    }
 
-    .section-title {
+    &-title {
       display: flex;
       flex-direction: column;
 
@@ -75,21 +79,30 @@ export default {
         @extend .rb-background-primary;
       }
     }
-  }
 
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &-content {
+      max-width: #{map-get($screen-sizes, 'largger')}px;
 
-    @extend .rb-pt-96;
+      @extend .rb-pt-96;
 
-    @include media('mobile', 'max') {
-      padding:
-        #{map-get($margin-sizes, 64)}rem
-        #{map-get($margin-sizes, 8)}rem
-        0;
+      @include media('mobile', 'max') {
+        padding:
+          #{map-get($margin-sizes, 64)}rem
+          #{map-get($margin-sizes, 8)}rem
+          0;
+      }
+
+      &, &-wrapper {
+        @extend .rb-mx-auto;
+      }
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
+
 }
 </style>

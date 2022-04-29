@@ -22,7 +22,7 @@ a {
   }
 }
 
-body {
+* {
   font-family: "Open Sans", serif;
   font-weight: normal;
   @include scrollbars(5px)
