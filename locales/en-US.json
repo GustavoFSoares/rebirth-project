@@ -85,6 +85,9 @@
         }
       }
     },
+    "ourClients": {
+      "title": "Our Clients"
+    },
     "contactUs": {
       "title": "Contact Us",
       "form": {

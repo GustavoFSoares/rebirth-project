@@ -85,6 +85,9 @@
         }
       }
     },
+    "ourClients": {
+      "title": "Nossos clientes"
+    },
     "contactUs": {
       "title": "Fale Conosco",
       "form": {

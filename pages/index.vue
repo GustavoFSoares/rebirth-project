@@ -12,7 +12,10 @@
 
     <members />
 
+    <our-clients />
+
     <contact-us />
+
     <v-footer />
   </div>
 </template>
@@ -25,8 +28,9 @@ export default {
     OurServices: () => import('~/pages/partials/OurServices'),
     Portfolio: () => import('~/pages/partials/Portfolio'),
     AboutUs: () => import('~/pages/partials/AboutUs'),
-    ContactUs: () => import('@/pages/partials/ContactUs'),
     Members: () => import('~/pages/partials/Members'),
+    OurClients: () => import('@/pages/partials/OurClients'),
+    ContactUs: () => import('@/pages/partials/ContactUs'),
     VFooter: () => import('~/pages/partials/VFooter')
   },
   mounted () {
