@@ -2,6 +2,8 @@
   <div class="main">
     <v-header />
 
+    <hero />
+
     <our-services />
 
     <portfolio />
@@ -16,22 +18,16 @@
 </template>
 
 <script>
-
-import OurServices from '~/pages/partials/OurServices'
-import Portfolio from '~/pages/partials/Portfolio'
-import AboutUs from '~/pages/partials/AboutUs'
-import Members from '~/pages/partials/Members'
-import VFooter from '~/pages/partials/VFooter'
-
 export default {
   name: 'IndexPage',
   components: {
-    OurServices,
-    Portfolio,
-    AboutUs,
+    Hero: () => import('~/pages/partials/Hero'),
+    OurServices: () => import('~/pages/partials/OurServices'),
+    Portfolio: () => import('~/pages/partials/Portfolio'),
+    AboutUs: () => import('~/pages/partials/AboutUs'),
     ContactUs: () => import('@/pages/partials/ContactUs'),
-    Members,
-    VFooter
+    Members: () => import('~/pages/partials/Members'),
+    VFooter: () => import('~/pages/partials/VFooter')
   }
 }
 </script>
