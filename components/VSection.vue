@@ -71,7 +71,7 @@ export default {
 
       @extend .rb-font-weight-bold;
       @extend .rb-font-size-40;
-      padding-top: 72px;
+      @extend .rb-pt-32;
 
       &::after {
         content: ' ';
@@ -87,7 +87,7 @@ export default {
       position: relative;
       /* max-width: #{map-get($screen-sizes, 'largger')}px; */
 
-      @extend .rb-pt-96;
+      @extend .rb-pt-64;
 
       @include media('mobile', 'max') {
         padding:
