@@ -25,11 +25,6 @@ export default {
         'tormenta-20'
       ]
     }
-  },
-  methods: {
-    getImagePath (client) {
-      return require(`@/assets/images/our-clients/${client}.webp`)
-    }
   }
 }
 </script>

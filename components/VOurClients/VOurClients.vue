@@ -24,7 +24,7 @@ export default {
     }
   },
   mounted () {
-    const loadedClients = this.clients.map(imageIndex => require(`@/assets/images/our-clients/${imageIndex}.png`))
+    const loadedClients = this.clients.map(imageIndex => require(`@/assets/images/our-clients/${imageIndex}.webp`))
 
     this.loadedClients = loadedClients
   }
