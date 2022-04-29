@@ -19,12 +19,10 @@
 </template>
 
 <script>
-import VueGallerySlideshow from 'vue-gallery-slideshow'
-
 export default {
   name: 'VPortfolio',
   components: {
-    VueGallerySlideshow
+    VueGallerySlideshow: () => import('vue-gallery-slideshow')
   },
   props: {
     images: {
