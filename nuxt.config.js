@@ -19,7 +19,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vuelidate'
+    '@/plugins/vuelidate',
+    { src: '@/plugins/vue-carousel.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,7 +48,7 @@ export default {
   publicRuntimeConfig: {
     recaptcha: {
       /* reCAPTCHA options */
-      siteKey: process.env.RECAPTCHA_SITE_KEY,
+      siteKey: process.env.RECAPTCHA_SITE_KEY || '123',
       size: 'invisible',
       hideBadge: false,
       version: 2
@@ -74,7 +75,8 @@ export default {
       {
         code: 'pt-BR',
         file: 'pt-BR.json'
-      }],
+      }
+    ],
     defaultLocale: 'en-US',
     lazy: true,
     langDir: 'locales/',
