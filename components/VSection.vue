@@ -1,18 +1,20 @@
 <template>
   <section :class="['section', `rb-background-${type}`]">
-    <div class="section-container rb-mx-auto">
-      <h1 v-if="title" class="section-container-title rb-mx-auto">
-        {{ title }}
-      </h1>
+    <slot name="section">
+      <div class="section-container rb-mx-auto">
+        <h1 v-if="title" class="section-container-title rb-mx-auto">
+          {{ title }}
+        </h1>
 
-      <div class="section-container-content">
-        <slot name="container">
-          <div class="section-container-content-wrapper">
-            <slot />
-          </div>
-        </slot>
+        <div class="section-container-content">
+          <slot name="container">
+            <div class="section-container-content-wrapper">
+              <slot />
+            </div>
+          </slot>
+        </div>
       </div>
-    </div>
+    </slot>
   </section>
 </template>
 
@@ -69,6 +71,7 @@ export default {
 
       @extend .rb-font-weight-bold;
       @extend .rb-font-size-40;
+      padding-top: 72px;
 
       &::after {
         content: ' ';
@@ -81,7 +84,7 @@ export default {
     }
 
     &-content {
-      max-width: #{map-get($screen-sizes, 'largger')}px;
+      /* max-width: #{map-get($screen-sizes, 'largger')}px; */
 
       @extend .rb-pt-96;
 
