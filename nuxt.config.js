@@ -8,7 +8,7 @@ export default {
   router,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'rebirth-studio',
+    title: 'Rebirth Studio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
