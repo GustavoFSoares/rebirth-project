@@ -34,7 +34,8 @@ export default {
       layoutMode: 'mosaic',
       sortByDimension: true,
       mediaQueries: [
-        { width: 1400, cols: 3 },
+        { width: 1400, cols: 4 },
+        { width: 1300, cols: 3 },
         { width: 767, cols: 2 },
         {
           width: 480,
