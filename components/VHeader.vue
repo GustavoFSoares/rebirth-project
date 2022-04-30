@@ -55,10 +55,10 @@ export default {
     .container {
       transform: translate3d(0,-100px, 0);
       animation: enter .3s ease 3s forwards;
-      padding: 15px 10px;
+      padding: 15px 0;
 
-      @include media('mobile-m', '<') {
-
+      @include media('tablet', 'max') {
+        padding: 15px 10px;
       }
     }
 

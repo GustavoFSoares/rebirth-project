@@ -89,6 +89,10 @@ export default {
 
   &-logo {
     height: 64px;
+
+    @include media("mobile-m", "<") {
+      height: 48px;
+    }
   }
 
   &-close {
