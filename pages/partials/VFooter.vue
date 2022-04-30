@@ -33,15 +33,15 @@ export default {
     socialLinks: [
       {
         icon: 'artstation',
-        href: '#'
+        href: 'https://www.artstation.com/rebirthstudio'
       },
       {
         icon: 'insta',
-        href: '#'
+        href: 'https://www.instagram.com/studiorebirth_/'
       },
       {
         icon: 'twitter',
-        href: '#'
+        href: 'https://twitter.com/rebirth_studio'
       },
       {
         icon: 'face',
