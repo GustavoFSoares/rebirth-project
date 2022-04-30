@@ -27,14 +27,14 @@ export default {
   computed: {
     images () {
       const images = [
+        { small: '8-300x600', img: '8' },
         { small: '1-300x300', img: '1' },
-        { small: '2-600x300', img: '2' },
         { small: '3-600x600', img: '3' },
-        { small: '4-600x600', img: '4' },
         { small: '5-300x300', img: '5' },
-        { small: '6-600x600', img: '6' },
         { small: '7-600x300', img: '7' },
-        { small: '8-300x600', img: '8' }
+        { small: '2-600x300', img: '2' },
+        { small: '4-600x600', img: '4' },
+        { small: '6-600x600', img: '6' }
       ]
 
       return images
