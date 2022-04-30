@@ -1,7 +1,8 @@
 <template>
-  <nuxt-link
+  <a
     class="menu-item"
-    :to="href"
+    :href="href"
+    @click.prevent="goTo()"
   >
     <span class="rb-text-color-1 rb-font-size-16">{{ label }}</span>
     <svg
@@ -23,7 +24,7 @@
         />
       </g>
     </svg>
-  </nuxt-link>
+  </a>
 </template>
 
 <script>
@@ -39,36 +40,33 @@ export default {
       type: String,
       default: '#',
       required: false
+    },
+    hash: {
+      type: String,
+      default: '#'
+    }
+  },
+  methods: {
+    getElement: id => document.querySelector(id),
+    goToElement (anchor = null) {
+      if (!this.$route.meta?.id && !anchor) {
+        return
+      }
+      const { id } = this.$route.meta
+      const top = this.getElement(anchor || id).offsetTop
+      if (top !== undefined) {
+        window.scrollTo({ top, behavior: 'smooth' })
+      }
+    },
+    goTo () {
+      history.pushState('/', 'Rebirth Studio', this.href)
+      this.goToElement(this.hash)
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-
-@keyframes menu-line {
-  0% {
-    d: path('M1 5C50 4.99998 77.1845 5 126 5');
-  }
-  30% {
-    d: path('M1 5C52.3183 9.09391 79.4405 8.95118 126 5');
-  }
-  60% {
-    d: path('M1 4.99931C52.5833 0.261296 79.119 0.80672 126 4.99931');
-  }
-  100% {
-    d: path('M1 5C50 4.99998 77.1845 5 126 5');
-  }
-}
-
-@keyframes menu-line-click {
-  0% {
-    d: path('M1 5C50 4.99998 77.1845 5 126 5');
-  }
-  30%, 100% {
-    d: path('M1 5C52.3183 9.09391 79.4405 8.95118 126 5');
-  }
-}
 
 .menu-item {
   display: flex;
@@ -82,12 +80,13 @@ export default {
     transform-box: fill-box;
   }
 
-  &:hover > svg path#middle-line {
-    animation: menu-line 1s ease forwards alternate;
+  svg path{
+    transition: ease .4s;
   }
 
-  &:active svg path#middle-line {
-    animation: menu-line-click 1s ease forwards alternate;
+  &.active > svg path#middle-line,
+  &:hover > svg path#middle-line {
+    stroke: map-get($text-colors, 3);
   }
 }
 </style>

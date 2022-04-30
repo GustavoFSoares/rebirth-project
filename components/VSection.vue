@@ -1,13 +1,17 @@
 <template>
   <section :class="['section', `rb-background-${type}`]">
-    <slot name="container">
+    <slot name="section">
       <div class="section-container rb-mx-auto">
-        <h1 class="section-title">
+        <h1 v-if="title" class="section-container-title rb-mx-auto">
           {{ title }}
         </h1>
 
-        <div class="section-content">
-          <slot />
+        <div class="section-container-content">
+          <slot name="container">
+            <div class="section-container-content-wrapper">
+              <slot />
+            </div>
+          </slot>
         </div>
       </div>
     </slot>
@@ -20,7 +24,7 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      default: ''
     },
     type: {
       type: String,
@@ -34,33 +38,39 @@ export default {
 <style lang="scss" scoped>
 .section {
   width: 100%;
-  height: 100vh;
-  padding-top: calc(11.4rem + 72px);
+  min-height: 100vh;
 
-  @include media("desktop", "max") {
-    padding: 1.5rem;
+  //@include media("desktop", "max") {
+  //  padding: 1.5rem;
+  //}
+
+  @include media('mobile', 'max') {
+    padding: 0 #{map-get($margin-sizes, 8)}rem;
   }
 
   &.rb-background-dark {
-    .section-title {
+    .section-container-title {
       @extend .rb-text-color-1;
     }
   }
   &.rb-background-light {
-    .section-title {
+    .section-container-title {
       @extend .rb-text-color-dark;
     }
   }
 
   &-container {
-    @extend .container;
+    &-title, &-content-wrapper {
+      @extend .container;
+    }
 
-    .section-title {
+    &-title {
       display: flex;
       flex-direction: column;
 
       @extend .rb-font-weight-bold;
-      @extend .rb-font-size-40;
+      @extend .rb-font-size-35;
+      padding-top: 120px;
 
       &::after {
         content: ' ';
@@ -71,12 +81,31 @@ export default {
         @extend .rb-background-primary;
       }
     }
+
+    &-content {
+      position: relative;
+      /* max-width: #{map-get($screen-sizes, 'largger')}px; */
+
+      @extend .rb-pt-64;
+
+      @include media('mobile', 'max') {
+        padding:
+          #{map-get($margin-sizes, 64)}rem
+          #{map-get($margin-sizes, 8)}rem
+          0;
+      }
+
+      &, &-wrapper {
+        @extend .rb-mx-auto;
+      }
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 </style>

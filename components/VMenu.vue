@@ -10,11 +10,13 @@
       <span />
       <span />
     </div>
-    <div class="menu-items">
+    <div class="menu-items" @click="isShowMenu = false">
       <menu-item
         v-for="(item, index) in menuItems"
         :key="`${index}-${item}`"
-        :label="item"
+        :label="item.label"
+        :href="item.path"
+        :hash="item.id"
       />
     </div>
   </nav>
@@ -24,18 +26,15 @@
 
 export default {
   name: 'VMenu',
-  data: () => ({
-    menuItems: [
-      'Potfolio',
-      'About Us',
-      'Members',
-      'Contact Us'
-    ],
-    isShowMenu: false
-  }),
+  data () {
+    return {
+      menuItems: this.$t('menu'),
+      isShowMenu: false
+    }
+  },
   watch: {
     isShowMenu (val) {
-      this.boxRotation(val)
+      this.showMenu(val)
     }
   },
   mounted () {
@@ -48,7 +47,7 @@ export default {
     }
   },
   methods: {
-    boxRotation (bol) {
+    showMenu (bol) {
       const gsap = this.$gsap
       gsap.to(
         '.menu-item',
@@ -57,6 +56,7 @@ export default {
           stagger: (bol) ? 0.2 : 0.1
         })
     }
+
   }
 }
 </script>
@@ -89,7 +89,11 @@ export default {
   }
 
   &-logo {
-    height: 48px;
+    height: 64px;
+
+    @include media("mobile-m", "<") {
+      height: 48px;
+    }
   }
 
   &-close {
@@ -129,7 +133,7 @@ export default {
       }
 
       span:nth-child(2) {
-         opacity: 0;
+        opacity: 0;
       }
 
       span:nth-child(3) {
@@ -139,7 +143,7 @@ export default {
       }
     }
 
-    @include media('tablet', 'min') {
+    @include media('tablet', '>') {
       display: none;
     }
   }

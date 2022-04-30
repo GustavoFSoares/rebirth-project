@@ -1,0 +1,160 @@
+{
+  "section": {
+    "ourServices": {
+      "title": "Our Services",
+      "items": [
+        {
+          "title": "Art Direction",
+          "content": "We have two awesome art directors working with us, who can provide specialized and high-qualified guidance for any artistic project that you can imagine. We count on them to lead your art for a higher level."
+        },
+        {
+          "title": "Character Design",
+          "content": "Any good game and story relies upon good characters. And to create the better ones, we have experienced and high-qualified Concept Artists, who are capable of creating the greater characters to your universe."
+        },
+        {
+          "title": "Environment",
+          "content": "Alongside with the characters, the environment gives a beating heart and consistent background to every artwork. Thinking about it, we wish to provide you beautiful scenarios and wonderful landscapes."
+        },
+        {
+          "title": "Prop Design",
+          "content": "The props are all over any game, and sometimes have great highlights on them, like legendary weapons or armors. In any way, let us come up with the greater items and props for your project."
+        },
+        {
+          "title": "Concept Art",
+          "content": "The very primal and essential step in the development of any IP, concept art is the work that gives soul and identity to the project, and that’s why we give real value to it, always looking to bring to life the most beautiful and creative stuff that your mind can conceive."
+        },
+        {
+          "title": "Illustration",
+          "content": "If the concept art is what gives life to an idea, the illustrations, in all forms, are what shows it to the world. To create a Strong connection, a real bond, between creator and public, such is the power of a good illustration, and such is our goal when working on one."
+        }
+      ]
+    },
+    "portfolio": {
+      "title": "Portfolio"
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "paragraphs": [
+        "Founded in mid-2020, Rebirth Studio started as an artist collective. Friends who, above all, shared the same passion and desire to bring to life the most diverse universes in the entertainment industry.",
+        "Over time, the collective grew and became professional, becoming what it is today: a formalized and structured company, with the mission of serving its customers with perfection and excellence in what they have always done best, which is art.",
+        "Along with the company, the friendship and companionship of the members always grew, making the spirit of love of that collective live stronger and stronger in the heart of an increasingly professional structure."
+      ]
+    },
+    "members": {
+      "title": "Members",
+      "people": {
+        "alef-mengali": {
+          "name": "Alef",
+          "role": "Lead Artist",
+          "description": "He started his artistic career out of love, and because of that, he always wanted to keep those he loves close. Soon he created many friendships within the artistic world, with whom he shared and grew as an artist. Alongside these friends, with whom he learned and who he taught, he founded Rebirth Studio, where he currently holds the title of Lead Artist with honor, feeling grateful to work alongside the artists he most admires and loves.",
+          "instagram": "https://instagram.com/alef_mengali",
+          "artstation": "https://www.artstation.com/alefoilustrador"
+        },
+        "catatau": {
+          "name": "Catatau",
+          "role": "Art Director",
+          "description": "Passionate about designing scenarios and telling stories through them, he studied Graphic Design in college and started studying illustration during the course, always focusing on environments. Some time later he accessed the market, working on editorial projects and role-playing games, when he founded Rebirth Studio alongside his friends, where he works as an artist and art director until today.",
+          "instagram": "https://www.instagram.com/art.catatau/",
+          "artstation": "https://www.artstation.com/viniciuspazian"
+        },
+        "daiany-tadaieski": {
+          "name": "Daiany",
+          "role": "Financial Manager",
+          "description": "Graduated in Law at UnC Campus Mafra in 2014 and Post-Graduated in management and tax legislation at UNINTER in 2020. She discovered the artistic world that same year, when she started in the administration of SKILLTREE Cursos and Rebirth Studio. Working in the legal and administrative sectors of both companies, he awakened a love for art, learning from it to have discipline, perseverance, constant search for knowledge, among other unspeakable values."
+        },
+        "felipe-castro": {
+          "name": "Felipe",
+          "role": "Illustrator",
+          "description": "A passionate drawing enthusiast since his early days, he loves to create personal illustrations based on his subjects of interest. He started studying illustration more intensively during college, and working as a professional in the industry in 2020, joining the Rebirth studio the following year. Currently, he dedicates his time to work with illustration and concept art, and to his personal art, which is inspired by his experiences, animations, movies and favorite stories.",
+          "instagram": "https://www.instagram.com/fcastro.mr",
+          "artstation": "https://www.artstation.com/fmcastro"
+        },
+        "guilherme-castro": {
+          "name": "Guilherme",
+          "role": "Project Manager",
+          "description": "Graduated in Music, he started teaching the discipline of Arts in regular schools. Through his involvement with Art he came into contact with the artistic market. Currently he studies digital art and works in the administrative management of Rebirth Studio."
+        },
+        "mariana-livraes": {
+          "name": "Mari Livraes",
+          "role": "Art Director",
+          "description": "Involved with drawing since always, she began her formal studies in 2018, when she studied digital painting with Mike Azevedo at ICS. Since then, she continued studying Fundamentals of Art and Character Design, and entered the job market making freelances for RPG books and passing through companies such as Insane, Kokku and Rebirth Studio itself, where she currently works as an artist and art director.",
+          "instagram": "https://instagram.com/marilivraes/",
+          "artstation": "https://www.artstation.com/marilivraes"
+        },
+        "mariana-morgan": {
+          "name": "Mari Morgan",
+          "role": "Illustrator",
+          "description": "Started in digital arts in 2011, using her first digital tablet given by her brother and received great encouragement from her mother. Former Designer Graphic from Universidade Paulista (UNIP - Brazil), later became an illustrator and since 2017 makes mostly editorial artworks such as book covers for fantasy books. Worked at Kinoene Arts School as teacher staff for drawing & illustration classes and now she is part of Rebirth Studio as an illustrator.",
+          "instagram": "https://www.instagram.com/_marimorgan/",
+          "artstation": "https://www.artstation.com/marimorgan"
+        },
+        "pedro-dutra": {
+          "name": "Pedro",
+          "role": "Lead Artist",
+          "description": "He has always been drawing, just like most children when they discover a pencil and paper. But over the years his fascination with art became more intense, until he decided to have it as a profession. Along the way, he met his great friends and partners in the field, especially Alef, who was responsible for showing that he could go further with his art, leading him to his current position as Lead Artist at Rebirth Studio.",
+          "instagram": "https://www.instagram.com/pedrocsdutra/",
+          "artstation": "https://www.artstation.com/pedrodutra14"
+        }
+      }
+    },
+    "ourClients": {
+      "title": "Our Clients"
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "form": {
+        "name": {
+          "label": "Name",
+          "errorMessage": "This field is required"
+        },
+        "email": {
+          "label": "E-mail",
+          "errorMessage": "This field is required",
+          "errorEmail": "Please, insert a valid email"
+        },
+        "subject": {
+          "label": "Subject",
+          "errorMessage": "This field is required"
+        },
+        "message": {
+          "label": "Message",
+          "errorMessage": "This field is required"
+        },
+        "button": {
+          "send": "Send",
+          "reset": "Clear"
+        },
+        "messages": {
+          "error": "Fail to send message",
+          "success": "Message sent successfully"
+        }
+      }
+    }
+  },
+  "menu": {
+    "portfolio": {
+      "label": "Portfolio",
+      "name": "portfolio",
+      "id": "#portfolio",
+      "path": "/portfolio"
+    },
+    "aboutUs": {
+      "label": "About Us",
+      "name": "about-us",
+      "id": "#about-us",
+      "path": "/about-us"
+    },
+    "members": {
+      "label": "Members",
+      "name": "members",
+      "id": "#members",
+      "path": "/members"
+    },
+    "contactUs": {
+      "label": "Contact Us",
+      "name": "contact-us",
+      "id": "#contact-us",
+      "path": "/contact-us"
+    }
+  }
+}

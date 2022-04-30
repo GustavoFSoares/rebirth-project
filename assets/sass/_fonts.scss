@@ -11,7 +11,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('~assets/fonts/OpenSans-Italic.ttf') format('truetype');
+  src: url('~assets/fonts/OpenSans-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -30,11 +30,18 @@
   src: url('~assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
-$font-sizes: 16, 24, 40;
+$font-sizes: (
+  12: 1.2,
+  16: 1.6,
+  20: 2,
+  24: 2.4,
+  35: 3.5,
+  40: 4
+);
 
-@each $size in $font-sizes {
-  .rb-font-size-#{$size} {
-    font-size: #{$size}px;
+@each $name, $size in $font-sizes {
+  .rb-font-size-#{$name} {
+    font-size: #{$size}rem;
     line-height: 1;
   }
 }

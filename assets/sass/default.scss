@@ -6,6 +6,10 @@
 
 :root {
   font-size: 10px;
+
+  @include media("mobile", "max") {
+    font-size: 8px;
+  }
 }
 
 a {
@@ -18,9 +22,10 @@ a {
   }
 }
 
-body {
+* {
   font-family: "Open Sans", serif;
   font-weight: normal;
+  @include scrollbars(5px)
 }
 
 body,

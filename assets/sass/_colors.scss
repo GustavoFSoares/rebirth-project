@@ -5,7 +5,8 @@ $text-colors: (
   1: #E8E8E8,
   2: #ADADAD,
   3: #8C8C8C,
-  dark: #262626,
+  primary: $primary,
+  dark: $secondary,
 );
 
 @each $name, $value in $text-colors {
@@ -16,14 +17,14 @@ $text-colors: (
 
 $backgrounds: (
   light: #ffffff,
-  dark: #262626,
+  dark: $secondary,
   soft-dark: #313131,
-  primary: #E72E51,
+  primary: $primary,
 );
 
 @each $name, $value in $backgrounds {
   .rb-background-#{$name} {
-    background: $value;
+    background-color: $value;
   }
 }
 
