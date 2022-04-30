@@ -31,6 +31,10 @@ export default {
     @include media("tablet", "<") {
       width: 90%;
     }
+
+    @include media("tablet", "max") {
+      width: 90%;
+    }
   }
 }
 </style>
