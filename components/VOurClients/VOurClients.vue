@@ -50,18 +50,16 @@ export default {
         grid-column-end: span 3 !important;
       }
     }
-    &-6 {
-      @extend .grid-start-3;
 
-      @include media("tablet", "<") {
-        grid-column-start: 4 !important;
-        grid-column-end: span 3 !important;
-      }
-    }
-
-    &-9 {
+    &-5 {
       @include media("tablet", "<") {
         @extend .m-grid-start-1;
+
+        &::v-deep {
+          img {
+            width: initial !important;
+          }
+        }
       }
     }
   }

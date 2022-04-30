@@ -44,10 +44,14 @@ export default {
 
       .image-container {
         background-size: cover;
-        background-position: center top;
+        background-position: top top;
         background-repeat: no-repeat;
         width: 100%;
-        min-height: calc(100vh - 72px);
+        min-height: 100vh;
+
+        @include media("mobile", "max") {
+          background-position: center center;
+        }
       }
     }
   }
