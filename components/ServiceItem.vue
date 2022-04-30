@@ -5,9 +5,9 @@
     </div>
 
     <div class="service-item-text-container">
-      <h4 class="service-item-text-container__title-content rb-text-color-2 rb-font-size-24 rb-font-weight-semibold">
+      <h5 class="service-item-text-container__title-content rb-text-color-2 rb-font-size-24 rb-font-weight-semibold">
         {{ title }}
-      </h4>
+      </h5>
 
       <h6 class="service-item-text-container__content rb-text-color-3 rb-font-size-16 rb-mt-16">
         {{ content }}
