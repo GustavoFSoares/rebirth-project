@@ -1,5 +1,5 @@
 <template>
-  <a v-if="icon" :href="href" class="social-link">
+  <a v-if="icon" :href="href" class="social-link" target="__blank">
     <component :is="getIcon" class="social-link__icon" />
   </a>
 </template>
