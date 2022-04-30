@@ -17,14 +17,32 @@
         :identifier="identifier"
       />
 
-      <div class="member-description">
-        <div class="member-description-icon">
-          <simple-arrow-svg />
+      <div class="member-content">
+        <div class="member-content-description">
+          <div class="member-content-description-icon">
+            <simple-arrow-svg />
+          </div>
+
+          <p class="member-content-description-text">
+            {{ description }}
+          </p>
         </div>
 
-        <p class="member-description-content">
-          {{ description }}
-        </p>
+        <div class="member-content-social">
+          <div
+            v-if="instagram"
+            class="member-content-social-instagram"
+          >
+            <social-link icon="insta" :href="instagram" />
+          </div>
+
+          <div
+            v-if="artstation"
+            class="member-content-social-artstation"
+          >
+            <social-link icon="artstation" :href="artstation" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -54,6 +72,14 @@ export default {
     description: {
       type: String,
       required: true
+    },
+    instagram: {
+      type: String,
+      default: null
+    },
+    artstation: {
+      type: String,
+      default: null
     }
   },
   data () {
@@ -159,38 +185,50 @@ export default {
       max-width: 16.8rem;
     }
 
-    .member-description {
-      position: relative;
-      flex-grow: 1;
+    .member-content {
       @extend .rb-ml-24;
 
-      display: flex;
-
-      @include media("tablet", "max") {
-        margin-top: #{map-get($margin-sizes, 24)}rem;
-      }
-
-      &-icon {
-        @extend .rb-mr-16;
-
-        svg path {
-          fill: map-get($text-colors, 1)
-        }
-
-        @include media("tablet", "max") {
-          display: none;
-        }
-      }
-
-      &-content {
-        font-style: italic;
-        line-height: 1.3;
+      &-description {
+        position: relative;
         flex-grow: 1;
 
-        @extend .rb-font-weight-light;
-        @extend .rb-font-size-16;
-        @extend .rb-text-color-1;
+        display: flex;
 
+        @include media("tablet", "max") {
+          margin-top: #{map-get($margin-sizes, 24)}rem;
+        }
+
+        &-icon {
+          @extend .rb-mr-16;
+
+          svg path {
+            fill: map-get($text-colors, 1)
+          }
+
+          @include media("tablet", "max") {
+            display: none;
+          }
+        }
+
+        &-text {
+          font-style: italic;
+          line-height: 1.3;
+          flex-grow: 1;
+
+          @extend .rb-font-weight-light;
+          @extend .rb-font-size-16;
+          @extend .rb-text-color-1;
+        }
+      }
+
+      &-social {
+        display: flex;
+        align-items: center;
+        @extend .rb-mt-16;
+
+        div + div {
+          @extend .rb-ml-16;
+        }
       }
     }
   }
