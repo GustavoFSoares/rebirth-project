@@ -59,6 +59,7 @@ export default {
       }
     },
     goTo () {
+      history.pushState('/', 'Rebirth Studio', this.href)
       this.goToElement(this.hash)
     }
   }
