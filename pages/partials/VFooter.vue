@@ -1,7 +1,7 @@
 <template>
   <v-section id="footer" class="footer">
     <template #section>
-      <div class="footer-container rb-pt-96">
+      <div class="footer-container">
         <div class="footer-container-social-links">
           <social-link
             v-for="(link, index) in socialLinks"
@@ -59,7 +59,8 @@ export default {
 <style scoped lang="scss">
 .footer {
   &-container {
-    min-height: calc(100vh - 72px);
+    padding-top: 160px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

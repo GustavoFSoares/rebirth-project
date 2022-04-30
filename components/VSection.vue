@@ -38,7 +38,7 @@ export default {
 <style lang="scss" scoped>
 .section {
   width: 100%;
-  min-height: calc(100vh - 72px);
+  min-height: 100vh;
 
   //@include media("desktop", "max") {
   //  padding: 1.5rem;
@@ -50,7 +50,6 @@ export default {
 
   &.rb-background-dark {
     .section-container-title {
-      @extend .rb-font-size-40;
       @extend .rb-text-color-1;
     }
   }
@@ -70,8 +69,8 @@ export default {
       flex-direction: column;
 
       @extend .rb-font-weight-bold;
-      @extend .rb-font-size-40;
-      @extend .rb-pt-32;
+      @extend .rb-font-size-35;
+      padding-top: 120px;
 
       &::after {
         content: ' ';

@@ -88,7 +88,7 @@ export default {
   }
 
   &-logo {
-    height: 48px;
+    height: 64px;
   }
 
   &-close {
