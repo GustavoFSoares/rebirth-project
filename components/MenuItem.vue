@@ -59,6 +59,7 @@ export default {
       }
     },
     goTo () {
+      history.pushState('/', 'Rebirth Studio', this.href)
       this.goToElement(this.hash)
     }
   }
@@ -83,6 +84,7 @@ export default {
     transition: ease .4s;
   }
 
+  &.active > svg path#middle-line,
   &:hover > svg path#middle-line {
     stroke: map-get($text-colors, 3);
   }
