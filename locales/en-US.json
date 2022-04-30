@@ -118,5 +118,31 @@
         }
       }
     }
+  },
+  "menu": {
+    "portfolio": {
+      "label": "Portfolio",
+      "name": "portfolio",
+      "id": "#portfolio",
+      "path": "/portfolio"
+    },
+    "aboutUs": {
+      "label": "About Us",
+      "name": "about-us",
+      "id": "#about-us",
+      "path": "/about-us"
+    },
+    "members": {
+      "label": "Members",
+      "name": "members",
+      "id": "#members",
+      "path": "/members"
+    },
+    "contactUs": {
+      "label": "Contact Us",
+      "name": "contact-us",
+      "id": "#contact-us",
+      "path": "/contact-us"
+    }
   }
 }
