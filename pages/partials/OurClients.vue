@@ -15,14 +15,10 @@ export default {
   data () {
     return {
       clients: [
-        'direwolf',
-        'eternal',
+        'jovem-nerd',
+        '9-tales',
         'breeders',
         'jambo-editora',
-        'jovem-nerd',
-        'mana-rocks',
-        'sicko-games',
-        'storybook-brawl',
         'tormenta-20'
       ]
     }

@@ -26,5 +26,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    @include media("tablet", "<") {
+      width: 90%;
+    }
+  }
 }
 </style>
