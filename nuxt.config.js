@@ -1,3 +1,5 @@
+import router from './router'
+
 export default {
   server: {
     host: '0'
@@ -14,7 +16,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
   },
-
+  router,
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/sass/default.scss'
@@ -70,7 +72,7 @@ export default {
     baseURL: '/'
   },
   i18n: {
-    strategy: 'prefix_except_default',
+    strategy: 'no_prefix',
     locales: [
       {
         code: 'en-US',
