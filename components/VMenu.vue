@@ -156,7 +156,7 @@ export default {
 
   @include media('tablet', 'max') {
     &-items {
-      top: 74px;
+      top: 94px;
       flex-direction: column;
       justify-content: unset;
       align-items: flex-start;

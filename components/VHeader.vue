@@ -57,9 +57,14 @@ export default {
       animation: enter .3s ease 3s forwards;
       padding: 15px 0;
 
+      @include media('desktop', 'max') {
+        padding: 15px 16px;
+      }
+
       @include media('tablet', 'max') {
         padding: 15px 10px;
       }
+
     }
 
     .decorator {
