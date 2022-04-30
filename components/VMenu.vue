@@ -14,7 +14,9 @@
       <menu-item
         v-for="(item, index) in menuItems"
         :key="`${index}-${item}`"
-        :label="item"
+        :label="item.label"
+        :href="item.path"
+        :hash="item.id"
       />
     </div>
   </nav>
@@ -24,15 +26,12 @@
 
 export default {
   name: 'VMenu',
-  data: () => ({
-    menuItems: [
-      'Potfolio',
-      'About Us',
-      'Members',
-      'Contact Us'
-    ],
-    isShowMenu: false
-  }),
+  data () {
+    return {
+      menuItems: this.$t('menu'),
+      isShowMenu: false
+    }
+  },
   watch: {
     isShowMenu (val) {
       this.showMenu(val)

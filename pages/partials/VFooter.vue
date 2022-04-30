@@ -1,5 +1,5 @@
 <template>
-  <v-section class="footer">
+  <v-section id="footer" class="footer">
     <template #section>
       <div class="footer-container rb-pt-96">
         <div class="footer-container-social-links">

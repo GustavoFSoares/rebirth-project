@@ -54,7 +54,7 @@ export default {
     }
   }
 
-  > *:not(.hero) {
+  > section:not(.hero) {
     @include media('desktop', 'max') {
       padding: 0 16px;
     }

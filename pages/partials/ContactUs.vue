@@ -1,5 +1,9 @@
 <template>
-  <v-section :title="$t('section.contactUs.title')" class="contact-us">
+  <v-section
+    id="contact-us"
+    :title="$t('section.contactUs.title')"
+    class="contact-us"
+  >
     <form ref="form" class="contact-us__form form">
       <v-input
         class="contact-us__form-name"

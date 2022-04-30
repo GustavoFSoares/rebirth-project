@@ -49,12 +49,17 @@ export default {
     transition: .2s ease-in-out;
 
     @include media('desktop', 'max') {
-      padding: 0 15px;
+      padding: 0;
     }
 
     .container {
       transform: translate3d(0,-100px, 0);
       animation: enter .3s ease 3s forwards;
+      padding: 15px 10px;
+
+      @include media('mobile-m', '<') {
+
+      }
     }
 
     .decorator {

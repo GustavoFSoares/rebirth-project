@@ -2,7 +2,7 @@ export default {
   extendRoutes (routes, resolve) {
     routes.push({
       name: 'portfolio',
-      path: '/sessao/sobre',
+      path: '/portfolio',
       component: '@/pages/index.vue',
       meta: {
         id: '#portfolio'
@@ -10,7 +10,7 @@ export default {
     })
     routes.push({
       name: 'about-us',
-      path: '/sessao/cursos',
+      path: '/about-us',
       component: '@/pages/index.vue',
       meta: {
         id: '#about-us'
@@ -23,7 +23,6 @@ export default {
       meta: {
         id: '#members'
       }
-
     })
     routes.push({
       name: 'contact-us',
@@ -33,5 +32,8 @@ export default {
         id: '#contact-us'
       }
     })
+  },
+  scrollBehavior (to, from, savedPosition) {
+    return { top: 0, behavior: 'smooff' }
   }
 }
