@@ -14,6 +14,8 @@
       :role="role"
       :identifier="identifier"
       :description="description"
+      :instagram="instagram"
+      :artstation="artstation"
       @hide="handleExpandMember"
     />
   </div>
@@ -38,6 +40,14 @@ export default {
     description: {
       type: String,
       required: true
+    },
+    instagram: {
+      type: String,
+      default: null
+    },
+    artstation: {
+      type: String,
+      default: null
     }
   },
   data () {
