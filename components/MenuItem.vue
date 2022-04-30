@@ -1,7 +1,8 @@
 <template>
-  <nuxt-link
+  <a
     class="menu-item"
-    :to="href"
+    :href="href"
+    @click.prevent="goTo()"
   >
     <span class="rb-text-color-1 rb-font-size-16">{{ label }}</span>
     <svg
@@ -23,7 +24,7 @@
         />
       </g>
     </svg>
-  </nuxt-link>
+  </a>
 </template>
 
 <script>
@@ -39,6 +40,26 @@ export default {
       type: String,
       default: '#',
       required: false
+    },
+    hash: {
+      type: String,
+      default: '#'
+    }
+  },
+  methods: {
+    getElement: id => document.querySelector(id),
+    goToElement (anchor = null) {
+      if (!this.$route.meta?.id && !anchor) {
+        return
+      }
+      const { id } = this.$route.meta
+      const top = this.getElement(anchor || id).offsetTop
+      if (top !== undefined) {
+        window.scrollTo({ top, behavior: 'smooth' })
+      }
+    },
+    goTo () {
+      this.goToElement(this.hash)
     }
   }
 }

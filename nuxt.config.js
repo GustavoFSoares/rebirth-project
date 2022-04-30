@@ -1,12 +1,10 @@
+import router from './router'
+
 export default {
   server: {
     host: '0'
   },
-  router: {
-    scrollBehavior (to, from, savedPosition) {
-      return { top: 0, behavior: 'smooff' }
-    }
-  },
+  router,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'rebirth-studio',
@@ -19,7 +17,6 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/sass/default.scss'
@@ -75,7 +72,7 @@ export default {
     baseURL: '/'
   },
   i18n: {
-    strategy: 'prefix_except_default',
+    strategy: 'no_prefix',
     locales: [
       {
         code: 'en-US',

@@ -1,5 +1,6 @@
 <template>
   <v-section
+    id="portfolio"
     class="portfolio"
     :title="$t('section.portfolio.title')"
   >

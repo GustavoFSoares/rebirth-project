@@ -130,5 +130,31 @@
         }
       }
     }
+  },
+  "menu": {
+    "portfolio": {
+      "label": "Portfólio",
+      "name": "portfolio",
+      "id": "#portfolio",
+      "path": "/portfolio"
+    },
+    "aboutUs": {
+      "label": "Sobre Nós",
+      "name": "about-us",
+      "id": "#about-us",
+      "path": "/about-us"
+    },
+    "members": {
+      "label": "Membros",
+      "name": "members",
+      "id": "#members",
+      "path": "/members"
+    },
+    "contactUs": {
+      "label": "Contato",
+      "name": "contact-us",
+      "id": "#contact-us",
+      "path": "/contact-us"
+    }
   }
 }
