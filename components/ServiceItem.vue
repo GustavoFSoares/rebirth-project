@@ -61,9 +61,9 @@ export default {
   &-text-container {
     &__content {
       font-style: italic;
+      line-height: 1.3;
 
       @include media("mobile", "max") {
-        line-height: 1.3;
         user-select: none;
       }
     }
