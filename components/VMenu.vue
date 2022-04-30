@@ -10,7 +10,7 @@
       <span />
       <span />
     </div>
-    <div class="menu-items">
+    <div class="menu-items" @click="isShowMenu = false">
       <menu-item
         v-for="(item, index) in menuItems"
         :key="`${index}-${item}`"
