@@ -4,6 +4,11 @@ export default {
   server: {
     host: '0'
   },
+  router: {
+    scrollBehavior (to, from, savedPosition) {
+      return { top: 0, behavior: 'smooff' }
+    }
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'rebirth-studio',

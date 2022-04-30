@@ -65,7 +65,10 @@ export default {
             outline: none;
 
         }
+      }
 
+      &-dot-container {
+        display: none;
       }
     }
   }

@@ -62,14 +62,7 @@ export default {
       top: 0;
 
       background-position: center center;
-
       transform: initial;
-
-      max-width: initial;
-      min-height: initial;
-
-      min-width: 100%;
-      max-height: 100%;
     }
   }
 
