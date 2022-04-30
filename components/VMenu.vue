@@ -56,6 +56,7 @@ export default {
           stagger: (bol) ? 0.2 : 0.1
         })
     }
+
   }
 }
 </script>

@@ -18,6 +18,18 @@ export default {
     },
     finish () {
       this.loading = false
+      this.goToElement()
+    },
+    getElement: id => document.querySelector(id),
+    goToElement (anchor = null) {
+      if (!this.$route.meta?.id && !anchor) {
+        return
+      }
+      const { id } = this.$route.meta
+      const top = this.getElement(anchor || id).offsetTop
+      if (top !== undefined) {
+        window.scrollTo({ top, behavior: 'smooth' })
+      }
     }
   }
 }
