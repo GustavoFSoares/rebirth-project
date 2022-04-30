@@ -43,15 +43,18 @@ export default {
     width: 100vw;
     max-width: 100vw;
     position: fixed;
-    z-index: 10;
+    z-index: 999;
     top: 0;
     left: 0;
-    opacity: 0;
     transition: .2s ease-in-out;
-    animation: enter .3s ease 3s forwards;
 
     @include media('desktop', 'max') {
       padding: 0 15px;
+    }
+
+    .container {
+      transform: translate3d(0,-100px, 0);
+      animation: enter .3s ease 3s forwards;
     }
 
     .decorator {
@@ -74,7 +77,7 @@ export default {
 
   @keyframes enter {
     to {
-      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
   }
 </style>

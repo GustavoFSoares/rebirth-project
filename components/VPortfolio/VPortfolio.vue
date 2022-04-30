@@ -8,13 +8,13 @@
       @click.native="handlePortfolioImage(index)"
     />
 
-    <no-ssr>
+    <client-only>
       <vue-gallery-slideshow
         :images="shuffleImageList"
         :index="galleryIndex"
         @close="handleHideGallery"
       />
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 

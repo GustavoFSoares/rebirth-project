@@ -1,7 +1,7 @@
 <template>
   <transition appear>
     <div v-if="loading" class="loading-page">
-      <VLogo class="logo" animate="true" />
+      <VLogo class="logo" :animate="true" />
     </div>
   </transition>
 </template>
