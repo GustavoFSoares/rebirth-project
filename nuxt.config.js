@@ -1,3 +1,4 @@
+import webpack from 'webpack'
 import router from './router'
 
 export default {
@@ -7,7 +8,7 @@ export default {
   router,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'rebirth-studio',
+    title: 'Rebirth Studio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,14 +20,17 @@ export default {
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/sass/default.scss'
+    '@/assets/sass/default.scss',
+    '~/assets/vendor/css/cubeportfolio.min.css'
+
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/vuelidate',
     { src: '@/plugins/vue-carousel', mode: 'client' },
-    { src: '@/plugins/vue-toastification.js', mode: 'client' }
+    { src: '@/plugins/vue-toastification.js', mode: 'client' },
+    { src: '~/assets/vendor/js/jquery.cubeportfolio.min.js', mode: 'client', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -103,6 +107,17 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    babel: {
+      compact: true
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      })
+    ]
+  },
   loading: '~/components/VLoading.vue'
 }
