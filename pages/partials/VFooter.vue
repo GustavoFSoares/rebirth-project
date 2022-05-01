@@ -42,14 +42,6 @@ export default {
       {
         icon: 'twitter',
         href: 'https://twitter.com/rebirth_studio'
-      },
-      {
-        icon: 'face',
-        href: '#'
-      },
-      {
-        icon: 'twitch',
-        href: '#'
       }
     ]
   })
