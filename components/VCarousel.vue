@@ -6,7 +6,6 @@
         :per-page="1"
         :loop="true"
         :autoplay="true"
-        :autoplay-hover-pause="false"
       >
         <slide
           v-for="(image, index) in images"
@@ -37,6 +36,8 @@ export default {
 
 <style scoped lang="scss">
 .v-carousel {
+  pointer-events: none;
+
   &-component {
     &-slide {
       width: 100%;
@@ -59,6 +60,10 @@ export default {
   ::v-deep {
     .VueCarousel {
       content: '';
+
+      &-inner {
+        transition: transform 1s ease-in-out 0s !important;
+      }
 
       &-pagination {
         position: absolute;

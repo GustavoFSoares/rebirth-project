@@ -6,7 +6,7 @@
     <div
       v-for="(photo, index) in images"
       :key="index"
-      class="cbp-item"
+      :class="`cbp-item ${photo.small}`"
     >
       <a :href="getEditedImageUrl(photo.img)" class="cbp-caption cbp-lightbox">
         <div class="cbp-caption-defaultWrap">
@@ -34,8 +34,9 @@ export default {
       layoutMode: 'mosaic',
       sortByDimension: true,
       mediaQueries: [
-        { width: 1400, cols: 4 },
-        { width: 1300, cols: 3 },
+        // { width: 1350, cols: 3 },
+        { width: 1300, cols: 5 },
+        { width: 1000, cols: 4 },
         { width: 767, cols: 2 },
         {
           width: 480,

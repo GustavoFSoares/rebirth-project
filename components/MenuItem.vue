@@ -84,7 +84,6 @@ export default {
     transition: ease .4s;
   }
 
-  &.active > svg path#middle-line,
   &:hover > svg path#middle-line {
     stroke: map-get($text-colors, 3);
   }
