@@ -1,0 +1,36 @@
+$primary: #E72E51;
+$secondary: #262626;
+
+$text-colors: (
+  1: #E8E8E8,
+  2: #ADADAD,
+  3: #8C8C8C,
+  primary: $primary,
+  dark: $secondary,
+);
+
+@each $name, $value in $text-colors {
+  .rb-text-color-#{$name} {
+    color: $value;
+  }
+}
+
+$backgrounds: (
+  light: #ffffff,
+  dark: $secondary,
+  soft-dark: #313131,
+  primary: $primary,
+);
+
+@each $name, $value in $backgrounds {
+  .rb-background-#{$name} {
+    background-color: $value;
+  }
+}
+
+
+@each $name, $value in $text-colors {
+  .rb-bshadow-#{$name} {
+    box-shadow: 0 0 20px -8px rgba($value, 0.5);
+  }
+}

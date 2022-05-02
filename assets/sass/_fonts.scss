@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/OpenSans-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('~assets/fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+$font-sizes: (
+  12: 1.2,
+  16: 1.6,
+  20: 2,
+  24: 2.4,
+  35: 3.5,
+  40: 4
+);
+
+@each $name, $size in $font-sizes {
+  .rb-font-size-#{$name} {
+    font-size: #{$size}rem;
+    line-height: 1;
+  }
+}
+
+$font-weights: (
+  bold: 700,
+  semibold: 600,
+  normal: 500,
+  light: 400,
+);
+
+@each $name, $value in $font-weights {
+  .rb-font-weight-#{$name} {
+    font-weight: $value;
+  }
+}

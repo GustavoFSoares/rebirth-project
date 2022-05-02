@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+
+  @include media("mobile", "max") {
+    font-size: 8px;
+  }
+}
+
+a {
+  &:link,
+  &:visited,
+  &:active,
+  &:hover {
+    text-decoration: none;
+    color: unset;
+  }
+}
+
+* {
+  font-family: "Open Sans", serif;
+  font-weight: normal;
+  @include scrollbars(5px)
+}
+
+body,
+header {
+  background: $secondary;
+}

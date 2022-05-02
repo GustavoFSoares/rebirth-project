@@ -1,0 +1,52 @@
+$margin-sizes: (
+  auto: auto,
+  8: 0.8,
+  16: 1.6,
+  24: 2.4,
+  32: 3.2,
+  64: 6.4,
+  96: 9.6
+);
+
+$spaces: (
+  margin: 'm',
+  padding: 'p',
+);
+
+@each $spaceName, $spaceInitial in $spaces {
+  @each $size, $value in $margin-sizes {
+    $propValue: #{$value}rem;
+
+    @if $value == 'auto' {
+      $propValue: #{$value};
+    }
+
+    .rb-#{$spaceInitial}l-#{$size} {
+      #{$spaceName}-left: #{$propValue};
+    }
+
+    .rb-#{$spaceInitial}r-#{$size} {
+      #{$spaceName}-right: #{$propValue};
+    }
+
+    .rb-#{$spaceInitial}x-#{$size} {
+      #{$spaceName}: 0 #{$propValue};
+    }
+
+    .rb-#{$spaceInitial}t-#{$size} {
+      #{$spaceName}-top: #{$propValue};
+    }
+
+    .rb-#{$spaceInitial}b-#{$size} {
+      #{$spaceName}-bottom: #{$propValue};
+    }
+
+    .rb-#{$spaceInitial}y-#{$size} {
+      #{$spaceName}: #{$propValue} 0;
+    }
+
+    .rb-#{$spaceInitial}a-#{$size} {
+      #{$spaceName}: #{$propValue};
+    }
+  }
+}

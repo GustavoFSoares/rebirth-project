@@ -1,0 +1,160 @@
+{
+  "section": {
+    "ourServices": {
+      "title": "Nossos Serviços",
+      "items": [
+        {
+          "title": "Art Direction",
+          "content": "Temos dois incríveis diretores de arte trabalhando conosco, que podem providenciar direcionamento especializado e altamente qualificado para qualquer projeto artístico que você possa imaginar. Contamos com eles para levar a sua arte para um patamar mais alto."
+        },
+        {
+          "title": "Character Design",
+          "content": "Qualquer bom jogo ou estória depende de bons personagens. E para criar os melhores, nós temos Concept Artists experientes e altamente qualificados, que são capazes de criar os melhores personagens para o seu universo."
+        },
+        {
+          "title": "Environment",
+          "content": "Junto com os personagens, os ambientes dão um coração pulsante e background consistente para todo trabalho artístico. Pensando nisso, nós desejamos te fornecer belos cenários e maravilhosas paisagens."
+        },
+        {
+          "title": "Prop Design",
+          "content": "Os props estão por todos os lugares em qualquer jogo, e às vezes tem bastante destaque neles, como armas ou armaduras lendárias. De qualquer forma, nos deixe trazer os melhores itens e props para o seu projeto."
+        },
+        {
+          "title": "Concept Art",
+          "content": "A etapa mais primitiva e essencial no desenvolvimento de qualquer IP, concept art é o trabalho que dá alma e identidade ao projeto, e é por isso que damos real valor a isso, sempre buscando trazer à vida as coisas mais belas e criativas que sua mente possa conceber."
+        },
+        {
+          "title": "Illustration",
+          "content": "Se o concept art é o que dá vida a uma ideia, as ilustrações, em todas as formas, são o que mostra ela ao mundo. Criar uma forte conexão, um laço real, entre criador e público, tal é o poder de uma boa ilustração, e tal é o nosso objetivo quando trabalhamos em uma."
+        }
+      ]
+    },
+    "portfolio": {
+      "title": "Portfólio"
+    },
+    "aboutUs": {
+      "title": "Sobre Nós",
+      "paragraphs": [
+        "Fundada em meados de 2020, a Rebirth Studio começou como um coletivo de artistas. Amigos que, acima de tudo, compartilhavam pela mesma paixão e desejo de trazer à vida os mais diversos universos da indústria de entretenimento.",
+        "Com o tempo o coletivo foi crescendo e se profissionalizando, tornando-se o que é hoje: uma empresa formalizada e estruturada, com a missão de atender os seus clientes com primor e excelência naquilo que sempre fizeram de melhor, que é a arte.",
+        "Junto com a empresa, cresceram sempre a amizade e o companheirismo dos membros, fazendo com que o espírito de amor daquele coletivo viva cada vez mais forte no coração de uma estrutura cada vez mais profissional."
+      ]
+    },
+    "members": {
+      "title": "Membros",
+      "people": {
+        "alef-mengali": {
+          "name": "Alef",
+          "role": "Lead Artist",
+          "description": "Iniciou sua carreira artística por amor, e devido a isso sempre quis manter aqueles que ama por perto. Logo foi criando muitas amizades dentro do mundo artístico, com os quais compartilhou e cresceu como artista. Ao lado desses amigos, com quem aprendeu e a quem ensinou, fundou a Rebirth Studio, onde atualmente carrega com honra o título de Lead Artist, sentindo-se grato por trabalhar ao lado dos artistas que mais admira e ama.",
+          "instagram": "https://instagram.com/alef_mengali",
+          "artstation": "https://www.artstation.com/alefoilustrador"
+        },
+        "catatau": {
+          "name": "Catatau",
+          "role": "Art Director",
+          "description": "Apaixonado por desenhar cenários e contar história através deles, estudou Design Gráfico na faculdade e começou a estudar ilustração ao decorrer do curso, sempre se focando em environment. Algum tempo depois ingressou no mercado, trabalhando em projetos editoriais e jogos de RPG, quando fundou a Rebirth Studio ao lado de seus amigos, onde atua como artista e diretor de arte até hoje.",
+          "instagram": "https://www.instagram.com/art.catatau/",
+          "artstation": "https://www.artstation.com/viniciuspazian"
+        },
+        "daiany-tadaieski": {
+          "name": "Daiany",
+          "role": "Financial Manager",
+          "description": "Formanda em Direito pela UnC Campus Mafra em 2014 e Pós Graduada em gestão e legislação tributária pela UNINTER em 2020. Descobriu o meio artístico nesse mesmo ano, quando iniciou na administração da SKILLTREE Cursos e da Rebirth Studio. Atuando no setor jurídico e administrativo de ambas as empresas, despertou o amor pela arte, aprendendo com ela a ter disciplina, perseverança, busca constante por conhecimento, entre outros valores inenarráveis."
+        },
+        "felipe-castro": {
+          "name": "Felipe",
+          "role": "Illustrator",
+          "description": "Entusiasta do desenho com muita paixão desde sempre, ama criar ilustrações pessoais com base em seus temas de interesse. Começou a estudar ilustração de maneira mais intensa durante a faculdade, e a trabalhar como profissional na indústria em 2020, se juntando ao estúdio Rebirth no ano seguinte. Atualmente, dedica seu tempo ao trabalho com ilustração e concept art, e à sua arte pessoal, sendo essa inspirada em suas vivências, animações, filmes e histórias favoritas.",
+          "instagram": "https://www.instagram.com/fcastro.mr",
+          "artstation": "https://www.artstation.com/fmcastro"
+        },
+        "guilherme-castro": {
+          "name": "Guilherme",
+          "role": "Project Manager",
+          "description": "Formado em Música e Pedagogia, se pós-graduando em Filosofia, passou a lecionar a disciplina de Artes em escolas de ensino regular. Através de seu envolvimento com a Arte foi tendo contato com o mercado artístico. Atualmente, estuda desenho e atua na gestão administrativa da Rebirth Studio."
+        },
+        "mariana-livraes": {
+          "name": "Mari Livraes",
+          "role": "Art Director",
+          "description": "Envolvida com desenho desde sempre, começou seus estudos formais em 2018, quando estudou pintura digital com Mike Azevedo na ICS. Desde então continuou estudando Fundamentos da Arte e Character Design, e ingressou no mercado de trabalho fazendo freelances para livros de RPG e passando por empresas como Insane, Kokku e a própria Rebirth Studio, onde atualmente atua como artista e diretora de arte.",
+          "instagram": "https://instagram.com/marilivraes/",
+          "artstation": "https://www.artstation.com/marilivraes"
+        },
+        "mariana-morgan": {
+          "name": "Mari Morgan",
+          "role": "Illustrator",
+          "description": "Iniciou nas artes digitais em 2011, com a primeira mesa digitalizadora que ganhou do irmão e incentivada a fazer desenhos pela mãe pintora. Formada em Design Gráfico na UNIP, migrou para ilustração e trabalha na área desde 2017, produzindo, em sua maioria, ilustrações editoriais como capas de livros de fantasia. Trabalhou na equipe de ensino de desenho e ilustração na escola Kinoene Arts e hoje integra o time da Rebirth como ilustradora.",
+          "instagram": "https://www.instagram.com/_marimorgan/",
+          "artstation": "https://www.artstation.com/marimorgan"
+        },
+        "pedro-dutra": {
+          "name": "Pedro",
+          "role": "Lead Artist",
+          "description": "Desenhou desde sempre, assim como a maioria das crianças quando descobrem um lápis e um papel. Mas ao longo dos anos seu fascínio pela arte se tornou mais intenso, até que decidiu ter como profissão. Nesse trajeto, conheceu seus grandes amigos e parceiros do ramo, em especial o Alef, que foi responsável por mostrar que poderia ir mais longe com sua arte, o levando a sua posição atual como Lead Artist na Rebirth Studio.",
+          "instagram": "https://www.instagram.com/pedrocsdutra/",
+          "artstation": "https://www.artstation.com/pedrodutra14"
+        }
+      }
+    },
+    "ourClients": {
+      "title": "Nossos clientes"
+    },
+    "contactUs": {
+      "title": "Fale Conosco",
+      "form": {
+        "name": {
+          "label": "Nome",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "email": {
+          "label": "E-mail",
+          "errorMessage": "Este campo é obrigatório",
+          "errorEmail": "Favor informar um email válido"
+        },
+        "subject": {
+          "label": "Assunto",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "message": {
+          "label": "Mensagem",
+          "errorMessage": "Este campo é obrigatório"
+        },
+        "button": {
+          "send": "Enviar",
+          "reset": "Limpar"
+        },
+        "messages": {
+          "error": "Falha ao enviar mensagem",
+          "success": "Mensagem enviada com sucesso"
+        }
+      }
+    }
+  },
+  "menu": {
+    "portfolio": {
+      "label": "Portfólio",
+      "name": "portfolio",
+      "id": "#portfolio",
+      "path": "/portfolio"
+    },
+    "aboutUs": {
+      "label": "Sobre Nós",
+      "name": "about-us",
+      "id": "#about-us",
+      "path": "/about-us"
+    },
+    "members": {
+      "label": "Membros",
+      "name": "members",
+      "id": "#members",
+      "path": "/members"
+    },
+    "contactUs": {
+      "label": "Contato",
+      "name": "contact-us",
+      "id": "#contact-us",
+      "path": "/contact-us"
+    }
+  }
+}
