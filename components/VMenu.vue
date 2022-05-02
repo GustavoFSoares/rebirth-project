@@ -1,6 +1,6 @@
 <template>
   <nav class="menu" :class="{'active' : isShowMenu}">
-    <v-logo class="menu-logo" />
+    <v-logo class="menu-logo" @click.native="toTop" />
     <div
       class="menu-close"
       :class="{'active' : isShowMenu}"
@@ -55,8 +55,11 @@ export default {
           x: (bol) ? 0 : 768,
           stagger: (bol) ? 0.2 : 0.1
         })
+    },
+    toTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      history.pushState('/', 'Rebirth Studio', '/')
     }
-
   }
 }
 </script>
@@ -90,6 +93,7 @@ export default {
 
   &-logo {
     height: 64px;
+    cursor: pointer;
 
     @include media("mobile-m", "<") {
       height: 48px;

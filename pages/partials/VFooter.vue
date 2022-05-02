@@ -17,7 +17,7 @@
           contact@rebirthstudio.com.br
         </a>
 
-        <r-brand class="footer-container-brand" />
+        <r-brand class="footer-container-brand" @click="toTop" />
       </div>
     </template>
   </v-section>
@@ -42,17 +42,15 @@ export default {
       {
         icon: 'twitter',
         href: 'https://twitter.com/rebirth_studio'
-      },
-      {
-        icon: 'face',
-        href: '#'
-      },
-      {
-        icon: 'twitch',
-        href: '#'
       }
     ]
-  })
+  }),
+  methods: {
+    toTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      history.pushState('/', 'Rebirth Studio', '/')
+    }
+  }
 }
 </script>
 
@@ -115,6 +113,7 @@ export default {
     &-brand {
       bottom: 40px;
       position: absolute;
+      cursor: pointer;
     }
   }
 }
