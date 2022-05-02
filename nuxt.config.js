@@ -102,7 +102,17 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      start_url: 'https://rebirthstudio.com.br/?standalone=true',
+      lang: 'en',
+      description: 'Gaming & Entertainment Industry Outsourcing Studio\n' +
+        'A group of friends making it happen\n' +
+        'High level of quality and reliability',
+      short_name: 'Rebirth Studio',
+      background_color: '#262626',
+      theme_color: '#E72E51'
+    },
+    icon: {
+      source: 'static/icon.png'
     }
   },
 
