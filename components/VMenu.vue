@@ -156,10 +156,8 @@ export default {
     display: flex;
     justify-content: space-between;
     gap: 48px;
-  }
 
-  @include media('tablet', 'max') {
-    &-items {
+    @include media('tablet', 'max') {
       top: 94px;
       flex-direction: column;
       justify-content: unset;
@@ -180,6 +178,12 @@ export default {
       }
     }
 
+    @include media ('mobile-m', '<') {
+      top: 78px;
+    }
+  }
+
+  @include media('tablet', 'max') {
     &-item {
       background: map-get($backgrounds, 'soft-dark');
       width: 100%;

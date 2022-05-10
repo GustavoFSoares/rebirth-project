@@ -1,22 +1,12 @@
 <template>
-  <div class="main">
-    <v-header />
-
+  <div>
     <hero />
-
     <our-services />
-
     <portfolio />
-
     <about-us />
-
     <members />
-
     <our-clients />
-
     <contact-us />
-
-    <v-footer />
   </div>
 </template>
 
@@ -30,8 +20,7 @@ export default {
     AboutUs: () => import('~/pages/partials/AboutUs'),
     Members: () => import('~/pages/partials/Members'),
     OurClients: () => import('@/pages/partials/OurClients'),
-    ContactUs: () => import('@/pages/partials/ContactUs'),
-    VFooter: () => import('~/pages/partials/VFooter')
+    ContactUs: () => import('@/pages/partials/ContactUs')
   },
   mounted () {
     this.$nextTick(() => {
@@ -41,27 +30,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.main {
-  &:first-child {
-    margin-top: calc(1rem + 72px);
-  }
-
-  section + section {
-    @include media('tablet', 'max') {
-      margin-top: 5rem;
-    }
-  }
-
-  > section:not(.hero):not(.footer) {
-    @include media('desktop', 'max') {
-      padding: 0 16px;
-    }
-
-    @include media('mobile-m', '<') {
-      padding: 0 10px;
-    }
-  }
-}
-</style>
