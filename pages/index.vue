@@ -21,12 +21,6 @@ export default {
     Members: () => import('~/pages/partials/Members'),
     OurClients: () => import('@/pages/partials/OurClients'),
     ContactUs: () => import('@/pages/partials/ContactUs')
-  },
-  mounted () {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 9000)
-    })
   }
 }
 </script>
