@@ -84,10 +84,16 @@ export default {
     line-height: 1.3;
     text-align: justify;
 
-    ::v-deep strong {
-      &,
-      & span {
-        font-weight: bold;
+    ::v-deep {
+      strong {
+        &,
+        & span {
+          font-weight: bold;
+        }
+      }
+
+      ol {
+        margin-left: 4rem;
       }
     }
   }
