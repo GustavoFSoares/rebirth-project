@@ -39,7 +39,9 @@ export default {
     page: '',
     term: ''
   }),
-  created () {
+  mounted () {
+    // eslint-disable-next-line no-console
+    console.log('aaa')
     // eslint-disable-next-line no-console
     this.term = this.$t(`pages.${this.$route.params.slug}`)
     this.page = this.$route.params.slug

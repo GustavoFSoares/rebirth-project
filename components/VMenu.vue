@@ -17,6 +17,7 @@
         :label="item.label"
         :href="item.path"
         :hash="item.id"
+        :name="item.name"
       />
     </div>
   </nav>
