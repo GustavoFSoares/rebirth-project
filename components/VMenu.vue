@@ -17,6 +17,7 @@
         :label="item.label"
         :href="item.path"
         :hash="item.id"
+        :class="`menu-items-${item.name}`"
       />
     </div>
   </nav>
@@ -180,6 +181,12 @@ export default {
 
     @include media ('mobile-m', '<') {
       top: 78px;
+    }
+
+    &-terms-of-use, &-privacy-policy {
+      @include media("tablet", "min") {
+        display: none;
+      }
     }
   }
 
