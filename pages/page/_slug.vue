@@ -58,6 +58,7 @@ export default {
     background-position: center -15vh;
     background-attachment: fixed;
     position: relative;
+    text-transform: uppercase;
 
     &::v-deep .section-container {
       &:before {
@@ -82,6 +83,19 @@ export default {
     white-space: pre-wrap;
     line-height: 1.3;
     text-align: justify;
+
+    ::v-deep {
+      strong {
+        &,
+        & span {
+          font-weight: bold;
+        }
+      }
+
+      ol {
+        margin-left: 4rem;
+      }
+    }
   }
 
   &-container {
