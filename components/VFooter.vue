@@ -19,7 +19,7 @@
 
         <r-brand class="footer-container-brand" @click="toTop" />
 
-        <div class="footer-container-terms">
+        <div class="footer-container-terms flex flex-center-center flex-column">
           <nuxt-link :to="$t('menu.privacyPolicy.path')" class="footer-container-terms-privacy-policy">
             {{ $t('menu.privacyPolicy.label') }}
           </nuxt-link>
@@ -121,33 +121,34 @@ export default {
     }
 
     &-brand {
-      bottom: 100px;
+      bottom: 70px;
       position: absolute;
       cursor: pointer;
     }
 
     &-terms {
-      bottom: 10px;
+      bottom: 25px;
       position: absolute;
-
-      @include media('mobile', 'max') {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      }
+      row-gap: 5px;
 
       a {
         @extend .rb-text-color-1;
-        @extend .rb-font-size-20;
+        font-size: 1rem;
+        opacity: .5;
+        transition: ease 1s;
 
-        &:nth-child(2) {
-          @extend .rb-ml-16;
-
-          @include media('mobile', 'max') {
-            margin-left: 0;
-            margin-top: #{map-get($margin-sizes, 16)}rem;
-          }
+        &:hover {
+          opacity: 1;
+          transform: scale(1.2);
         }
+
+        //&:nth-child(2) {
+        //
+        //  @include media('mobile', 'max') {
+        //    margin-left: 0;
+        //    margin-top: #{map-get($margin-sizes, 16)}rem;
+        //  }
+        //}
       }
     }
   }

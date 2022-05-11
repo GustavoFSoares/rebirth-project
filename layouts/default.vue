@@ -18,8 +18,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.main {
+<style lang="scss">
+.main > div {
   margin-top: calc(1rem + 72px);
 
   section + section {
@@ -28,13 +28,13 @@ export default {
     }
   }
 
-  div > section:not(.hero):not(.footer) {
+  > section:not(.hero):not(.footer) {
     @include media('desktop', 'max') {
-      padding: 0 16px;
+      padding: 0 16px 5rem;
     }
 
     @include media('mobile-m', '<') {
-      padding: 0 10px;
+      padding: 0 10px 5rem;
     }
   }
 }
