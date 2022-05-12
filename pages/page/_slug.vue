@@ -40,14 +40,18 @@ export default {
     term: ''
   }),
   mounted () {
-    // eslint-disable-next-line no-console
-    console.log('aaa')
-    // eslint-disable-next-line no-console
     this.term = this.$t(`pages.${this.$route.params.slug}`)
     this.page = this.$route.params.slug
 
-    // eslint-disable-next-line no-console
-    console.log(this.term)
+    this.$nextTick(() => {
+      setTimeout(() => this.toTop(), 200)
+    })
+  },
+  methods: {
+    toTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      document.title = `Rebirth Studio | ${this.term.title}`
+    }
   }
 }
 </script>
