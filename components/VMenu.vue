@@ -59,6 +59,10 @@ export default {
         })
     },
     toTop () {
+      if (window.scrollY === 0) {
+        this.$router.push({ name: 'index' })
+      }
+
       window.scrollTo({ top: 0, behavior: 'smooth' })
       history.pushState('/', 'Rebirth Studio', '/')
     }
