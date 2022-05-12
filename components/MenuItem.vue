@@ -44,6 +44,10 @@ export default {
     hash: {
       type: String,
       default: '#'
+    },
+    name: {
+      type: String,
+      default: ''
     }
   },
   methods: {
@@ -59,6 +63,11 @@ export default {
       }
     },
     goTo () {
+      const { name } = this.$route
+      if (name === 'page-slug') {
+        return this.$router.push({ name: this.name })
+      }
+
       history.pushState('/', 'Rebirth Studio', this.href)
       this.goToElement(this.hash)
     }

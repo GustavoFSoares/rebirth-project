@@ -18,6 +18,16 @@
         </a>
 
         <r-brand class="footer-container-brand" @click="toTop" />
+
+        <div class="footer-container-terms flex flex-center-center flex-column">
+          <nuxt-link :to="$t('menu.privacyPolicy.path')" class="footer-container-terms-privacy-policy">
+            {{ $t('menu.privacyPolicy.label') }}
+          </nuxt-link>
+
+          <nuxt-link :to="$t('menu.termsOfUse.path')" class="footer-container-terms-terms-of-use">
+            {{ $t('menu.termsOfUse.label') }}
+          </nuxt-link>
+        </div>
       </div>
     </template>
   </v-section>
@@ -111,9 +121,35 @@ export default {
     }
 
     &-brand {
-      bottom: 40px;
+      bottom: 70px;
       position: absolute;
       cursor: pointer;
+    }
+
+    &-terms {
+      bottom: 25px;
+      position: absolute;
+      row-gap: 5px;
+
+      a {
+        @extend .rb-text-color-1;
+        font-size: 1rem;
+        opacity: .5;
+        transition: ease 1s;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+
+        //&:nth-child(2) {
+        //
+        //  @include media('mobile', 'max') {
+        //    margin-left: 0;
+        //    margin-top: #{map-get($margin-sizes, 16)}rem;
+        //  }
+        //}
+      }
     }
   }
 }
