@@ -158,6 +158,18 @@ export default {
     }
   }
 
+  @include media('tablet', 'max') {
+    &-item {
+      background: map-get($backgrounds, 'soft-dark');
+      width: 100%;
+      padding: 20px 10px;
+    }
+
+    ::v-deep &-line{
+      display: none;
+    }
+  }
+
   &-items {
     display: flex;
     justify-content: space-between;
@@ -188,22 +200,11 @@ export default {
       top: 78px;
     }
 
-    &-terms-of-use, &-privacy-policy {
-      @include media("tablet", "min") {
-        display: none;
+    &-terms-of-use,
+    &-privacy-policy {
+      @include media("tablet", ">") {
+        display: none !important;
       }
-    }
-  }
-
-  @include media('tablet', 'max') {
-    &-item {
-      background: map-get($backgrounds, 'soft-dark');
-      width: 100%;
-      padding: 20px 10px;
-    }
-
-    ::v-deep &-line{
-      display: none;
     }
   }
 }
