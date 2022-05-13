@@ -106,6 +106,10 @@ export default {
 
   &-container {
     padding: 96px 0;
+
+    @include media('tablet', '<'){
+      padding: 0 10px;
+    }
   }
 
   &-main ::v-deep .section-container-content {
