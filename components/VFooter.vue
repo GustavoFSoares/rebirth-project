@@ -141,14 +141,6 @@ export default {
           opacity: 1;
           transform: scale(1.2);
         }
-
-        //&:nth-child(2) {
-        //
-        //  @include media('mobile', 'max') {
-        //    margin-left: 0;
-        //    margin-top: #{map-get($margin-sizes, 16)}rem;
-        //  }
-        //}
       }
     }
   }

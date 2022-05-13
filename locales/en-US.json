@@ -159,13 +159,13 @@
     "termsOfUse": {
       "label": "Terms Of Use",
       "name": "terms-of-use",
-      "id": "#terms-of-use",
+      "id": "",
       "path": "/page/terms-of-use"
     },
     "privacyPolicy": {
       "label": "Privacy Policy",
       "name": "privacy-policy",
-      "id": "#privacy-policy",
+      "id": "",
       "path": "/page/privacy-policy"
     }
   },
