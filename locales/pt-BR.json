@@ -120,6 +120,12 @@
           "label": "Mensagem",
           "errorMessage": "Este campo é obrigatório"
         },
+        "agree": {
+          "agree": "Ao selecionar concordo com",
+          "and": "e",
+          "privacyPolicy": "Politica de Privacidade",
+          "termsOfUse": "Termos de Uso"
+        },
         "button": {
           "send": "Enviar",
           "reset": "Limpar"
