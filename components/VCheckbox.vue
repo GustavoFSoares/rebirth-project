@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<script scoped>
+<script>
 export default {
   name: 'VCheckbox',
   props: {
@@ -33,11 +33,26 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@keyframes cb-pop {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.9);
+  }
+  66% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .checkbox {
-  --checkbox-size: 30px;
-  --checkbox-color: #{map-get($text-colors, 1)};
-  --hover-color: #{map-get($text-colors, 3)};
-  --tick-color: #{$primary};
+  $checkboxSize: 30px;
+  $checkboxColor: #{map-get($text-colors, 1)};
+  $hoverColor: #{map-get($text-colors, 3)};
+  $tickColor: #{$primary};
 
   display: flex;
   align-items: center;
@@ -52,17 +67,15 @@ export default {
   &-input {
     .tick-container {
       display: inline-block;
-      width: var(--checkbox-size);
-      height: var(--checkbox-size);
-      border: calc(var(--checkbox-size) * 0.05) solid var(--checkbox-color);
+      width: $checkboxSize;
+      height: $checkboxSize;
+      border: calc($checkboxSize * 0.05) solid $checkboxColor;
       border-radius: 5px;
-      -webkit-transition: 400ms 100ms ease-out;
-      -o-transition: 400ms 100ms ease-out;
       transition: 400ms 100ms ease-out;
     }
 
     .tick-container:hover {
-      border-color: var(--hover-color);
+      border-color: $hoverColor;
     }
 
     input[type="checkbox"] {
@@ -72,13 +85,13 @@ export default {
     .tick {
       position: relative;
 
-      right: calc(var(--checkbox-size) * -0.3);
-      top: calc(var(--checkbox-size) * 0.1);
-      width: calc(var(--checkbox-size) * 0.3);
-      height: calc(var(--checkbox-size) * 0.6);
+      right: calc($checkboxSize * -0.3);
+      top: calc($checkboxSize * 0.1);
+      width: calc($checkboxSize * 0.3);
+      height: calc($checkboxSize * 0.6);
 
-      border-right: calc(var(--checkbox-size) * 0.10) solid var(--tick-color);
-      border-bottom: calc(var(--checkbox-size) * 0.10) solid var(--tick-color);
+      border-right: calc($checkboxSize * 0.1) solid $tickColor;
+      border-bottom: calc($checkboxSize * 0.1) solid $tickColor;
 
       transform: rotate(45deg) scale(0);
       opacity: 0;
@@ -89,59 +102,35 @@ export default {
     .tick:before {
       content: "";
       position: absolute;
-      left: calc(var(--checkbox-size) * -0.07);
-      bottom: calc(var(--checkbox-size) * -0.1);
-      border: calc(var(--checkbox-size) * 0.05) solid var(--tick-color);
+      left: calc($checkboxSize * -0.07);
+      bottom: calc($checkboxSize * -0.1);
+      border: calc($checkboxSize * 0.05) solid $tickColor;
       border-radius: 50%;
     }
 
     .tick:after {
       content: "";
       position: absolute;
-      right: calc(var(--checkbox-size) * -0.1);
-      top: calc(var(--checkbox-size) * -0.07);
-      border: calc(var(--checkbox-size) * 0.05) solid var(--tick-color);
+      right: calc($checkboxSize * -0.1);
+      top: calc($checkboxSize * -0.07);
+      border: calc($checkboxSize * 0.05) solid $tickColor;
       border-radius: 50%;
     }
 
     input[type="checkbox"]:checked + .tick-container {
-      border-color: var(--hover-color);
+      border-color: $hoverColor;
 
       .tick {
         opacity: 1;
-        -webkit-transform: rotate(45deg) scale(1);
-        -ms-transform: rotate(45deg) scale(1);
         transform: rotate(45deg) scale(1);
       }
     }
 
     input[type="checkbox"]:focus + .tick-container {
-      -webkit-animation-name: cb-pop;
       animation-name: cb-pop;
-      -webkit-animation-duration: 400ms;
       animation-duration: 400ms;
-      -webkit-animation-iteration-count: 1;
       animation-iteration-count: 1;
-      -webkit-animation-timing-function: linear;
       animation-timing-function: linear;
-    }
-
-    @keyframes cb-pop {
-      0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-      33% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-      }
-      66% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-      100% {
-        tranform: scale(1);
-      }
     }
   }
 
@@ -152,7 +141,7 @@ export default {
     display: flex;
     gap: 4px;
 
-    @include media('tablet', '<') {
+    @include media("tablet", "<") {
       display: initial;
       line-height: 1.2;
     }
@@ -162,7 +151,5 @@ export default {
       @extend .rb-font-weight-bold;
     }
   }
-
 }
-
 </style>
