@@ -25,7 +25,10 @@ export default {
         this.$route.name === 'page-slug' ||
         this.$route.name === 'index'
       ) {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        setTimeout(() => {
+          window.scrollTo({ top: 1, behavior: 'smooth' })
+        }, 90)
+
         return null
       }
 

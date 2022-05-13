@@ -27,7 +27,7 @@ export default {
     }
   }
 
-  > section:not(.hero):not(.footer) {
+  > section:not(.hero):not(.footer):not(.page-header) {
     @include media('desktop', 'max') {
       padding: 0 16px 5rem;
     }

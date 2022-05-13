@@ -64,8 +64,9 @@ export default {
     },
     goTo () {
       const { name } = this.$route
-      if (name === 'page-slug') {
-        return this.$router.push({ name: this.name })
+
+      if (name === 'page-slug' || !this.hash) {
+        return this.$router.push({ path: this.href })
       }
 
       history.pushState('/', 'Rebirth Studio', this.href)
