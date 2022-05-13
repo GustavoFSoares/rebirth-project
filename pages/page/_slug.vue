@@ -65,6 +65,7 @@ export default {
     background-attachment: fixed;
     position: relative;
     text-transform: uppercase;
+    text-align: center;
 
     &::v-deep .section-container {
       &:before {
