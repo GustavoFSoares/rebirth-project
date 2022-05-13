@@ -65,6 +65,7 @@ export default {
     background-attachment: fixed;
     position: relative;
     text-transform: uppercase;
+    text-align: center;
 
     &::v-deep .section-container {
       &:before {
@@ -106,6 +107,10 @@ export default {
 
   &-container {
     padding: 96px 0;
+
+    @include media('tablet', '<'){
+      padding: 0 10px;
+    }
   }
 
   &-main ::v-deep .section-container-content {
