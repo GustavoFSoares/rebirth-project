@@ -60,6 +60,7 @@ export default {
 .page {
   &-header {
     min-height: 40vh;
+    max-height: 40vh;
     background-image: url("/portfolio/7.webp");
     background-position: center -15vh;
     background-attachment: fixed;
