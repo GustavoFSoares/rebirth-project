@@ -46,8 +46,6 @@ export default {
         'catatau',
         'daiany-tadaieski',
         'felipe-castro',
-        'guilherme-castro',
-        'mariana-livraes',
         'mariana-morgan',
         'pedro-dutra'
       ]
@@ -65,11 +63,11 @@ export default {
       @extend .grid-2;
 
       &-position-0 {
-        @extend .grid-start-2;
+        @extend .grid-start-3;
       }
 
-      &-position-5 {
-        @extend .grid-start-4;
+      &-position-4 {
+        @extend .grid-start-5;
       }
 
       @include media("tablet", "<") {
@@ -80,7 +78,7 @@ export default {
           grid-column-end: span 3;
         }
 
-        &.member-position-5 {
+        &.member-position-4 {
           grid-column: span 3;
         }
       }
