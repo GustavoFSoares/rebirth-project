@@ -19,7 +19,7 @@
           `member-position-${position}`
         ]"
         :identifier="memberKey"
-        v-bind="members[memberKey]"
+        v-bind="members[getName(memberKey)]"
       />
 
       <div class="decorator">
@@ -42,13 +42,20 @@ export default {
     return {
       members: this.$t('section.members.people'),
       memberPositions: [
-        'alef-mengali',
-        'catatau',
-        'daiany-tadaieski',
-        'felipe-castro',
-        'mariana-morgan',
-        'pedro-dutra'
+        'alef-mengali.jpg',
+        'catatau.jpg',
+        'daiany-tadaieski.jpg',
+        'felipe-castro.jpg',
+        'mariana-morgan.jpg',
+        'pedro-dutra.jpg',
+        'adriene-amaral.png'
       ]
+    }
+  },
+  methods: {
+    getName (image) {
+      const name = image.split('.')[0]
+      return name
     }
   }
 }
@@ -67,7 +74,7 @@ export default {
       }
 
       &-position-4 {
-        @extend .grid-start-5;
+        @extend .grid-start-4;
       }
 
       @include media("tablet", "<") {
