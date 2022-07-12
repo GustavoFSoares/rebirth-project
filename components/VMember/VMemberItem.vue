@@ -42,7 +42,7 @@ export default {
   computed: {
     imagePath () {
       if (this.identifier) {
-        return `/members/${this.identifier}.jpg`
+        return `/members/${this.identifier}`
       }
 
       return require('~/assets/images/members/default-image.svg')
