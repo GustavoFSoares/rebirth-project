@@ -102,10 +102,6 @@ export default {
           font-weight: bold;
         }
       }
-
-      //ol {
-      //  margin-left: 4rem;
-      //}
     }
   }
 
