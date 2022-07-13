@@ -12,12 +12,14 @@
             <double-arrow-3-red />
           </div>
         </div>
-
-        <v-paragraphs
-          class="page-description rb-font-size-16 rb-text-color-1"
-          v-html="term.description"
-        />
-
+        <div class="page-description rb-font-size-16 rb-text-color-1">
+          <v-line
+            v-for="(line, index) in term.description"
+            :key="index"
+            :line="line"
+            :index="index"
+          />
+        </div>
         <div class="decorator">
           <div class="arrows-bars">
             <bars class="bars" />
@@ -32,6 +34,7 @@
 export default {
   name: 'IndexPage',
   components: {
+    VLine: () => import('@/components/Terms/VLine'),
     Bars: () => import('@/assets/images/icons/decorators/bars.svg?inline'),
     DoubleArrow3Red: () => import('@/assets/images/icons/decorators/double-arrow-3-red.svg?inline')
   },
@@ -88,9 +91,9 @@ export default {
   }
 
   &-description {
-    white-space: pre-wrap;
     line-height: 1.3;
-    text-align: justify;
+    background: $primary;
+    border-radius: 10px;
 
     ::v-deep {
       strong {
@@ -100,14 +103,15 @@ export default {
         }
       }
 
-      ol {
-        margin-left: 4rem;
-      }
+      //ol {
+      //  margin-left: 4rem;
+      //}
     }
   }
 
   &-container {
     padding: 96px 0;
+    width: 100%;
 
     @include media('tablet', '<'){
       padding: 0 10px;
