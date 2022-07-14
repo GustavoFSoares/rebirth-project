@@ -63,8 +63,9 @@ export default {
         this.$router.push({ name: 'index' })
       }
 
+      const path = this.$route.path.indexOf('page') ? this.$route.path : '/'
       window.scrollTo({ top: 0, behavior: 'smooth' })
-      history.pushState('/', 'Rebirth Studio', '/')
+      history.pushState('/', 'Rebirth Studio', path)
     }
   }
 }
