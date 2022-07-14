@@ -32,8 +32,5 @@ export default {
         id: '#contact-us'
       }
     })
-  },
-  scrollBehavior (to, from, savedPosition) {
-    return { top: 0, behavior: 'smooff' }
   }
 }

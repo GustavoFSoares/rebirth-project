@@ -113,6 +113,12 @@
           "label": "Message",
           "errorMessage": "This field is required"
         },
+        "agree": {
+          "agree": "By selecting I agree with",
+          "and": "and",
+          "privacyPolicy": "Privacy Policy",
+          "termsOfUse": "Terms of Use"
+        },
         "button": {
           "send": "Send",
           "reset": "Clear"
@@ -148,6 +154,380 @@
       "name": "contact-us",
       "id": "#contact-us",
       "path": "/contact-us"
+    },
+    "termsOfUse": {
+      "label": "Terms Of Use",
+      "name": "terms-of-use",
+      "id": "",
+      "path": "/page/terms-of-use"
+    },
+    "privacyPolicy": {
+      "label": "Privacy Policy",
+      "name": "privacy-policy",
+      "id": "",
+      "path": "/page/privacy-policy"
     }
-  }
+  },
+  "pages": {
+    "terms-of-use": {
+      "title": "Terms of Use",
+      "description": [
+        {
+          "title": "Terms",
+          "typeTitle": "ol",
+          "paragraphs": [
+            {
+              "text": "This Terms of Use clarifies the rules of use of the REBIRTH STUDIO company website, where we explain, in the described way, about our services to be provided, the rights of the illustrators, as well as the other clauses that could generate some kind of doubt and/or questioning.",
+              "highLights": [
+                "REBIRTH STUDIO"
+              ]
+            },
+            {
+              "text": "By accessing the REBIRTH STUDIO website, you agree to comply with these Terms of Service, which are in full accordance with the required legislation. The purpose o four website is to publicize our provision of artistic services and to be a point of contact with potential clientes and/or illustrators who wishes to join the team.",
+              "highLights": [
+                "REBIRTH STUDIO"
+              ]
+            },
+            {
+              "text": "We are responsible for complying with all the applicable local laws. The materials contained on this website are protected by applicable copyright (and any laws of intelectual property) and trademark.",
+              "highLights": []
+            }
+          ]
+        },
+        {
+          "title": "License Use",
+          "typeTitle": "ol",
+          "paragraphs": [
+            {
+              "text": "On our website, we publicize our work through the exhibition of the artworks. It is forbidden the use of any images contained on this website as their own authorship; whenever they’re used, it is the user’s duty to indicate the source and authorship.",
+              "highLights": []
+            },
+            {
+              "text": "Accordingly, permission is granted to temporarily download a copy of the materials, for study, reference, indication and personal, non-commercial transitory viewing only.",
+              "highLights": []
+            },
+            {
+              "text": "This is the grant of a license, not a transfer of title, and, under this license, you may not:",
+              "highLights": []
+            },
+            {
+              "text": "",
+              "list": [
+                  {
+                    "text": "modify or copy the materials;"
+                  },
+                  {
+                    "text": "use the materials for any comercial purpose or for public display (commercial or non-commercial);"
+                  },
+                  {
+                    "text": "attempt to decompile or reverse engineer any software contained on the REBIRTH STUDIO website;"
+                  },
+                  {
+                    "text": "remove any copyright or other proprietary notations from the materials; or"
+                  },
+                  {
+                    "text": "transfer the materials to another person or “mirror” the materials on any other server."
+                  }
+              ],
+              "highLights": ["REBIRTH STUDIO"]
+            },
+            {
+              "text": "This license will be automatically terminated if you violate any civil rights of others by using it wrongly. The user who acts in bad faith with the work published by the company, using incorrectly, discriminatory or racial, unfair, using expressions and opinions that do not match the ethical and moral values of the REBIRTH STUDIO company can be sued.",
+              "highLights": ["REBIRTH STUDIO"]
+            },
+            {
+              "text": "REBIRTH STUDIO cannot be held responsible for acts or publications of third parties that include its name without an official statement from the company.",
+              "highLights": ["REBIRTH STUDIO"]
+            },
+            {
+              "text":"You can always be able to visualize the artworks and subjects of study of the illustrators when entering the website, being able to use as reference of electronic format.",
+              "highLights": ["REBIRTH STUDIO"]
+            }
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "typeTitle": "ol",
+          "paragraphs": [
+            {
+              "text": "This Terms of Use clarifies the rules of use of the REBIRTH STUDIO company website, where we explain, in the described way, about our services to be provided, the rights of the illustrators, as well as the other clauses that could generate some kind of doubt and/or questioning.",
+              "highLights": [
+                "REBIRTH STUDIO"
+              ],
+              "list": [
+                {
+                  "text": "The materials on the REBIRTH STUDIO website are provided “as they are”. REBIRTH STUDIO offers no warranties, expresso or implied, and, hereby, disclaims all other warranties, includind, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose or non-infringement of intelectual property, or other infringement of rights. "
+                },
+                {
+                  "text": "In addition, REBIRTH STUDIO does not warrant or makes any representations regarding the accuracy, likely results or reliability of the use of the materials on its website or otherwise related to these materials or on websites linked to this website."
+                },
+                {
+                  "text": "REBIRTH STUDIO and its suppliers cannot be held responsible for damages from invasions, loss or damage of profits when the materials are used illegaly."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Intellectual, moral and patrimonial rights",
+          "typeTitle": "ol",
+          "paragraphs": [
+            {
+              "text": "",
+              "highLights": [
+                "REBIRTH STUDIO",
+                "ILLUSTRATOR/ARTIST"
+              ],
+              "list": [
+                {
+                  "text": "Intellectual right concerns only and exclusively to REBIRTH STUDIO."
+                },
+                {
+                  "text": "The moral right is always from the ILLUSTRATOR/ARTIST who develops the artwork, given that it is a non-transferable and inalienable right. When the project if developed collectively, the moral rights belong to the collective."
+                },
+                {
+                  "text": "The patrimonial right is what refers to the economic use of the work, being the same transferred by the artist to REBIRTH STUDIO, who negotiates with the final client."
+                },
+                {
+                  "text": "This way, all the rights of the referred website follow the Brazilian legislation, and whenever there is a negotiation, it must be formalized by contract."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Materials accuracy",
+          "typeTitle": "ol",
+          "paragraphs": [
+            {
+              "text": "The materials exhibited on the REBIRTH STUDIO website can include technical, typographical or photographic errors. REBIRTH STUDIO does not warrant that any material on its website is accurate, complete or current. REBIRTH STUDIO can make changes to the materials contained on its website at any time without notice.",
+              "highLights": ["REBIRTH STUDIO"]
+            },
+            {
+              "text": "However, REBIRTH STUDIO makes no commitment to update the materials. Using the website and all the materials in a way that meets only and exclusively the company’s needs, being disseminated to attract new customers and the artist community for study for free.",
+              "highLights": ["REBIRTH STUDIO"]
+            }
+          ]
+        },
+        {
+          "title": "Links",
+          "typeTitle": "ol",
+          "paragraphs": [
+            {
+              "text": "REBIRTH STUDIO analyzed the possible websites linked to its website, with no link to any other website in force.",
+              "highLights": ["REBIRTH STUDIO"]
+            },
+            {
+              "text": "Thus, it is not responsible for the content of any linked website (without legal binding, and/or pronounced by the company itself). The inclusion of any link does not imply endorsement by REBIRTH STUDIO of the website. The use of any linked website is at the user’s own risk and responsibility.",
+              "highLights": ["REBIRTH STUDIO"]
+            }
+          ]
+        },
+        {
+          "title": "Modifications",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "REBIRTH STUDIO may revise these website Terms of Service at any time without notice. Always aiming to update it and keep it in accordance with legislation and better user experience. By using this website you agree to be bound by the current version of these Terms of Service.",
+              "highLights": ["REBIRTH STUDIO"]
+            }
+          ]
+        },
+        {
+          "title": "Applicable Law",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "These Terms and Conditions are governed by and interpreted in accordance with the laws of REBIRTH STUDIO, and you irrevocably submit to the exclusive jurisdiction of the Brazilian courts.",
+              "highLights": ["REBIRTH STUDIO"]
+            }
+          ]
+        },
+        {
+          "title": "",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "Yours sincerely,",
+              "highLights": ["REBIRTH STUDIO"]
+            }
+          ]
+        },
+        {
+          "title": "Company’s Legal Department.",
+          "typeTitle": false,
+          "paragraphs": []
+        },
+        {
+          "title": "Rebirth Studio.",
+          "typeTitle": false,
+          "paragraphs": []
+        }
+      ]
+    },
+    "privacy-policy": {
+      "title": "PRIVACY POLICY",
+      "description": [
+        {
+          "title": "PRIVACY POLICY",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "When you browse through the REBIRTH STUDIO website, you provide some data indirectly, and when you are interested in contact the company, you inform your data directly through our form, at this moments you provide some personal data with the aim of enable its operation. ",
+              "highLights": [
+                "REBIRTH STUDIO"
+              ]
+            },
+            {
+              "text": "We value the security of your data, respect of your privacy and transparency, so we have prepared this document to explain how your personal data will be treated by REBIRTH STUDIO and what measures we apply to keep them safe.",
+              "highLights": [
+                "REBIRTH STUDIO"
+              ]
+            },
+            {
+              "text": "REBIRTH STUDIO, registered under CNPJ 25.151.753/0001-29, provides illustration services in various specialities, artistic property and entertainment. Always in accordance with the legislation necessary for the performance and development of the provision of services, in accordance with the General Data Protection Law “LGPD” (Federal Law nº 13.709.2018), on the original: “Lei Geral de Proteção de Dados “LGPD” (Lei Federal nº 13.709.2018)”. We are responsible for the complete confidentiality of information from our clientes and students, and we are in full agreement of the LGPD new legislation (http://www.planalto.gov.br/ccivil_03/_ato2015- 2018/2018/lei/L13709.htm) when there is a need to capture information related to the customer for the provision of the service.  We are responsible for defining what happens to this data and for protecting it. To ease the understanding of this policy, every time you find the terms “we” or “our”, we are referring to the controller of your personal data, that is, REBIRTH STUDIO company, and every time you read “user”, “you”, “yours” or “your”, we refer to you, our client and/or illustrator/artist hired as a freelancer.",
+              "highLights": [
+                "REBIRTH STUDIO",
+                "client and/or illustrator/artist hired as a freelancer"
+              ]
+            },
+            {
+              "text": "We are aware of and consent to the processing of our customers’ Parsonal Data as provided for in the Privacy and Personal Data Protection Policy, in accordance with the article 14 of the Law 13.709/2018 (amended by Law 13.853/2019), on the original: “Política de Privacidade e Proteção de Dados Pessoais, em acordo com artigo 14 da Lei 13.709/2018 (alterada pela Lei 13.853/2019)”.",
+              "highLights": []
+            },
+            {
+              "text": "However, considering that no security system is infallible, we are exempt from any liability for any damages and/or losses resulting from failures, viruses or invasions of your database, and other illegal acts carried out by third parties, except in cases where we have deceit or guilt. ",
+              "highLights": []
+            },
+            {
+              "text": "From the time you send your contact with your information through our website, aware of the acceptance of our Terms of Use and this Privacy Policy document, you agree to be bound by the information on this Term, in addition to being responsible for the veracity of the data provided for the registration, being aware that any incorrect information is of your full responsibility , as well as the applicable penalties, provided for in Article 299 of the Brazilian Penal Code.",
+              "highLights": [
+                "Terms of Use",
+                "Privacy Policy"
+              ]
+            },
+            {
+              "text": "",
+              "highLights": [
+                "REBIRTH STUDIO"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "WHAT DATA DO WE COLLECT?",
+          "style": "light",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "Name or corporate name; e-mail. So that there is a first communication between the parties. After that, if a demand is closed, personal and/or business data will be requested to prepare a service provision contract between the parties. EMPHASIZING that all data sent for the preparation of the CONTRACT will also be secured and confidential. We may also collect the following data: IP address; information about the device used for navigation; searched or viewed products and categories; view count; pages visited on other websites.",
+              "highLights": [
+                "EMPHASIZING",
+                "CONTRACT"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "HOW WE USE YOUR DATA?",
+          "style": "light",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "We use personal data to ensure quality service and a better experience in your negotiation and/or interest in participating in the team of illustrators, to resolve demands and/or fulfill requests/doubts in our Customer Service department; in order to correctly identify the User, for later contact that can cover several subjects. We emphasize that we do not send marketing, advertising or communication of offers.",
+              "highLights": ["emphasize that we do not"]
+            },
+            {
+              "text": "The IP is detected to assist on the use and navigation on the website, considering that we use it for the diagnosis of the language used by the IP, and automatically offer the translation of the website for your better understanding, navigations and enjoyment while visiting our website."
+            },
+            {
+              "text": "Collecting this data helps us improve our performance and diagnose technical errors to work towards solving them; to develop new features and improvements, improving your experience with our available services."
+            }
+          ]
+        },
+        {
+          "title": "WHO WE MAY SHARE YOUR DATA WITH?",
+          "style": "light",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "For the execution of the activities listed above, we may share your personal data with service providers (illustration team), remembering that all of them are confidential and have an NDA contract, ensuring that your data is not exposed inappropriately. It may, when requested, be shared with competent authorities and regulatory bodies (upon judicial request ONLY). We never sell personal data.",
+              "highLights": ["ensuring that your data is not exposed inappropriately"]
+            },
+            {
+              "text": "Below is a summary of these possibilities:"
+            },
+            {
+              "text": "We have some service providers that act in some aspects to help and guarantee better confidentiality of information as well as in anti-fraud analysis, payment intermadiation, company management, archiving and storage of data in the cloud, when necessary. Remembering that to hire these providers we demand the same commitment to the legislation and data confidentiality."
+            },
+            {
+              "text": "Judicial, police or governmental authorities: we must provide personal data of Customers and/or Users, in compliance with a court order, requests from administrative authorities, legal or regulatory obligation, as well as to act collaboratively with governmental authorities, in general on investigations involving illegal acts. "
+            }
+          ]
+        },
+        {
+          "title": "HOW YOUR DATA WILL BE STORED?",
+          "style": "light",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "We undertake to provide a Privacy Policy and Protection of Personal Data with details on the processing of Personal Data, to be kept on a confidential location, used only for the purposes of registration and/or movement when necessary, always complying with the legislation and confidentiality of the customer. "
+            },
+            {
+              "text": "Garantimos nossos melhores esforços para proteção da informação, principalmente Dados Pessoais e Dados Pessoais Sensíveis, aplicando as medidas de proteção administrativa e técnica necessárias e disponíveis à época, exigindo de seus fornecedores o mesmo nível aceitável de Segurança da Informação, com base em melhores práticas de mercado, a partir de cláusulas contratuais. "
+            },
+            {
+              "text": "We guarantee our best efforts to protect information, especially Personal Data and Sensitive Personal Data, applying the administrative and technical protection measures necessary and available at the time, demanding from its suppliers the same acceptable level of Information Security, based on better practices of market, from contractual clauses."
+            }
+          ]
+        },
+        {
+          "title": "WHAT YOU HAVE THE RIGHT TO DO AFTER PROVIDING US YOUR DATA?",
+          "style": "light",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "Transparency about the processing of your personal data is our priority. In addition to the information provided by this Privacy Policy, you can also exercise the rights provided for the General Data Protection Law, including:"
+            },
+            {
+              "text": "Confirmation of the existence of processing of personal data; Access to personal data. "
+            },
+            {
+              "text": "Revocation of consente; Correction of incomplete, inaccurate or outdated personal data; Deletion of personal data processed with consente or unnecessary, excessive or when you understand that some point of the LGPD has not been met; Information about the circumstances and with which companies, partners and other institutions we may share or receive personal data concerning to you; Information on the possibility of not providing consent and on the consequences of denial, where applicable."
+            },
+            {
+              "text": "All requests will be processed free of charge, and will be subject to a prior assessment of your identity and the viability of the service, in order to comply with any obligations that prevent the complete fulfillment of the requests of the right holders."
+            },
+            {
+              "text": "If you choose to delete your personal data from our registration base, we may ONLY retain your name and e-mail address for a certain period of time to comply with legal or regulatory obligations, for the regular exercise of the REBIRTHSTUDIO Company’s rights, any legal actions, audit purposes of various natures, or other deadlines defined and bases on legal bases that justify the retention of this data."
+            }
+          ]
+        },
+        {
+          "title": "POSSIBLE UPDATES TO THIS PRIVACY POLICY",
+          "style": "light",
+          "typeTitle": false,
+          "paragraphs": [
+            {
+              "text": "As we are always looking to improve our customers’ experience, our personal data processing practices may change with the inclusion of new features and services, always in compliance with the General Data Protection Law “LGPD” (Federal Law nº 13.709.2018), on the original: “Lei Geral de Proteção de Dados “LGPD” (Lei Federal nº 13.709.2018)”. Always aiming at legal determination, and prioritizing excellent service and guaranteeing the confidentiality of our customers’ data."
+            }
+          ]
+        },
+        {
+          "title": "Yours sincerely,",
+          "style": "light",
+          "typeTitle": false
+        },
+        {
+          "title": "Company’s Legal Department.",
+          "typeTitle": false
+        },
+        {
+          "title": "REBIRTH STUDIO.",
+          "typeTitle": false
+        }
+      ]
+    }
+  },
+  "cookie": "This website use cookies to better your exprience. By browsing you automatically agree to our "
 }
