@@ -42,6 +42,24 @@
         :error="$v.form.message"
         @blur="$v.form.message.$touch()"
       />
+
+      <v-checkbox
+        v-model="form.agree"
+        class="contact-us__form-agree"
+      >
+        <span>{{ $t('section.contactUs.form.agree.agree') }}</span>
+
+        <nuxt-link :to="$t('menu.privacyPolicy.path')">
+          {{ $t('section.contactUs.form.agree.privacyPolicy') }}
+        </nuxt-link>
+
+        <span>{{ $t('section.contactUs.form.agree.and') }}</span>
+
+        <nuxt-link :to="$t('menu.termsOfUse.path')">
+          {{ $t('section.contactUs.form.agree.termsOfUse') }}
+        </nuxt-link>
+      </v-checkbox>
+
       <v-button
         class="button--outline"
         type="reset"
@@ -65,7 +83,7 @@
 </template>
 
 <script>
-import { required, email } from 'vuelidate/lib/validators'
+import { required, email, sameAs } from 'vuelidate/lib/validators'
 import emailjs from '@/helpers/emailjs'
 
 export default {
@@ -75,7 +93,8 @@ export default {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      agree: false
     },
     sending: false
   }),
@@ -93,6 +112,9 @@ export default {
       },
       message: {
         required
+      },
+      agree: {
+        sameAs: sameAs(() => true)
       }
     }
   },
@@ -149,6 +171,15 @@ export default {
       &-textarea {
         ::v-deep textarea {
           height: 96px;
+        }
+      }
+
+      &-agree {
+        grid-column: span 12;
+        margin-bottom: 20px;
+
+        @include media('tablet', '<') {
+          grid-column: span 6;
         }
       }
 

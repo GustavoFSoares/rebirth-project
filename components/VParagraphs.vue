@@ -16,7 +16,8 @@ export default {
   props: {
     paragraphs: {
       type: Array,
-      required: true
+      required: false,
+      default: () => []
     }
   }
 }

@@ -17,6 +17,8 @@
         :label="item.label"
         :href="item.path"
         :hash="item.id"
+        :name="item.name"
+        :class="`menu-items-${item.name}`"
       />
     </div>
   </nav>
@@ -57,8 +59,13 @@ export default {
         })
     },
     toTop () {
+      if (window.scrollY === 0) {
+        this.$router.push({ name: 'index' })
+      }
+
+      const path = this.$route.path.indexOf('page') ? this.$route.path : '/'
       window.scrollTo({ top: 0, behavior: 'smooth' })
-      history.pushState('/', 'Rebirth Studio', '/')
+      history.pushState('/', 'Rebirth Studio', path)
     }
   }
 }
@@ -152,14 +159,24 @@ export default {
     }
   }
 
+  @include media('tablet', 'max') {
+    &-item {
+      background: map-get($backgrounds, 'soft-dark');
+      width: 100%;
+      padding: 20px 10px;
+    }
+
+    ::v-deep &-line{
+      display: none;
+    }
+  }
+
   &-items {
     display: flex;
     justify-content: space-between;
     gap: 48px;
-  }
 
-  @include media('tablet', 'max') {
-    &-items {
+    @include media('tablet', 'max') {
       top: 94px;
       flex-direction: column;
       justify-content: unset;
@@ -180,14 +197,15 @@ export default {
       }
     }
 
-    &-item {
-      background: map-get($backgrounds, 'soft-dark');
-      width: 100%;
-      padding: 20px 10px;
+    @include media ('mobile-m', '<') {
+      top: 78px;
     }
 
-    ::v-deep &-line{
-      display: none;
+    &-terms-of-use,
+    &-privacy-policy {
+      @include media("tablet", ">") {
+        display: none !important;
+      }
     }
   }
 }
