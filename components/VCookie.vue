@@ -1,6 +1,6 @@
 <template>
   <transition>
-    <div v-if="!hasCookie" class="cookie">
+    <div v-if="hasCookie" class="cookie">
       {{ $t('cookie') }}
       <nuxt-link :to="$t('menu.privacyPolicy.path')" class="cookie--link">
         {{ $t('menu.privacyPolicy.label') }}
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     close () {
-      this.hasCookie = true
+      this.hasCookie = false
       this.setCookie()
     },
     setCookie () {
@@ -42,7 +42,7 @@ export default {
       return !!cookieArray.find(cookie => cookie.includes(this.cookieName))
     },
     checkCookie () {
-      this.hasCookie = this.getCookie()
+      this.hasCookie = !this.getCookie()
     }
   }
 }
