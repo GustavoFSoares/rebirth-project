@@ -49,7 +49,7 @@ export default {
 }
 
 .checkbox {
-  $checkboxSize: 30px;
+  $checkboxSize: 20px;
   $checkboxColor: #{map-get($text-colors, 1)};
   $hoverColor: #{map-get($text-colors, 3)};
   $tickColor: #{$primary};
@@ -135,7 +135,7 @@ export default {
   }
 
   &-label {
-    @extend .rb-font-size-16;
+    @extend .rb-font-size-12;
     @extend .rb-text-color-2;
 
     display: flex;

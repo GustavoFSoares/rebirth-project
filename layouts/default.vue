@@ -2,6 +2,7 @@
   <div class="main">
     <v-header />
     <Nuxt />
+    <v-cookie />
     <v-footer />
   </div>
 </template>
