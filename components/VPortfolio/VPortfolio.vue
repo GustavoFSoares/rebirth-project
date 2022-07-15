@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     getEditedImageUrl (url) {
-      return `/portfolio/${url}.webp`
+      return `/portfolio/${url}.webp?${this.$config.projectVersion}`
     }
   }
 }
