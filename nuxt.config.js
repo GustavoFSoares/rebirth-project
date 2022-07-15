@@ -1,4 +1,5 @@
 import webpack from 'webpack'
+import { version } from './package.json'
 import router from './router'
 
 export default {
@@ -64,7 +65,8 @@ export default {
       size: 'invisible',
       hideBadge: false,
       version: 2
-    }
+    },
+    projectVersion: version
   },
   styleResources: {
     scss: ['@/assets/sass/resources.scss']

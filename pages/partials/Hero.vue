@@ -15,7 +15,7 @@ export default {
       const imageCount =
         numbers
           .map((_, index) => index + 1)
-          .map(image => `/hero/${image}.webp`)
+          .map(image => `/hero/${image}.webp?${this.$config.projectVersion}`)
       return imageCount
     }
   }
