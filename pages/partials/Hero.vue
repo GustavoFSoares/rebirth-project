@@ -1,7 +1,7 @@
 <template>
   <v-section class="hero">
     <template #section>
-      <v-carousel :images="images" />
+      <tine-slider :images="images" />
     </template>
   </v-section>
 </template>
@@ -16,7 +16,6 @@ export default {
         numbers
           .map((_, index) => index + 1)
           .map(image => `/hero/${image}.webp`)
-
       return imageCount
     }
   }

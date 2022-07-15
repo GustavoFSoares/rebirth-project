@@ -21,7 +21,8 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/sass/default.scss',
-    '~/assets/vendor/css/cubeportfolio.min.css'
+    '~/assets/vendor/css/cubeportfolio.min.css',
+    '~/node_modules/tiny-slider/dist/tiny-slider.css'
 
   ],
 
@@ -29,6 +30,7 @@ export default {
   plugins: [
     '@/plugins/vuelidate',
     { src: '@/plugins/vue-carousel', mode: 'client' },
+    { src: '@/plugins/tine-slider.js', mode: 'client' },
     { src: '@/plugins/vue-toastification.js', mode: 'client' },
     { src: '~/assets/vendor/js/jquery.cubeportfolio.min.js', mode: 'client', ssr: false }
   ],
@@ -129,5 +131,5 @@ export default {
       })
     ]
   },
-  loading: '~/components/VLoading.vue'
+  loading: (process.env.NODE_ENV === 'production') ? '~/components/VLoading.vue' : undefined
 }
