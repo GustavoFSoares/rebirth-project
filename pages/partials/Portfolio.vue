@@ -34,7 +34,7 @@ export default {
         { small: '5-300x300', img: '5' },
         { small: '6-600x600', img: '6' },
         { small: '7-600x300', img: '7' },
-        { small: '8-alt-300x300', img: '8-alt' },
+        { small: '8-300x300', img: '8-alt' },
         { small: '9-300x300', img: '9' }
       ]
 
