@@ -2,7 +2,7 @@
   <div class="portfolio-item">
     <div
       class="image"
-      :style="`background-image: url(${imagePath})`"
+      :style="`background-image: url(${imagePath})?${$config.projectVersion}`"
     />
   </div>
 </template>
