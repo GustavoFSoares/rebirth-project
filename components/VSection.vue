@@ -40,9 +40,9 @@ export default {
   width: 100%;
   min-height: 100vh;
 
-  //@include media("desktop", "max") {
-  //  padding: 1.5rem;
-  //}
+  &:not(.footer):not(.hero):not(.portfolio) {
+    padding-bottom: 36px;
+  }
 
   @include media('mobile', 'max') {
     padding: 0 #{map-get($margin-sizes, 8)}rem;
